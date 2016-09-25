@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>计算除权除息价格 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  <header>
+    <h2>计算除权除息价格</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2016.html">2016</a>，
+    <a href="/zh/projects/project_china_stocks.html">沪深股票下载（R）</a>
+    </span>
+    <span class="datestamp">2016-05-02</span>
+    </p>
+    <p class="summary">
+      获取股票分红配股信息；根据分红配股计算除权除息历史价格。
+    </p>
+  </header>
+  <section>
+    <p>
+      添加两个R文件，分别用于获取分红配股信息（网易财经）和计算向前向后除权除息参考价格。向前除权除息后当前价格不变，但有可能产生非正数的历史价格;向后除权除息后方便计算收益率，但当前价格会高出交易价格很多。
+    </p>
+    <p>
+      目前只在Ubuntu环境下测试可用。在windows下，读取网页后utf-8编码的中文会出现乱码，但由于在选取数据框的列采用了列数而不是列名，应该也可以正常使用。
+    </p>
+    <ul>
+      <li>
+        Github：<a href="https://github.com/wangguansong/get_chinese_stocks">https://github.com/wangguansong/get_chinese_stocks</a>
+      </li>
+      <li>
+        上海深圳股票和指数历史价格以及除权除息价格（至2016/04/30）：待完成
+      </li>
+    </ul>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

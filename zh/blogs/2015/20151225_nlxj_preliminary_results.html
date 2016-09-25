@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>征友资料挖掘：初步结果 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  
+  <header>
+    <h2>征友资料挖掘：初步结果</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2015.html">2015</a>，
+    <a href="/zh/projects/project_nlxj.html">交友资料文字挖掘</a>
+    </span>
+    <span class="datestamp">2015-12-25</span>
+    </p>
+    <p class="summary">
+      虽然并没有完成，但先放出一些结果：性别、年龄、身高、城市的分布图。
+    </p>
+  </header>
+  
+  <section>
+    <p>这个项目其实搁置挺久了，只是一直在添加新的资料而已。在圣诞这个特殊的日子里，我决定把现有的很粗略的结果放出来吧。</p>
+    
+    <h3>文本挖掘</h3>
+    <p>从原始文本中整理出规范的变量，是这个项目最大的难处。每个变量都会有几十种名称的写法，也会有十几种不同的格式。目前提取出了年龄、身高和所在城市。其中由于所在城市可能的值很多，所以一直处于未完成的状态。其余变量属于文字段落，需要进行中文分词处理，暂时还没有计划实施。</p>
+        
+    <h3>性别分布</h3>
+    <p>每周两期女士一期男士，而且还常常有投稿男士数量不足的时候，就足以说明了在征友的性别比例和人口实际性别比例完全相反。在所有2509份资料中，男找女有598份，女找男有1901份，同性有10份。</p>
+    <a href="/images/nlxj/piechart_gender.png"><img src="/images/nlxj/piechart_gender.png" width="80%"></a>
+    
+    <h3>年龄</h3>
+    <p>公众号从2014年开始发布征友资料，最新一期是2015年底。按发布资料的年份统计年龄，基本统计如下表：</p>
+    <pre>
+        最小值     25%   中位数    均值     75%    最大值
+    男  20.00   25.00   26.00   26.55   28.00   37.00
+    女  20.00   24.00   26.00   25.84   27.00   39.00
+    </pre>
+    <p>男性年龄分布图（下左）和女性年龄分布图（下右）：</p>
+    <a href="/images/nlxj/hist_age_male.png"><img src="/images/nlxj/hist_age_male.png" width="45%"></a>
+    <a href="/images/nlxj/hist_age_female.png"><img src="/images/nlxj/hist_age_female.png" width="45%"></a>
+    <p>男女年龄的中位数均为26岁，分布形状也基本相同。但男性年龄分布的右侧尾部要比女性的多。</p>
+    
+    <h3>身高</h3>
+    <p>身高的基本统计和分布图如下（下左为男性，下右为女性）：</p>
+    <pre>
+        最小值    25%    中位数    均值     75%    最大值
+    男  165.0   174.0   178.0   177.6   181.0   195.0
+    女  152.0   160.0   163.0   163.7   167.0   178.0
+    </pre>
+    <a href="/images/nlxj/hist_height_male.png"><img src="/images/nlxj/hist_height_male.png" width="45%"></a>
+    <a href="/images/nlxj/hist_height_female.png"><img src="/images/nlxj/hist_height_female.png" width="45%"></a>
+    <p>统计上看并没有什么出奇的地方，男女的中位数也符合直观的感受。</p>
+    <p>分布图却出现了很多奇怪的峰值，比如男性的175、178、180、183，和女性的158、160、165、168。大概是“取整”和对“8”的偏好影响。如果磨平这些峰值，身高大致呈现正态分布。</p>
+    
+    <h3>城市</h3>
+    <p>由于城市众多，而且一座城市还有很多种称呼，所以目前还没有完全清理。出现次数最多的前20座城市的饼状图如下：</p>
+    <a href="/images/nlxj/piechart_city.png"><img src="/images/nlxj/piechart_city.png" width="80%"></a>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

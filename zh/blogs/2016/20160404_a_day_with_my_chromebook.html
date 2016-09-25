@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>和我的Chromebook的一天 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  <header>
+    <h2>和我的Chromebook的一天</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2016.html">2016</a>，
+    <a href="/zh/tags/tag_pc.html">电脑</a>
+    </span>
+    <span class="datestamp">2016-04-04</span>
+    </p>
+    <p class="summary">
+      Chromebook更新全过程。
+    </p>
+  </header>
+  <section>
+    <h3>Chromebook</h3>
+    <p>
+      也许是受够了背着厚厚的戴尔到学校去，也许是为了信仰，也许只是当时的冲动，我购入了Acer C720 Chromebook。不到3斤的重量，6、7个小时的工作时间，省掉带电源的麻烦，C720立即成为我每日携带的唯一笔记本。利用Crouton装上Ubuntu后，它基本满足了所有工作需求。娱乐功能缺乏反而更有益于专注工作。
+    </p>
+    <p>我会向所有人推荐Chromebook，当然，前提是可以访问Google.com。之前我没有考虑过在中国用Chromebook会遇到的问题。其实日常使用并没有多大的影响（除了不能Google的系列服务以外），只是在升级和第一次登录时麻烦，比如今天。</p>
+    <p>Chromebook提供L2TP和OpenVPN两种VPN连接，我的VPN在这个系统下只提L2TP。在这个特殊的网络环境，不同的接入商会对VPN有不同的屏障：在某地的广电网络就连不上任何L2TP连接。</p>
+    <h3>更新Chromebook</h3>
+    <p>终于回到了家中，连上了VPN，开始更新系统。距离上一次更新已经很长时间了，我已经忘记了会发生什么。一切安装完毕后，重新启动系统，于是在登录界面就傻眼了。首次登录系统中需要连接到Google服务器，然而在登录界面并没有VPN选项！这我才想起之前更新的经历。当时我用一台Windows电脑分享了WIFI，然而我的Windows电脑并没有随身带着。</p>
+    <p>于是我便开始发挥想象力，以创建一个可以访问google的WIFI，最终解决方法如下：</p>
+    
+    <h3>自由的WIFI</h3>
+    <p>需要：WIFI或手机流量，安卓手机，Chromebook，（Mini USB数据线）。</p>
+    <ul>
+      <li>安装APP：TetherNet。</li>
+      <li>用手机（安卓）分享网络到Chromebook，或者通过WIFI或者通过USB。</li>
+      <li>连接VPN。</li>
+      <li>使用APP：TetherNet。</li>
+      <li>Chromebook上登录。</li>
+    </ul>
+    <p>注：</p>
+    <ul>
+      <li>上述方法没有TetherNet行不通。手机分享了网络并打开VPN后可以访问Google，而Chromebook访问不了任何网络。根源在于打开VPN后IP的分配问题，另外也可以通过命令行解决。</li>
+      <li>记得我上次是用一台Windows笔记本发射WIFI信号连接上的。但这次尝试用Ubuntu分享网络没有成功。</li>
+      <li>直接在路由器上设置VPN似乎是很有吸引力的方法，不过我没有设置成功。</li>
+      <li>系统更新有可能会毁掉Crouton的安装，用下面命令修复，修复时可能需要连接Google，trusty是chroot的名字：
+      <pre>sudo sh crouton -u -n trusty</pre>
+      </li>
+    </ul>
+    <p>
+    </p>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+tag,date,zhTitle,enTitle,zhDesc,enDesc,type
+2007,NA,2007,2007,2007,2007,year
+2008,NA,2008,2008,2008,2008,year
+2009,NA,2009,2009,2009,2009,year
+2010,NA,2010,2010,2010,2010,year
+2011,NA,2011,2011,2011,2011,year
+2012,NA,2012,2012,2012,2012,year
+2013,NA,2013,2013,2013,2013,year
+2014,NA,2014,2014,2014,2014,year
+2015,NA,2015,2015,2015,2015,year
+2016,2016-09-17,2016,2016,2016,2016,year
+animals,2016-09-03,动物世界,Animal planet,动物世界,Animal planet,theme
+beijing,2016-09-17,中国北京,"Beijing, China",中国北京,"Beijing, China",location
+beiyandang,2016-03-05,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",location
+butters,NA,Butters本人,Butters Himself,Butters本人,Butters Himself,theme
+butters_crap,NA,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap,theme
+interesting,2016-09-17,有趣的东西,Interesting Things,有趣的东西,Interesting Things,theme
+lvshun,2016-02-28,中国辽宁省旅顺,"Lvshun, Liaoning, China",中国辽宁省旅顺,"Lvshun, Liaoning, China",location
+ningbo,2016-02-11,中国浙江省宁波,"Ningbo, Zhejiang, China",中国浙江省宁波,"Ningbo, Zhejiang, China",location
+people,2016-09-17,进入我镜头的人们,People who entered my camera,进入我镜头的人们,People who entered my camera,theme
+photographer,2016-09-17,拍照的人,Taking Pictures,拍照的人,Taking Pictures,theme
+plants,2016-09-04,花花草草,Plants,花花草草,Plants,theme
+selfie,2016-09-17,自拍的人,Taking Selfies,自拍的人,Taking Selfies,theme
+shanghai,2016-03-02,中国上海,"Shanghai, China",中国上海,"Shanghai, China",location
+sites,2016-09-17,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites,theme
+travel,2016-03-05,旅行,Travel,旅行,Travel,tag
+weekend,2016-09-17,周末,Weekend,周末,Weekend,theme
+yuanmingyuan,2016-09-17,圆明园,Yuanmingyuan,北京圆明园,Yuanmingyuan Park in Beijing,location

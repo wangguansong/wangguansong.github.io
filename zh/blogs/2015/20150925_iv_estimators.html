@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>高频数据波动性统计量 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+
+  <header>
+    <h2>高频数据波动性统计量</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2015.html">2015</a>，
+    <a href="/zh/projects/project_iv_estimators.html">高频数据日波动率</a>
+    </span>
+    <span class="datestamp">2015-09-25</span>
+    </p>
+    <p class="summary">
+      这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。
+    </p>
+  </header>
+  
+  <section>
+    <p>一些利用高频数据的波动性统计量在R中的实现。</p>
+    <p>Github链接：<a href="https://github.com/wangguansong/IVEstimators">https://github.com/wangguansong/IVEstimators</a></p>
+  </section>
+  
+  <section>
+    <p>主要的统计量的论文：</p>
+    <ul>
+      <li>Barndorff-Nielsen, O., P. Hansen, A. Lunde, and N. Shephard (2008): “Designing realized kernels to measure the ex post variation of equity prices in the presence
+of noise,” Econometrica, 76(6), 1481–1536.</li>
+      <li>Jacod, J., Y. Li, P. Mykland, M. Podolskij, and M. Vetter (2009): “Microstructure noise in the continuous case: the pre-averaging approach,” Stochastic
+Processes and their Applications, 119(7), 2249–2276.</li>
+      <li>Zhang, L. (2006): “Efficient estimation of stochastic volatility using noisy observations: A multi-scale approach,” BERNOULLI-LONDON-, 12(6), 1019.
+      </li>
+      <li>Zhang, L., P. Mykland, and Y. Ait-Sahalia (2005): “A tale of two time scales,” Journal of the American Statistical Association, 100(472), 1394–1411.</li>
+    </ul>
+    
+    <p>当交易数据中的误差有时间序列自相关时，以上统计量会出现存在很大的误差。假设误差项为MA结构（移动平均），则可以调整偏差：<br />
+    <a href="/documents/rkmacv_master.pdf">
+    Realized Kernels with Moving Average Noises and Optimal Weights
+    </a>
+    </p>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

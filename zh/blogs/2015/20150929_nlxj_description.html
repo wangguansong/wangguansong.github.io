@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>解析征友资料HTML页面 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  
+  <header>
+    <h2>解析征友资料HTML页面</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2015.html">2015</a>，
+    <a href="/zh/projects/project_nlxj.html">交友资料文字挖掘</a>
+    </span>
+    <span class="datestamp">2015-09-29</span>
+    </p>
+    <p class="summary">
+      纳兰性急是一个微信公众号，每周末发布三期交友信息。我从190期HTML页面中提取出来2509份征友的资料，以待之后分析。
+    </p>
+  </header>
+  
+  <section>
+    <h3>纳兰性急</h3>
+    <p>在西藏旅游时碰到了两个有趣的90后，给我推荐了一个有趣的微信公众号：纳兰性急。（新浪微博：<a href="http://weibo.com/hugoyu1982">@纳兰性急</a>）每周末发布三期交友信息：星期五为男士专场，星期六、日为女士专场。每期有大概15个人。每个人投稿的内容包括微信号，个人信息，和求偶要求之类，每份资料个格式大致为：</p>
+    <ul>
+      <li>编号（一个给定的标记号码）</li>
+      <li>微信号</li>
+      <li>年龄</li>
+      <li>身高</li>
+      <li>城市</li>
+      <li>职业</li>
+      <li>兴趣爱好</li>
+      <li>求偶要求</li>
+      <li>一句话介绍自己</li>
+      <li>一张照片</li>
+    </ul>
+    <p>具备敏锐数据嗅觉的我立即发现这是一个能挖出很多有趣故事的东西。比如：投稿人的年龄分布、地点分布、身高分布、职业分布；这些分布在男女上是否有显著不同；在兴趣爱好，自我介绍，和求偶要求上是否存在高频词；等等。</p>
+    <p>信息由每个人自己撰写投递，纳兰在整理的时候想必也没有考虑到挖掘网页的人，因此资料的格式比较混乱。每一项的名称标记不统一，光城市就有十多种写法；每一项填写的格式也各式各样，比如年龄就有“30”，“30岁”，“1985”，“85”，“85年”，“芳龄30”等等很多种写法；HTML的结构也不是统一的，比如有的人用“&#60;br&#62;”换行，而不是用“&#60;p&#62;”排版；另外，很多人使用一些表情符也会导致读取编码出错。</p>
+    <p>试试看吧。Github：<a href="https://github.com/wangguansong/nlxj-profiles">https://github.com/wangguansong/nlxj-profiles</a></p>
+
+    <h3>HTML页面解析</h3>
+    <p>第一步是读取和解析HTML文件。</p>
+    <p>每期，所有人的资料都写在一个很长的HTML行里，被包含在id为“js_content”的div中。现找到此行。</p>
+    <p>每份资料之间由一行很长的横线分割，于是用”-----“（五个以上的“-”）将此长行分割。</p>
+    <p>分割后的最后一段总是这个平台的介绍或者广告，可以舍弃；第一段是标题，包含本期编号以及性别，把此标题复制到每一份资料中，使得每一份资料都可以单独使用。一切顺利的话，现在已经将每一个人的资料分割开了</p>
+    <p>大多数资料用“&#60;p&#62;”排版。对每一份切割后的文本，进一步用“&#60;/p&#62;”切割。清理切割之后的文字，删掉HTML的标记以及无用的空格等等。</p>
+    <p>如果一切运行顺利，得到的结果是一个文本向量（character vector）的列表（list），每个向量包含了一个人的资料。</p>
+
+    <h3>修改HTML原文件</h3>
+    <p>然而文本挖掘从来不会一切顺利。R脚本经常会报错，因为无法读取HTML中的表情符，大概是中文编码中特有的而UTF-8中不包括的符号。好在并不是很多，所以每个错误发生之后可以锁定问题文本，从原HTML文件中删除表情符。</p>
+    <p>在整个脚本运行成功之后，检查得到的列表发现，有的文本向量的长度仅为5，正常的情况其长度应该大于10。原因是一些资料用“&#60;br&#62;”而不是““&#60;p&#62;”分隔信息。我写了一个R程序以处理这种情况，但其实并不很多见，所以还是统一标准，直接修改了原HTML文件。</p>
+    
+    <h3>结果（2012/12/29更新）</h3>
+    <p>一共搜集了190期，2509份资料。</p>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

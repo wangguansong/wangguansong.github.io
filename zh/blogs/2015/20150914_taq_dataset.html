@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>TAQ数据处理 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  
+  <header>
+    <h2>TAQ数据处理</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2015.html">2015</a>，
+    <a href="/zh/projects/project_iv_estimators.html">高频数据日波动率</a>
+    </span>
+    <span class="datestamp">2015-09-14</span>
+    </p>
+    <p class="summary">
+      高频交易报价数据来自于TAQ数据库。这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。
+    </p>
+  </header>
+
+  <section>
+    <p>这个项目是我在UNC为了处理TAQ数据所做，也是我从Matlab转向R之后的第一次实际应用，所以很多地方只做到了可用而已。以下是翻译到中文的README文档。</p>
+    <p>Github链接：<a href="https://github.com/wangguansong/TAQDataTreatment">https://github.com/wangguansong/TAQDataTreatment</a></p>
+  </section>
+  <section>
+    <p>TAQ数据库包括了股票成交和报价记录。由于电子交易网络的出现，交易量大大地增加了。SAS用户可以从TAQ数据库直接获取数据，但如果从TAQ网站直接请求下载交易数据，下载文件常常十分巨大很难直接分析。</p>
+    <p>这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。</p>
+    <p>文件和脚本如下所列，按功能分类：</p>
+  </section>
+  
+  <section>
+    <h3>（1）基本信息</h3>
+    <dl>
+      <dt>dj30.txt</dt>
+      <dd>包含道琼斯30指数（在2012年时）成份股符号列表，用于从TAQ数据库请求数据时的股票符号列表。</dd>
+      <dt>dj30_name.csv</dt>
+      <dd>包含道琼斯30指数成份股的符号、名称和交易列表。</dd>
+      <dt>halfdays.txt</dt>
+      <dd>包含从1993年到2012年的所有半交易日列表，格式为yyyymmdd（例如20150923）。</dd>
+      <dt>Overview of TAQ Data.pdf</dt>
+      <dd>TAQ数据的概览（官方文档）。</dd>
+    </dl>
+  </section>
+  
+  <section>
+    <h3>（2）分割大文件</h3>
+    <dl>
+      <dt>TAQSplit2gz.sh</dt>
+      <dd>把大文件（csv, gz，或zip格式）分割成每日每支股票的小文件，分割后的小文件包含了一支股票在一天内的交易/报价记录。分割后的csv文件被压缩为gz文件。</dd>
+      <dt>TAQSplit2RData.sh</dt>
+      <dd>本项目的核心程序。如同上一个文，只是本脚本分割后的csv文件保存成RData文件。这个脚本依赖于下面的R脚本（和R程序）。</dd>
+      <dt>TAQcsv2RData.R</dt>
+      <dd>读取一个csv文档并输出为一个RData文件。数据列类型需要指明。</dd>
+      <dt>SortRDataBySymbol.sh</dt>
+      <dd>当TAQ大文件包含很多支股票和日期时，分割后会生成很多小文件。此脚本将这些小文件整理为按股票分类的文件夹。</dd>
+      <dt>TAQLoop.sh</dt>
+      <dd>在TAQ大文件中扫描所有的股票符号和日期，然后生成一个索引文件或者对每一个股票/日期组合运行一个处理小csv的脚本。</dd>
+    </dl>
+  </section>
+  <section>
+    <h3>（3）获取一日一支股票的记录</h3>
+    <dl>
+      <dt>TAQExtract.sh</dt>
+      <dd>给定一个股票符号和一个日期，此脚本在大文件中寻找所有该股票/日期组合的记录。如果存在索引文件，此脚本会利用索引信息提高速度。运行时间会和记录在大文件中所处位置有关，通常为几分钟。</dd>
+      <dt>TAQExtract.R</dt>
+      <dd>在R中引用上个脚本。</dd>
+    </dl>
+  </section>
+  <section>
+    <h3>（4）无效记录的粗略处理</h3>
+    <dl>
+      <dt>TAQFilter.R</dt>
+      <dd>R方程，输入一个R数据框（data frame）或一个包含数据框的RData文件名，返回一个长度为数据框行数的逻辑向量，其中TRUE代表正常数据而FALSE代表无效数据。</dd>
+      <dt>TAQError.R</dt>
+      <dd>R方程，输入一个R数据框（data frame）或一个包含数据框的RData文件名，返回一个长度为数据框行数的逻辑向量，其中FALSE代表离奇的数据（比如点错小数点的价格）。</dd>
+      <dt>TAQOutLiersBHLS.R</dt>
+      <dd>R方程，输入一个价格的向量，返回一个对应长度的逻辑向量，其中TRUE代表可能为异常值。</dd>
+      <dt>TAQSparseSample.R</dt>
+      <dd>R方程，输入一个R数据框（data frame），给定采集数据的频率（每秒、每10秒等等），返回一个R数据框，其中第一列为采集时间，第二列为对应的原数据框的行数。</dd>
+      <dt>TAQCondPlot</dt>
+      <dd>R方程，输入一个R数据框（data frame）或一个包含数据框的RData文件名，生成一个价格走势图，其中标示出所有异常的记录点。</dd>
+    </dl>
+  </section>
+  <section>
+    <h3>（5）生成可用数据</h3>
+    <dl>
+      <dt>TAQApplyFilter.R</dt>
+      <dd>R方程，给定一个RData的文件名，检查其中列的格式，如果需要则更新原RData文件。运行指定的过滤程序，把结果保存到新RData文件中。</dd>
+      <dt>TAQCreateSamples.R</dt>
+      <dd>类似于上个文件，但运行更多的过滤程序。另外会报告检查到的格式错误而不会自动改变原文件。</dd>
+      <dt>TAQCheckData.R</dt>
+      <dd>R脚本，生成一个数据框，保存所有小RData文件的元信息。如果过滤文件已存在，将相应信息填入数据框。</dd>
+    </dl>
+  </section>
+
+</article>
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

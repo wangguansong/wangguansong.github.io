@@ -1,0 +1,44 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+header, main, footer {
+  width: 960px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  clear: both;
+}
+main {
+  overflow: hidden;
+  min-height: 300px;
+}
+header {
+  background: skyblue;
+  height: auto;
+}
+
+nav{
+  width: 100%;
+  clear: both;
+  background: steelblue;
+}
+
+article{
+  margin: 1% 1% 1% 2%;
+  width: 62%;
+  float: left;
+  line-height: 1.5em;
+}
+#content{
+  margin-left: 4em;
+  width: 75%;
+}
+
+aside{
+  width: 32%;
+  margin: 1% 2% 1% 0%;
+  float: right;
+}
+

@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <link rel="import" href="test.html">
+<title>Collecting and Cleansing AQI Data - WGS</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>Guansong Wang's Website</h1>
+  <nav>
+    <ul>
+      <li><a href="/en/index.html">Home</a></li>
+      <li><a href="/en/aboutme.html">About Me</a></li>
+      <li><a href="/en/projects.html">Projects</a></li>
+      <li><a href="/en/blog.html">Blog</a></li>
+      <li><a href="/en/pictures.html">Pictures</a></li>
+      <li><a href="/en/updates.html">Updates</a></li>
+      <li><a href="/en/links.html">Links</a></li>
+      <li><a href="/zh/index.html" lang="zh-cmn-Hans">中文</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<article id="content">
+  
+  <header>
+    <h2>Collecting and Cleansing AQI Data</h2>
+    <p>
+    <span class="tags">
+      Tags:
+    <a href="/en/tags/tag_2015.html">2015</a>，
+    <a href="/en/projects/project_china_aqi.html">ChinaAQI</a>
+    </span>
+    <span class="datestamp">2015-08-21</span>
+    </p>
+    <p class="summary">
+      Collect and cleanse hourly AQI of five cities of China （where U.S. embassy locations: Beijing, Shanghai, Guangzhou, Shenyang, Chengdu) from 2008 to 2014.
+    </p>
+  </header>
+  
+  <section>
+    <p>
+      Collect and cleanse hourly AQI of five cities of China （where U.S. embassy locations: Beijing, Shanghai, Guangzhou, Shenyang, Chengdu) from 2008 to 2014.
+    </p>
+    <p>
+      Link to raw and cleansed dataset：<a href="http://pan.baidu.com/s/1i4vBkep" target="_blank">Baidu Cloud</a>.</p>
+  </section>
+  <section>
+    <p>
+      Data Source:         stateair.net <br />
+      Create Date:         20150406<br />
+      Updata Date:         20150407<br />
+    </p>
+    <p>
+      Defination of the dataset and introduction can be downloaded from this link: <a href="http://www.stateair.net/web/historical/1/1.html">http://www.stateair.net/web/historical/1/1.html</a>
+    </p>
+    <p>Data use statement<a href="http://www.stateair.net/web/historical/1/1.html">http://www.stateair.net/web/historical/1/1.html</a></p>
+    
+    <h4>Files:</h4>
+    <dl>
+      <dt>City_PM25_From_To.csv</dt>
+      <dd>CSV dataset of cleansed data of _city_</dd>
+      <dt>USEmbassyAQI.csv</dt>
+      <dd>CSV dataset with five cities combied</dd>
+      <dt>USEmbassyAQI.RData</dt>
+      <dd>In Rdata format</dd>
+      <dt>Raw/*</dt>
+      <dd>Raw dataset</dd>
+    </dl>
+    
+    <h4>Cleansing Process:</h4>
+    <ul>
+      <li>Delete the first three rows of text.</li>
+      <li>Delete the "Parameter" column, since all have the same value "PM2.5".</li>
+      <li>Delete "DATE(LST)" column, keep "Year", "Month", "Day" and "Hour" columns.</li>
+      <li>Delete "Unit" column, since all have the same value "ug/m3".</li>
+      <li>Delete "QC Name", since all are blank.</li>
+      <li>Transfer "Duration" column, which takes two values of "Valid" and "Missing" to a boolean column "Valid".</li>
+    </ul>
+    
+    <h4>Update 20150407：</h4>
+    <p>
+      There are 17 pairs of duplicates (same location and time), all of which are at 3:00 am. The duplicates have different values of AQI and the 2:00 am records are missing for all the cases, so correct the first appearance of 3:00 am as 2:00 am record. The following data is adjusted:
+    </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Row</th>
+            <th>Site</th>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Day</th>
+            <th>Hour</th>
+            <th>Value</th>
+            <th>Valid</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+        <tr><td>6675</td><td>Beijing</td><td>2009</td><td>3</td><td>8</td><td>3</td><td>179</td><td>TRUE</td></tr>
+        <tr><td>15579</td><td>Beijing</td><td>2010</td><td>3</td><td>14</td><td>3</td><td>75</td><td>TRUE</td></tr>
+        <tr><td>24315</td><td>Beijing</td><td>2011</td><td>3</td><td>13</td><td>3</td><td>351</td><td>TRUE</td></tr>
+        <tr><td>50523</td><td>Beijing</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>55</td><td>TRUE</td></tr>
+        <tr><td>59355</td><td>Chengdu</td><td>2012</td><td>3</td><td>11</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>68091</td><td>Chengdu</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>176</td><td>TRUE</td></tr>
+        <tr><td>76827</td><td>Chengdu</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>65</td><td>TRUE</td></tr>
+        <tr><td>85683</td><td>Guangzhou</td><td>2011</td><td>3</td><td>13</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>94419</td><td>Guangzhou</td><td>2012</td><td>3</td><td>11</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>103155</td><td>Guangzhou</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>92</td><td>TRUE</td></tr>
+        <tr><td>111891</td><td>Guangzhou</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>23</td><td>TRUE</td></tr>
+        <tr><td>120747</td><td>Shanghai</td><td>2011</td><td>3</td><td>13</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>129483</td><td>Shanghai</td><td>2012</td><td>3</td><td>11</td><td>3</td><td>89</td><td>TRUE</td></tr>
+        <tr><td>138219</td><td>Shanghai</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>107</td><td>TRUE</td></tr>
+        <tr><td>146955</td><td>Shanghai</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>55</td><td>TRUE</td></tr>
+        <tr><td>155739</td><td>Shenyang</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>164475</td><td>Shenyang</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>53</td><td>TRUE</td></tr>
+        </tbody>
+
+      </table>
+    <p>
+      Moreover, there are records with value -999 but not marked as invalid in Shanghai, such as:
+    </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Row</th>
+            <th>Site</th>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Day</th>
+            <th>Hour</th>
+            <th>Value</th>
+            <th>Valid</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+        <tr><td>127905</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>9</td><td>49</td><td>TRUE</td></tr>
+        <tr><td>127906</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>10</td><td>49</td><td>TRUE</td></tr>
+        <tr><td>127907</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>11</td><td>-999</td><td>TRUE</td></tr>
+        <tr><td>127908</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>12</td><td>-999</td><td>TRUE</td></tr>
+        <tr><td>127909</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>13</td><td>50</td><td>TRUE</td></tr>
+        <tr><td>127910</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>14</td><td>50</td><td>TRUE</td></tr>
+        </tbody>
+      </table>
+    <p>
+      The two records in the middle is invalid but not properly marked. There are totally 296 cases like this that are adjusted by marking "Valid=FALSE".
+    </p>
+  </section>
+
+</article>
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      Registration Info:
+      <a href="http://www.miitbeian.gov.cn/" lang="zh-cmn-Hans">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

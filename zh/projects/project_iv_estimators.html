@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>项目：高频数据日波动率估计 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<article>
+  <header>
+    <h2>高频数据日波动率</h2>
+    <p class="summary">
+      利用高频交易数据，估算每日价格走势的波动率。<br />更精确的波动率统计量有助于资产管理和衍生品价格核算。
+    </p>
+  </header>
+
+  <section>
+    <h3>
+    <a href="/zh/blogs/2015/20150926_rounding_error.html">取整误差对日波动率统计量的影响</a>
+    <span class="datestamp">2015/09/26</span>
+    </h3>
+    <p>取整误差会导致高频交易数据的误差项有时间序列自相关，建立在白噪声假设下的统计量会有严重偏差。</p>
+  </section>
+
+  <section>
+    <h3>
+    <a href="/zh/blogs/2015/20150925_iv_estimators.html">高频数据波动性统计量</a>
+    <span class="datestamp">2015/09/25</span>
+    </h3>
+    <p>这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。</p>
+  </section>
+
+  <section>
+    <h3>
+    <a href="/zh/blogs/2015/20150914_taq_dataset.html">TAQ数据处理</a>
+    <span class="datestamp">2015/09/14</span>
+    </h3>
+    <p>高频交易报价数据来自于TAQ数据库。这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。</p>
+  </section>
+
+</article>
+
+<aside>
+  <h3>项目：</h3>
+  <ul>
+    <li><a href="/zh/projects/project_china_aqi.html">中国空气质量指数</a></li>
+    <li><a href="/zh/projects/project_china_stocks.html">沪深股票下载（R）</a></li>
+    <li class="active"><a href="/zh/projects/project_iv_estimators.html">高频数据日波动率</a></li>
+    <li><a href="/zh/projects/project_nlxj.html">交友资料文字挖掘</a></li>
+    <li><a href="/zh/projects/project_zillow.html">Zillow网站数据</a></li>
+  </ul>
+</aside>
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

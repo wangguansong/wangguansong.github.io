@@ -1,0 +1,185 @@
+body {
+  background: #E7E7E7;
+  font-size: 100%;
+  font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+  color: #000000;
+}
+a {text-decoration: none}
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  text-align: center;
+}
+header h1 {
+  margin-top: 0;
+  padding-top: 1em;
+  padding-bottom: 0;
+  color: grey;
+  letter-spacing: 10px;
+}
+
+/* Navigation Menu */
+nav {
+  text-align: center;
+  font-size: large;
+  line-height: 100%;
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
+}
+nav ul{
+  width: auto;
+  margin: 0 auto 0 auto;
+}
+nav li {
+  padding: 0.5em 1em 0.5em 1em;
+  display: inline;
+  font: bold Verdana, Arial, Helvetica, sans-serif;
+  color: white;
+}
+nav li:hover{
+  background: skyblue;
+}
+.active{
+  font-weight: bold;
+  background: lightgrey;
+  pointer-events: none;
+  cursor: default;
+}
+nav a, nav a:hover, nav a:visited {
+  text-decoration: none;
+}
+nav a {
+  color: white;
+}
+
+/* Main Content Area */
+main {
+  background: lightgrey;
+  font-size: 100%;
+}
+
+article h3 {
+  text-align: left;
+  margin-left: 1em;
+}
+article header {
+  background-color: lightgrey;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+article header .summary {
+  text-align: left;
+  font-size: small;
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+article {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+article .tags {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+article .datestamp{
+  font-size: small;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+article section{
+  padding: 0.5em 0 0.5em 0;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  clear: both;
+}
+article table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+article th, article td{
+  border: 1px solid black;
+}
+article td:nth-of-type(1){
+  text-align: center;
+}
+
+article cite {
+  margin-right: 0.2em;
+}
+article pre{
+  font-size: large;
+}
+article .back_to_top {
+  text-align: right;
+}
+
+
+aside {
+  background: lightgrey;
+  border: 2px dotted steelblue;
+  padding: 1em 0em 1em 0em;
+}
+aside th, aside td {
+  border: 1px solid black;
+}
+aside table{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+aside h2{
+  text-align: center;
+}
+aside h3 {
+  margin-left: 2em;
+}
+aside img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+aside ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+aside p {
+  margin-left: 1em;
+}
+aside .datestamp {
+  font-size: small;
+  padding-right: 0.5em;
+  float: right;
+}
+aside ul li {
+  padding-left: 3em;
+}
+
+
+footer {
+  text-align: center;
+  font-size: small;
+  background: steelblue;
+  color: white;
+}
+footer ul{
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+footer li {
+  display: inline;
+  font: bold Verdana, Arial, Helvetica, sans-serif;
+  padding-left: 3em;
+  padding-right: 3em;
+}

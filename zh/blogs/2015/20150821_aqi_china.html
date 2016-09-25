@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>AQI数据搜集整理 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  
+  <header>
+    <h2>AQI数据搜集整理</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2015.html">2015</a>，
+    <a href="/zh/projects/project_china_aqi.html">中国空气质量指数</a>
+    </span>
+    <span class="datestamp">2015-08-21</span>
+    </p>
+    <p class="summary">
+      收集并清理从2008年到2014年中国五个城市（美国使馆所在城市：北京，上海，广州，沈阳，成都）的每小时空气指数（AQI）。
+    </p>
+  </header>
+  
+  <section>
+    <p>收集并清理从2008年到2014年中国五个城市（美国使馆所在城市：北京，上海，广州，沈阳，成都）的每小时空气指数（AQI）。</p>
+    <p>原始数据和整理数据：<a href="http://pan.baidu.com/s/1i4vBkep" target="_blank">百度盘</a></p>
+  </section>
+  <section>
+    <p>
+      数据源:         stateair.net <br />
+      创建日期:       20150406<br />
+      更新日期:       20150407<br />
+    </p>
+    <p>本数据的定义和介绍可在这网址下载：<a href="http://www.stateair.net/web/historical/1/1.html">http://www.stateair.net/web/historical/1/1.html</a></p>
+    <p>适用于本数据的使用声明：<a href="http://www.stateair.net/web/historical/1/1.html">http://www.stateair.net/web/historical/1/1.html</a></p>
+    
+    <h4>文件：</h4>
+    <dl>
+      <dt>City_PM25_From_To.csv</dt>
+      <dd>分城市清理过的数据</dd>
+      <dt>USEmbassyAQI.csv</dt>
+      <dd>五个城市组合</dd>
+      <dt>USEmbassyAQI.RData</dt>
+      <dd>R数据格式</dd>
+      <dt>Raw/*</dt>
+      <dd>原始数据</dd>
+    </dl>
+    
+    <h4>清理过程：</h4>
+    <ul>
+      <li>删除前三行文字。</li>
+      <li>删除“Parameter”列，因为所有值都是“PM2.5”。</li>
+      <li>删除“Date(LST)”列，保留“Year”，“Month”，“Day”和“Hour”列。</li>
+      <li>删除“Unit”列，因为所有值都是“ug/m3”。</li>
+      <li>删除“QC NAME”列，因为都是空。</li>
+      <li>转换“Duration”列，原只有两个值“Valid”或”Missing“，改为真假变量“Valid”。</li>
+    </ul>
+    
+    <h4>更新 20150407：</h4>
+    <p>有17个重复的数据（同样地点和时间），所有的重复数据都是在上午三点（3:00am）。但重复数据的AQI不同，而且没有当日两点（2:00am）的数据，所以把第一个重复视为前一小时数据。以下数据被调整：</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Row</th>
+            <th>Site</th>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Day</th>
+            <th>Hour</th>
+            <th>Value</th>
+            <th>Valid</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+        <tr><td>6675</td><td>Beijing</td><td>2009</td><td>3</td><td>8</td><td>3</td><td>179</td><td>TRUE</td></tr>
+        <tr><td>15579</td><td>Beijing</td><td>2010</td><td>3</td><td>14</td><td>3</td><td>75</td><td>TRUE</td></tr>
+        <tr><td>24315</td><td>Beijing</td><td>2011</td><td>3</td><td>13</td><td>3</td><td>351</td><td>TRUE</td></tr>
+        <tr><td>50523</td><td>Beijing</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>55</td><td>TRUE</td></tr>
+        <tr><td>59355</td><td>Chengdu</td><td>2012</td><td>3</td><td>11</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>68091</td><td>Chengdu</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>176</td><td>TRUE</td></tr>
+        <tr><td>76827</td><td>Chengdu</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>65</td><td>TRUE</td></tr>
+        <tr><td>85683</td><td>Guangzhou</td><td>2011</td><td>3</td><td>13</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>94419</td><td>Guangzhou</td><td>2012</td><td>3</td><td>11</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>103155</td><td>Guangzhou</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>92</td><td>TRUE</td></tr>
+        <tr><td>111891</td><td>Guangzhou</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>23</td><td>TRUE</td></tr>
+        <tr><td>120747</td><td>Shanghai</td><td>2011</td><td>3</td><td>13</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>129483</td><td>Shanghai</td><td>2012</td><td>3</td><td>11</td><td>3</td><td>89</td><td>TRUE</td></tr>
+        <tr><td>138219</td><td>Shanghai</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>107</td><td>TRUE</td></tr>
+        <tr><td>146955</td><td>Shanghai</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>55</td><td>TRUE</td></tr>
+        <tr><td>155739</td><td>Shenyang</td><td>2013</td><td>3</td><td>10</td><td>3</td><td>-999</td><td>FALSE</td></tr>
+        <tr><td>164475</td><td>Shenyang</td><td>2014</td><td>3</td><td>9</td><td>3</td><td>53</td><td>TRUE</td></tr>
+        </tbody>
+
+      </table>
+    <p>另外，上海有无效的数据（-999）但没有被“Valid”列标记，比如：</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Row</th>
+            <th>Site</th>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Day</th>
+            <th>Hour</th>
+            <th>Value</th>
+            <th>Valid</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+        <tr><td>127905</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>9</td><td>49</td><td>TRUE</td></tr>
+        <tr><td>127906</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>10</td><td>49</td><td>TRUE</td></tr>
+        <tr><td>127907</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>11</td><td>-999</td><td>TRUE</td></tr>
+        <tr><td>127908</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>12</td><td>-999</td><td>TRUE</td></tr>
+        <tr><td>127909</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>13</td><td>50</td><td>TRUE</td></tr>
+        <tr><td>127910</td><td>Shanghai</td><td>2012</td><td>1</td><td>5</td><td>14</td><td>50</td><td>TRUE</td></tr>
+        </tbody>
+      </table>
+    <p>中间两个数据无效但没有被标记。一共有296个类似的记录，都被更新标记为“Valid=FALSE”。</p>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

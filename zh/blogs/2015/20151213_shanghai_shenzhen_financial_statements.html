@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>沪深股票财务明细下载 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  
+  <header>
+    <h2>沪深股票财务明细下载</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2015.html">2015</a>，
+    <a href="/zh/projects/project_china_stocks.html">沪深股票下载（R）</a>
+    </span>
+    <span class="datestamp">2015-12-13</span>
+    </p>
+    <p class="summary">
+      加入了下载股票财务信息的程序，以网易或新浪为数据源。
+    </p>
+  </header>
+  
+  <section>
+    <p>加入了下载股票财务信息的程序，可以获得主要财务指标，财务报表摘要，资产负债表，利润表，现金流量表等。可选择从网易或者新浪下载。</p>
+  </section>
+  
+  <section>
+    <dl>
+      <dt>GetSymbols(HF).netease.R</dt>
+      <dd>下载每日（明细）价格，然后保存在文件或者载入到R空间中。</dd>
+      <dt>GetSymbolsHF.sina.R</dt>
+      <dd>如上，但从新浪下载数据。</dd>
+      <dt>CleanSymbols(HF).netease.R</dt>
+      <dd>清理下载的数据。</dd>
+      <dt>CleanSymbolsHF.sina.R</dt>
+      <dd>如上，但为新浪下载的数据清理。</dd>
+      <dt>GetAllSymbols(HF).R</dt>
+      <dd>自动下载所有的股票和指数数据。</dd>
+      <dt>GetFinancialInfo.netease(sina).R</dt>
+      <dd>从网易或新浪下载财务信息。</dd>
+      <dt>GetAllSymbolsFinancialInfo.R</dt>
+      <dd>自动下载所有股票的财务信息。</dd>
+    </dl>
+    
+    <h4>用法例：</h4>
+    <p>下载上证综合指数每日历史价格（从最早日期到今天），保存到csv文件，然
+后载入到R空间中。以下写法效果相同：</p>
+    <pre>
+      GetSymbols.netease("0000001")
+      GetSymbols.netease("000001", market="Shanghai")
+      GetSymbols.netease("0000001", savefile="SH000001.csv",
+                         dfname="SH000001")
+    </pre>
+    
+    <p>仅载入下载数据，不保存文件：</p>
+    <pre>
+      GetSymbols.netease("0000001", savefile=NA)
+    </pre>
+    
+    <p>仅保存文件，不载入数据：</p>
+    <pre>
+      GetSymbols.netease("0000001", dfname=NA)
+    </pre>
+    
+    <p>保存中文变量名</p>
+    <pre>
+      GetSymbols.netease("0000001", translate=FALSE)
+    </pre>
+    
+    <p>下载上证综合指数在2015年11月2日的交易明细，保存到xls文件：</p>
+    <pre>
+      GetSymbols.netease("0000001", "20151102")
+      GetSymbols.netease("0000001", "20151102",
+                         savefile="SH000001_20151102.xls")
+    </pre>
+
+    <p>清理"SH000001.csv"文件中的历史每日价格, 然后覆盖该文件：</p>
+    <pre>
+      CleanSymbols.netease("SH000001.csv")
+      CleanSymbols.netease("SH000001.csv", savefile="SH000001.csv")
+    </pre>
+    
+    <p>清理"SH000001.csv"文件中的历史每日价格，保存到RData文件：</p>
+    <pre>
+      CleanSymbols.netease("SH000001.csv", savefile="SH000001.RData")
+      CleanSymbols.netease("SH000001.csv", savefile="SH000001.RData",
+                           dfname="SH000001")
+    </pre>
+    
+    <p>转换并清理"SH000001_20151102.xls"文件，保存到RData文件：</p>
+    <pre>
+      CleanSymbolsHF.netease("SH000001_20151102.xls",
+                             savefile="a_name_you_like.RData",
+                             dfname="notsobigdata")
+    </pre>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

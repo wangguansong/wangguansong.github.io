@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>Ubuntu 16.04 Xenial Xerus 安装配置 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="/layout.css" type="text/css">
+<link rel="stylesheet" href="/design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  <header>
+    <h2>Ubuntu 16.04 Xenial Xerus 安装配置</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2016.html">2016</a>，
+    <a href="/zh/tags/tag_pc.html">电脑</a>
+    </span>
+    <span class="datestamp">2016-04-27</span>
+    </p>
+    <p class="summary">
+      安装Ubuntu系统之后的后续安装，和环境配置。记录以供以后安装系统参考。
+    </p>
+  </header>
+  <section>
+    <p>
+      Ubuntu 16.04 LTS在4月21日发布。于是开始折腾各个电脑。可选择合适的镜像（<a href="https://launchpad.net/ubuntu/+cdmirrors">镜像列表</a>）下载系统启动盘或者bt种子。
+    </p>
+    <h3>安装</h3>
+    <p>安装过程基本顺畅，只是在从U盘启动时，没有正常进入安装界面，而是提示错误：</p>
+    <pre>gfxboot.c32: not a COM32R image</pre>
+    <p>之前也遇到过类似情况，直接在命令行输入“<span lang="en">live</span>”即可进入“体验Ubuntu”。</p>
+      <h3>换源</h3>
+      <p>选择中国区的镜像；改变检查更新频率为从不；更新源，安装更新包。</p>
+      <p>根据需要添加以下PPA：</p>
+      <ul>
+	      <li>ppa:marutter/rrutter</li>
+	      <li>ppa:libreoffice/ppa</li>
+	      <li>ppa:qbittorrent-team/qbittorrent-stable</li>
+	      <li>ppa:geany-dev/ppa</li>
+	      <li>ppa:otto_kesselgulasch/gimp</li>
+	      <li>ppa:rvm/smplayer</li>
+      </ul>
+  
+    <h3>安装软件</h3>
+    <pre>sudo apt-get install ...</pre>
+    <dl>
+      <dt>系统相关</dt>
+      <dd>aptitude build-essential unity-tweak-tool synaptic apt-xapian-index gdebi</dd>
+      <dt>常用软件</dt>
+      <dd>vim git indicator-multiload qbittorrent unrar chromium skype</dd>
+      <dt>多媒体</dt>
+      <dd>flashplugin-installer smplayer audacious gimp</dd>
+      <dt>工作相关</dt>
+      <dd>r-base texlive vim-latexsuite geany (rstudio)</dd>
+      <dt>R扩展包依赖</dt>
+      <dd>libxml2-dev xml2-config libssl-dev libcurl4-openssl-dev</dd>
+      <dd></dd>
+      <dt>不需要安装</dt>
+      <dd>nautilus-openterminal wqy-font</dd>
+    </dl>
+    
+    <h3>配置</h3>
+    需要配置文件/软件：
+    <ul>
+      <li>安装完整语言包，添加中文。Ibus中没有拼音可以添加，需要安装ibus-m17n。</li>
+      <li>Firefox同步</li>
+      <li>用户配置：.vimrc .bashrc .Rprofile</li>
+      <li>R扩展包：rvest RSelenium</li>
+      <li>texlive扩展包：</li>
+      
+    </ul>
+
+  </section>
+
+</article>
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>
