@@ -1,6 +1,7 @@
 ########################################################################
-ReplaceTag <- function(htmlfile, htmlpart, tag, whichone=1) {
+ReplaceTag <- function(htmlfile, htmlpart, tag, whichone=1, id) {
   # Replace a tag (a big building block) in a html file
+  # It cannot deal with a tree structure of the same tag.
 
   if (length(htmlfile)==1) {
     if (!file.exists(htmlfile)) {
@@ -30,6 +31,14 @@ ReplaceTag <- function(htmlfile, htmlpart, tag, whichone=1) {
   startline <- grep(opentag, filetext)
   endtag <- paste("</", tag, "[^>]*>", sep="")
   endline <- grep(endtag, filetext)
+
+  if (!missing(id)) {
+    whichone <- grep(paste("<[^<]*id[ ]*=[ ]*",
+                           "\"", id, "\"", "[^>]*>", sep = ""),
+                     filetext[startline])
+  }
+
+
   if (length(startline)>1) {
     startline <- startline[whichone]
     endline <- endline[whichone]
