@@ -8,21 +8,23 @@ tag,date,type,zhTitle,enTitle,zhDesc,enDesc
 2013,NA,year,2013,2013,2013,2013
 2014,NA,year,2014,2014,2014,2014
 2015,NA,year,2015,2015,2015,2015
-2016,2016-09-17,year,2016,2016,2016,2016
-animals,2016-09-03,theme,动物世界,Animal planet,动物世界,Animal planet
+2016,2016-09-25,year,2016,2016,2016,2016
+animals,2016-09-25,theme,动物世界,Animal planet,动物世界,Animal planet
 beijing,2016-09-17,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
 beiyandang,2016-03-05,location,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China"
-butters,NA,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
-butters_crap,NA,theme,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap
-interesting,2016-09-17,theme,有趣的东西,Interesting Things,有趣的东西,Interesting Things
+butters,2016-09-24,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
+butters_crap,2016-09-24,theme,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap
+chengdu,2016-09-25,location,中国四川省成都,"Chengdu, Sichuan, China",中国四川省成都,"Chengdu, Sichuan, China"
+food,2016-09-24,tag,食物,Food,食物,Food
+interesting,2016-09-25,theme,有趣的东西,Interesting Things,有趣的东西,Interesting Things
 lvshun,2016-02-28,location,中国辽宁省旅顺,"Lvshun, Liaoning, China",中国辽宁省旅顺,"Lvshun, Liaoning, China"
 ningbo,2016-02-11,location,中国浙江省宁波,"Ningbo, Zhejiang, China",中国浙江省宁波,"Ningbo, Zhejiang, China"
-people,2016-09-17,theme,进入我镜头的人们,People who entered my camera,进入我镜头的人们,People who entered my camera
-photographer,2016-09-17,theme,拍照的人,Taking Pictures,拍照的人,Taking Pictures
+people,2016-09-25,theme,进入我镜头的人们,People who entered my camera,进入我镜头的人们,People who entered my camera
+photographer,2016-09-25,theme,拍照的人,Taking Pictures,拍照的人,Taking Pictures
 plants,2016-09-04,theme,花花草草,Plants,花花草草,Plants
-selfie,2016-09-17,theme,自拍的人,Taking Selfies,自拍的人,Taking Selfies
+selfie,2016-09-25,theme,自拍的人,Taking Selfies,自拍的人,Taking Selfies
 shanghai,2016-03-02,location,中国上海,"Shanghai, China",中国上海,"Shanghai, China"
-sites,2016-09-17,theme,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites
+sites,2016-09-25,theme,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites
 travel,2016-03-05,tag,旅行,Travel,旅行,Travel
 weekend,2016-09-17,theme,周末,Weekend,周末,Weekend
-yuanmingyuan,2016-09-17,location,圆明园,Yuanmingyuan,北京圆明园,Yuanmingyuan Park in Beijing
+yuanmingyuan,2016-09-17,tag,圆明园,Yuanmingyuan,北京圆明园,Yuanmingyuan Park in Beijing
