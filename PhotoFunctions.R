@@ -1,4 +1,62 @@
+########################################################################
+# Build/Update front and album pages
 
+UpdatePictureFrontPage <-function(lang,
+                                  albumDFfile = "database/albumDF.csv"){
+  pagePath <- paste(lang, "/pictures.html", sep = "")
+  typeList <- c("theme", "location", "tag", "year")
+  if (lang == "en") {
+    typeWord <- c("Theme", "Location", "Tag", "Year")
+  } else {
+    typeWord <- c("专题", "地理位置", "标签", "年")
+  }
+
+  if (!exists("albumDF", mode = "list")) {
+    albumDF <- read.csv(albumDFfile, stringsAsFactors = FALSE)
+  }
+  for (i in 1:length(typeList)) {
+    sectionHTML <- c(paste("<section id = \"", typeList[i], "\">",
+                           sep = ""),
+                     paste("  <h2>", typeWord[i], "</h2>", sep = ""),
+                     "  <table>")
+    sectionTags <- albumDF$tag[albumDF$type == typeList[i]]
+
+    for (j in which(albumDF$type == typeList[i])) {
+      tagLink <- paste("/", lang, "/", "photos", "/",
+                       albumDF$tag[j], "_page01.html",
+                       sep = "")
+      sectionHTML <- c(sectionHTML, "    <tr>")
+      sectionHTML <- c(sectionHTML,
+                       paste("      <td>",
+                             paste("<a href=\"", tagLink, "\">",
+                                   sep = ""),
+                             ifelse(lang=="en",
+                                    albumDF$enTitle[j],
+                                    albumDF$zhTitle[j]),
+                             "</a>",
+                             "</td>",
+                             sep = ""),
+                       paste("      <td>",
+                             albumDF$date[j],
+                             "</td>",
+                             sep = ""),
+                       paste("      <td>",
+                             ifelse(lang=="en",
+                                    albumDF$enDesc[j],
+                                    albumDF$zhDesc[j]),
+                             "</td>",
+                             sep = ""),
+                       "    </tr>")
+
+    }
+
+    sectionHTML <- c(sectionHTML, "  </table>", "</section>")
+    ReplaceTag(htmlfile = paste(lang, "/pictures.html", sep = ""),
+               htmlpart = sectionHTML,
+               tag = "section",
+               id = typeList[i])
+  }
+}
 
 ########################################################################
 # Database functions
@@ -63,8 +121,8 @@ UpdateAlbumDatabase <- function(rowIds,
 
   updateRows <- which(!is.na(albumDF$dateNew) &
                       (albumDF$dateNew > albumDF$date |
-                      albumDF$date == "" |
-                      is.na(albumDF$date)))
+                       albumDF$date == "" |
+                       is.na(albumDF$date)))
   albumDF$date[updateRows] <- albumDF$dateNew[updateRows]
 
   updateTags <- albumDF$tag[updateRows]
@@ -99,8 +157,8 @@ ScanPhotoTags <- function(rowIds,
   allTags <- unique(allTags)
   tagsDF <- data.frame(tag = allTags)
   tagsDF$date <- apply(tagsDF, 1, FUN = function(x) {
-      return(max(photoDF$date[grepl(x, photoDF$tags[rowIds])]))
-    })
+                         return(max(photoDF$date[grepl(x, photoDF$tags[rowIds])]))
+                          })
   return(tagsDF)
 }
 
@@ -126,8 +184,6 @@ BuildAllAlbumPages <- function(lang,
                  update = max(photoDF$date),
                  desc = "All of them")
 
-}
-UpdateAlbumPages <- function() {
 }
 
 BuildAlbumPage <- function(tags, lang, dates, fileName,

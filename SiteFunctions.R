@@ -48,7 +48,7 @@ ReplaceTag <- function(htmlfile, htmlpart, tag, whichone=1, id) {
     writeLines(c(filetext[1:(startline-1)],
                  parttext,
                  filetext[(endline+1):length(filetext)]), htmlfile)
-    return()
+    return(invisible(c(startline, endline)))
   } else {
     return(c(filetext[1:(startline-1)], parttext,
              filetext[(endline+1):length(filetext)]))
