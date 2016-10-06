@@ -4,35 +4,35 @@
   * Collect all photo files into a directory.
   * Make an archive and save the zip file.
   * Compress the photo files into smaller ones:
-  ```bash
-  mkdir test
-  jpegoptim --size=1024 --dest=test *
-  ```
+```bash
+mkdir test
+jpegoptim --size=1024 --dest=test *
+```
   * Select photos to keep and to keep private.
   * Update the photo database. In R:
-  ```
-  UpdatePhotoDatabase(rootDir = "/media/butters/MyHDD/Photos/",
-                      subDir = "2016/20160101_HappyNewYear")
-  ```
+```R
+UpdatePhotoDatabase(rootDir = "/media/butters/MyHDD/Photos/",
+                    subDir = "2016/20160101_HappyNewYear")
+```
   * Open the actual csv file, input all dates, tags, title, etc.
   * Update the album database. In R:
-  ```
-  currentTags <- unique(albumDF$tags)
-  updateTags <-
-    UpdateAlbumDatabase(rowIds = which(is.na(photoDF$date)))
-  ```
+```R
+currentTags <- unique(albumDF$tags)
+updateTags <-
+  UpdateAlbumDatabase(rowIds = which(is.na(photoDF$date)))
+```
   * Generate / update album pages, in R:
-  ```
+```R
   BuildAlbumPages("zh", updateTags)
   BuildAlbumPages("en", updateTags)
-  ```
+```
   * Update picture front page if new tags are added:
-  ```
-  if (length(setdiff(updateTags, currentTags))>0) {
-    UpdatePictureFrontPage("zh")
-    UpdatePictureFrontPage("en")
-  }
-  ```
+```R
+if (length(setdiff(updateTags, currentTags))>0) {
+  UpdatePictureFrontPage("zh")
+  UpdatePictureFrontPage("en")
+}
+```
 
 
 # Database: Structures
