@@ -1,4 +1,11 @@
 ########################################################################
+# Procedure for adding a new blog:
+# - NewBlogPage(path)
+# - source("ScanPages.R")
+# - UpdateSidebars()
+# - UpdateBlogFrontPage()
+
+########################################################################
 # Database functions
 
 BuildBlogDatabase <- function(blogDFfile = "database/blogDF.csv") {
@@ -175,13 +182,6 @@ ParseBlogHTML <- function(path) {
 
 
 
-
-########################################################################
-# Procedure for adding a new blog:
-# - NewBlogPage(path)
-# - source("ScanPages.R")
-# - UpdateSidebars()
-# - UpdateBlogFrontPage()
 
 ########################################################################
 WriteDataBase <- function() {
