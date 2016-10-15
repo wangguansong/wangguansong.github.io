@@ -1,18 +1,17 @@
-tag,lang,date,title,desc,type
-ChinaAQI,en,NA,AQI of China,AQI of China,project
-中国空气质量指数,zh,NA,中国空气质量指数,关于中国空气质量指数的数据搜集，整理，分析。,project
-沪深股票下载（R）,zh,NA,沪深股市数据（R）,在R环境沪深股票历史价格数据，近5日的交易明细，以及资产负债表等信息。,project
-高频数据日波动率,zh,NA,高频数据日波动率,利用高频交易数据，估算每日价格走势的波动率。<br />更精确的波动率统计量有助于资产管理和衍生品价格核算。,project
-交友资料文字挖掘,zh,NA,微信公众号纳兰性急交友资料,文字搜集，整理，分析。,project
-Zillow网站数据,zh,NA,Zillow网站数据抓取,Zillow是一个发布房地产买卖信息的网站，上面列出了各地区待售、待租的房产，以及房产的详细信息和历史价格。目前试图下载到西雅图地区的所有房产的详细信息、状态和价格。,project
-2015,en,NA,Tag: 2015,In 2015,tag
-2016,en,NA,Tag: 2016,In 2016,tag
-Reading,en,NA,Tag: Reading,Reading is good for you.,tag
-2015,zh,NA,标签：2015,2015,tag
-2016,zh,NA,标签：2016,2016,tag
-计量经济学,zh,NA,标签：计量经济学,关于计量经济学,tag
-GARCH,zh,NA,标签：GARCH,广义自回归条件异方差，Generalized AutoRegressive Conditional Heteroskedasticity,tag
-电脑,zh,NA,标签：电脑,电脑,tag
-读书,zh,NA,标签：读书,读书,tag
-R,zh,NA,标签：R,关于R,tag
-译文,zh,NA,标签：译文,翻译一些英文文章。,tag
+tag,lang,date,type,title,desc,name
+2015,en,2015-08-21,tag,Tag: 2015,In 2015,2015
+2015,zh,2015-12-25,tag,标签：2015,2015,2015
+2016,en,2016-03-08,tag,Tag: 2016,In 2016,2016
+2016,zh,2016-09-24,tag,标签：2016,2016,2016
+ChinaAQI,en,2015-08-21,project,AQI of China,AQI of China,china_aqi
+GARCH,zh,2016-04-14,tag,标签：GARCH,广义自回归条件异方差，Generalized AutoRegressive Conditional Heteroskedasticity,garch
+R,zh,2016-09-24,tag,标签：R,关于R,r
+Reading,en,2016-03-08,tag,Tag: Reading,Reading is good for you.,reading
+中国空气质量指数,zh,2016-03-19,project,中国空气质量指数,关于中国空气质量指数的数据搜集，整理，分析。,china_aqi
+交友资料文字挖掘,zh,2015-12-25,project,微信公众号纳兰性急交友资料,文字搜集，整理，分析。,nlxj
+沪深股票下载（R）,zh,2016-05-02,project,沪深股市数据（R）,在R环境沪深股票历史价格数据，近5日的交易明细，以及资产负债表等信息。,china_stocks
+电脑,zh,2016-04-27,tag,标签：电脑,电脑,pc
+计量经济学,zh,2016-04-14,tag,标签：计量经济学,关于计量经济学,econometrics
+译文,zh,2016-04-11,tag,标签：译文,翻译一些英文文章。,translation
+读书,zh,2016-03-08,tag,标签：读书,读书,reading
+高频数据日波动率,zh,2015-09-26,project,高频数据日波动率,利用高频交易数据，估算每日价格走势的波动率。<br />更精确的波动率统计量有助于资产管理和衍生品价格核算。,iv_estimators

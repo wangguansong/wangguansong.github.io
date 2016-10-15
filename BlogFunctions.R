@@ -42,6 +42,7 @@ UpdateTagDatabase <- function(rowIds,
                         type = character(0),
                         title = character(0),
                         desc = character(0),
+                        name = character(0),
                         stringsAsFactors = FALSE)
   }
 
@@ -92,8 +93,9 @@ ScanBlogTags <- function(rowIds, blogDFfile = "database/blogDF.csv") {
                                 rep("zh", length(zhAllTags))),
                        stringsAsFactors = FALSE)
   tagsDF$date <- apply(tagsDF, 1, FUN = function(x) {
-      return(max(blogDF$date[grepl(x[1], blogDF$tags[rowIds])],
-                 na.rm=TRUE))
+      tagRows <- which(grepl(x[1], blogDF$tags[rowIds]) &
+                       blogDF$lang[rowIds] == x[2])
+      return(max(blogDF$date[rowIds][tagRows], na.rm=TRUE))
     })
   return(tagsDF)
 

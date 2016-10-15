@@ -16,7 +16,7 @@
 "zh/blogs/2016/20160319_aqi_pku_report.html","zh","blog","北京大学空气质量评估报告","2016,中国空气质量指数",2016-03-19,"北京大学光华管理学院和统计科学中心发布的第二篇空气质量评估报告，同样引用了美国使馆的AQI数据。"
 "zh/blogs/2016/20160404_a_day_with_my_chromebook.html","zh","blog","和我的Chromebook的一天","2016,电脑",2016-04-04,"Chromebook更新全过程。"
 "zh/blogs/2016/20160411_a_practical_introduction_to_garch_modeling.html","zh","blog","GARCH模型的实用介绍（译）","2016,译文,GARCH,计量经济学,R",2016-04-11,"关于波动率聚类以及GARCH(1,1)模型。翻译原文<cite lang=""en""><a href=""http://www.portfolioprobe.com/2012/07/06/a-practical-introduction-to-garch-modeling/"">A practical introduction to garch modeling</a></cite>。"
-"zh/blogs/2016/20160411_A_practical_introduction_to_garch_modeling.html","zh","blog","GARCH模型的实用介绍（译）","2016,译文,GARCH,计量经济学,R",2016-04-11,"关于波动率聚类以及GARCH(1,1)模型。翻译原文<cite lang=""en""><a href=""http://www.portfolioprobe.com/2012/07/06/a-practical-introduction-to-garch-modeling/"">A practical introduction to garch modeling</a></cite>。"
 "zh/blogs/2016/20160414_garch_of_china.html","zh","blog","GARCH：中国股指","2016,GARCH,计量经济学,R",2016-04-14,"把上证指数、沪深300和深证成指代入ARMA(1,1)-GARCH(1,1)，应用rugarch扩展包。"
 "zh/blogs/2016/20160427_ubuntu_xenial_xerus.html","zh","blog","Ubuntu 16.04 Xenial Xerus 安装配置","2016,电脑",2016-04-27,"安装Ubuntu系统之后的后续安装，和环境配置。记录以供以后安装系统参考。"
 "zh/blogs/2016/20160501_dividend_adjust.html","zh","blog","计算除权除息价格","2016,沪深股票下载（R）",2016-05-02,"获取股票分红配股信息；根据分红配股计算除权除息历史价格。"
+"zh/blogs/2016/20160924_china_r_chengdu.html","zh","blog","第九届中国R语言会议（成都）","2016,R",2016-09-24,"SUMMARY"

@@ -21,6 +21,8 @@ currentTags <- unique(albumDF$tags)
 updateTags <-
   UpdateAlbumDatabase(rowIds = which(is.na(photoDF$date)))
 ```
+  * Open the albumDF csv file, input descriptions.
+  * Reload albumDF.
   * Generate / update album pages, in R:
 ```R
   BuildAlbumPages("zh", updateTags)
