@@ -9,6 +9,7 @@
 # Database functions
 
 BuildBlogDatabase <- function(blogDFfile = "database/blogDF.csv") {
+  # Scan and parse blog html files, build a data frame of blogs.
   htmlfilelist <- character()
   for (lang in c("en", "zh")) {
     htmlfilelist <-  c(htmlfilelist,
@@ -24,6 +25,8 @@ BuildBlogDatabase <- function(blogDFfile = "database/blogDF.csv") {
 UpdateTagDatabase <- function(rowIds,
                               blogDFfile = "database/blogDF.csv",
                               tagDFfile = "database/tagDF.csv") {
+  # Build or update the tag database from blog database.
+  # If asked, return updated tags.
   if (!exists("blogDF", mode = "list")) {
     blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
   }
@@ -102,6 +105,8 @@ ScanBlogTags <- function(rowIds, blogDFfile = "database/blogDF.csv") {
 }
 
 ########################################################################
+# Helper functions.
+
 ParseFiles <- function(pathlist) {
   # Given a path list, find its language, type, title, tags, etc.
   # Return a data.frame.
@@ -180,25 +185,6 @@ ParseBlogHTML <- function(path) {
 }
 
 
-
-
-
-
-
-########################################################################
-WriteDataBase <- function() {
-  # Save htmldf to files: SiteMeta.RData/SiteMeta.csv
-
-  if (!exists("htmldf", mode="list")) {
-    stop("WriteDataBase: Cannot find data frame htmldf to write.")
-  }
-  save(htmldf, file="SiteMeta.RData")
-  write.csv(htmldf, file="SiteMeta.csv", row.names=FALSE)
-}
-
-########################################################################
-
-########################################################################
 ParseTagHTML <- function(path) {
   # Given a path to a tag page, return the tag, title and summary line.
 
@@ -222,8 +208,7 @@ ParseTagHTML <- function(path) {
   return(list(tags=tag, title=title, summary=summary))
 
 }
-########################################################################
-########################################################################
+
 ToggleActive <- function(htmlfile, link) {
   # Toggle the class to "active" in a navigation list.
   # Search by link.

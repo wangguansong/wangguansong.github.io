@@ -58,11 +58,28 @@ UpdatePictureFrontPage <-function(lang,
   }
 }
 
-BuildAlbumPages <- function(lang, tags) {
-  if (missing(tags)) {
-    tags <- unique(albumDF$tag)
+UpdateAlbumPages <- function(lang, tags,
+                             updateAll = TRUE,
+                             updateFront = TRUE) {
+  # Update album (given by tags) pages.
+  # If tags not given, update the album database and build or update
+  # for updated tags.
+
+  if (!exists("albumDF", mode = "list")) {
+    albumDF <- read.csv(albumDFfile, stringsAsFactors = FALSE)
   }
-  
+  if (!exists("photoDF", mode = "list")) {
+    photoDF <- read.csv(photoDFfile, stringsAsFactors = FALSE)
+  }
+  currentTags <- unique(albumDF$tag)
+  updateTags <- tags
+
+  if (missing(tags)) {
+    updateTags <- UpdateAlbumDatabase()
+    albumDF <- read.csv(albumDFfile, stringsAsFactors = FALSE)
+    tags <- updateTags
+  }  
+
   for (i in which(!is.na(albumDF$date))) {
     if (albumDF$tag[i] %in% tags) {
       BuildTagPage(tags = albumDF$tag[i],
@@ -74,18 +91,25 @@ BuildAlbumPages <- function(lang, tags) {
     }
   }
 
-  BuildTagPage(lang = lang,
-               fileName = "all",
-               title = "All Photo",
-               update = max(photoDF$date),
-               desc = "All of them")
+  if (updateAll) {
+    BuildAlbumPage(lang = lang,
+                   fileName = "all",
+                   title = "All Photo",
+                   update = max(photoDF$date),
+                   desc = "All of them")
+  }
+  if (updateFront) {
+    if (length(setdiff(updateTags, currentTags))>0) {
+      UpdatePictureFrontPage(lang = lang)
+    }
+  }
 
 }
 
-BuildTagPage <- function(tags, lang, dates, fileName,
-                         title, desc, update, iconSize = "small",
-                         favorite = FALSE, hide = TRUE,
-                         maxPhoto = 50) {
+BuildAlbumPage <- function(tags, lang, dates, fileName,
+                           title, desc, update, iconSize = "small",
+                           favorite = FALSE, hide = TRUE,
+                           maxPhoto = 50) {
   albumRows <- rep(TRUE, nrow(photoDF))
   if (!missing(dates)) {
     albumRows <- albumRows & photoDF$date %in% dates 
@@ -169,7 +193,7 @@ BuildTagPage <- function(tags, lang, dates, fileName,
     tempAlbumRows <- tempAlbumRows[!is.na(tempAlbumRows)]
 
     ReplaceTag(htmlfile = destFileList[p],
-               htmlpart = BuildTagTable(tempAlbumRows,
+               htmlpart = BuildAlbumTable(tempAlbumRows,
                                           lang = lang),
                tag = "table",
                whichone = 1)
@@ -179,7 +203,7 @@ BuildTagPage <- function(tags, lang, dates, fileName,
 
 
 
-BuildTagTable <- function(rowIds, lang, iconSize = "small") {
+BuildAlbumTable <- function(rowIds, lang, iconSize = "small") {
   # Build an HTML table of an album (part of the photo data frame)
   tableHTML <- "<table>"
   for (i in rowIds) {

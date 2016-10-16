@@ -17,7 +17,7 @@ UpdatePhotoDatabase(rootDir = "/media/butters/MyHDD/Photos/",
   * Open the actual csv file, input all dates, tags, title, etc.
   * Update the album database. In R:
 ```R
-currentTags <- unique(albumDF$tags)
+currentTags <- unique(albumDF$tag)
 updateTags <-
   UpdateAlbumDatabase(rowIds = which(is.na(photoDF$date)))
 ```
