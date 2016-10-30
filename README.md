@@ -1,5 +1,6 @@
 # Summary of Most Used Procedures
 ## Add a New Blog
+
 ## Add New Photos
   * Collect all photo files into a directory.
   * Make an archive and save the zip file.
@@ -36,6 +37,11 @@ if (length(setdiff(updateTags, currentTags))>0) {
 }
 ```
 
+## Re-build all album pages:
+```R
+UpdateAlbumPages("zh", albumDF$tags)
+UpdateAlbumPages("en", albumDF$tags)
+
 
 # Database: Structures
 ## photoDF
@@ -49,11 +55,11 @@ if (length(setdiff(updateTags, currentTags))>0) {
 
 ## blogDF
   * File: /database/blogDF.csv
-  * Variables: filePath, lang, date, tags, title, desc
+  * Variables: filePath, lang, date, tags, title, desc, hide
 
 ## tagDF
   * File: /database/tagDF.csv
-  * Variables: tag, lang, date, type, title, desc
+  * Variables: tag, lang, date, type, title, desc, name
 
 # Database: Building and Updating
 

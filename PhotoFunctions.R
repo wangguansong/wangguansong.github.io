@@ -65,29 +65,24 @@ UpdateAlbumPages <- function(lang, tags,
   # If tags not given, update the album database and build or update
   # for updated tags.
 
-  if (!exists("albumDF", mode = "list")) {
-    albumDF <- read.csv(albumDFfile, stringsAsFactors = FALSE)
-  }
-  if (!exists("photoDF", mode = "list")) {
-    photoDF <- read.csv(photoDFfile, stringsAsFactors = FALSE)
-  }
   currentTags <- unique(albumDF$tag)
-  updateTags <- tags
 
   if (missing(tags)) {
     updateTags <- UpdateAlbumDatabase()
     albumDF <- read.csv(albumDFfile, stringsAsFactors = FALSE)
     tags <- updateTags
-  }  
+  } else {
+    updateTags <- tags
+  }
 
   for (i in which(!is.na(albumDF$date))) {
     if (albumDF$tag[i] %in% tags) {
-      BuildTagPage(tags = albumDF$tag[i],
-                   lang = lang,
-                   fileName = albumDF$tag[i],
-                   update = albumDF[i, "date"],
-                   title = albumDF[i, paste(lang, "Title", sep = "")],
-                   desc = albumDF[i, paste(lang, "Desc", sep = "")])
+      BuildAlbumPage(tags = albumDF$tag[i],
+                     lang = lang,
+                     fileName = albumDF$tag[i],
+                     update = albumDF[i, "date"],
+                     title = albumDF[i, paste(lang, "Title", sep = "")],
+                     desc = albumDF[i, paste(lang, "Desc", sep = "")])
     }
   }
 
@@ -172,21 +167,36 @@ BuildAlbumPage <- function(tags, lang, dates, fileName,
                 overwrite = TRUE)
     }
 
+    # change title
+    if (!missing(title)) {
+      ReplaceTag(htmlfile = destFileList[p],
+                 htmlpart = c("<title>",
+                              paste(ifelse(lang=="zh",
+                                           "相册：", "Album:"),
+                                    title, "-",
+                                    ifelse(lang=="zh",
+                                           "王冠嵩", "WGS")),
+                              "</title>"),
+                 tag = "title",
+                 whichone = 1)
+    }
+
+
     # write header
     ReplaceTag(htmlfile = destFileList[p],
                htmlpart = headerHTML,
                tag = "header",
                whichone = 2)
 
-    # write page index
+    # write top page index
     tempPagesHTML <- pagesHTML
     tempPagesHTML[p+1] <- paste("[", p, "]", sep = "")
     ReplaceTag(htmlfile = destFileList[p],
-               htmlpart = c("<section>",
+               htmlpart = c("<section id=\"top_pages_index\">",
                             tempPagesHTML,
                             "</section>"),
                tag = "section",
-               whichone = 1)
+               id = "top_pages_index")
 
     # write album table
     tempAlbumRows <- albumRows[1:maxPhoto + (p-1)*maxPhoto]
@@ -196,7 +206,18 @@ BuildAlbumPage <- function(tags, lang, dates, fileName,
                htmlpart = BuildAlbumTable(tempAlbumRows,
                                           lang = lang),
                tag = "table",
-               whichone = 1)
+               id = "album_table")
+
+    # write bottom page index
+    tempPagesHTML <- pagesHTML
+    tempPagesHTML[p+1] <- paste("[", p, "]", sep = "")
+    ReplaceTag(htmlfile = destFileList[p],
+               htmlpart = c("<section id=\"bottom_pages_index\">",
+                            tempPagesHTML,
+                            "</section>"),
+               tag = "section",
+               id = "bottom_pages_index")
+
   }
   return(invisible(destFileList))
 }
@@ -205,6 +226,8 @@ BuildAlbumPage <- function(tags, lang, dates, fileName,
 
 BuildAlbumTable <- function(rowIds, lang, iconSize = "small") {
   # Build an HTML table of an album (part of the photo data frame)
+  # Return the <table> element
+
   tableHTML <- "<table>"
   for (i in rowIds) {
     tags <- unlist(strsplit(photoDF$tags[i], ","))
@@ -232,7 +255,7 @@ BuildAlbumTable <- function(rowIds, lang, iconSize = "small") {
                    paste("      <img src=\"",
                          PhotoLink(photoDF$filePath[i], iconSize),
                          "\" />",
-                         "      </a>",
+                         "</a>",
                          sep = ""),
                    "    </td>",
                    "    <td>",
@@ -251,6 +274,8 @@ BuildAlbumTable <- function(rowIds, lang, iconSize = "small") {
 
 ########################################################################
 # Database functions
+# UpdatePhotoDatabase(rootDir, subDir, photoDFfile)
+# UpdateAlbumDatabase <- function(rowIds, photoDFfile, albumDFfile)
 
 UpdatePhotoDatabase <- function(rootDir, subDir,
                                 photoDFfile = "database/photoDF.csv") {
@@ -271,6 +296,7 @@ UpdatePhotoDatabase <- function(rootDir, subDir,
   if (!grepl("/$", rootDir)) rootDir <- paste(rootDir, "/", sep = "")
   if (!grepl("/$", subDir)) subDir <- paste(subDir, "/", sep = "")
   photoFiles <- list.files(paste(rootDir, subDir, sep = ""))
+  photoFiles <- photoFiles[-which(photoFiles %in% c("Private"))]
   addPhotoDF <- data.frame(filePath = paste(subDir, photoFiles,
                                             sep = ""),
                            date = "",
@@ -281,16 +307,26 @@ UpdatePhotoDatabase <- function(rootDir, subDir,
                            enDesc = "",
                            favorite = 0,
                            hide = 0)
+  if (require("exif")) {
+    addPhotoDF$date <- read_exif(paste(rootDir,
+                                       addPhotoDF$filePath,
+                                       sep = ""))$timestamp
+    addPhotoDF$date <- strptime(addPhotoDF$date,
+                                "%Y:%m:%d %H:%M:%S")
+  }
   write.table(addPhotoDF, file = photoDFfile, append = TRUE, sep = ",",
               row.names = FALSE, col.names = FALSE, quote = FALSE,
               fileEncoding = "utf-8")
+  assign("photoDF",
+         read.csv(photoDFfile, stringsAsFactors = FALSE),
+         envir = .GlobalEnv)
+  cat("Data frame \"photoDF\" is loaded from database/photoDF.csv.\n")
   return(invisible(addPhotoDF))
 }
 
 UpdateAlbumDatabase <- function(rowIds,
                                 photoDFfile = "database/photoDF.csv",
                                 albumDFfile = "database/albumDF.csv") {
-
   # Update the file of albumDF (usually albumDF.csv) if there is any new
   # tag or updated date. Return updated tag (if asked for), or
   # character(0) if no update.
@@ -341,10 +377,31 @@ UpdateAlbumDatabase <- function(rowIds,
     cat("There is no update of albumDF.\n")
   }
 
+  cat("Data frame \"albumDF\" is loaded from database/albumDF.csv.\n")
+  assign("albumDF", albumDF, envir = .GlobalEnv)
   return(invisible(updateTags))
 
 }
 
+
+
+########################################################################
+# Helper functions
+# PhotoLink(filePath, filter, host)
+# ScanPhotoTags(rowIds, photoDFfile)
+
+PhotoLink <- function(filePath, filter,
+                      host = "http://images.guansong.wang/") {
+  # Generate link to a photo
+  # "filter" is the photo manipulate keyword of aliyun OSS.
+  # Now it has "small" for icon, "original" for large.
+  if (filter == "") {
+    filterSep <- ""
+  } else {
+    filterSep <- "@!"
+  }
+  return(paste(host, filePath, filterSep, filter, sep = ""))
+}
 
 ScanPhotoTags <- function(rowIds,
                           photoDFfile = "database/photoDF.csv") {
@@ -368,20 +425,3 @@ ScanPhotoTags <- function(rowIds,
   return(tagsDF)
 }
 
-
-
-
-
-########################################################################
-PhotoLink <- function(filePath, filter,
-                      host = "http://images.guansong.wang/") {
-  # Generate link to a photo
-  # "filter" is the photo manipulate keyword of aliyun OSS.
-  # Now it has "small" for icon, "original" for large.
-  if (filter == "") {
-    filterSep <- ""
-  } else {
-    filterSep <- "@!"
-  }
-  return(paste(host, filePath, filterSep, filter, sep = ""))
-}
