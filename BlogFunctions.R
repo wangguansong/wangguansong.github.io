@@ -9,6 +9,16 @@
 ########################################################################
 # Building pages
 
+UpdateBlogFrontPage <- function(lang) {
+
+}
+
+UpdateTagPages <- function(lang, tags,
+                           updateAll = TRUE,
+                           updateFront = TRUE) {
+}
+
+
 BuildTagPage <- function(tags, lang, dates, fileName,
                          type, title, desc) {
   # Build a collection page of blogs, selected by tags, lang, dates.
@@ -66,7 +76,10 @@ BuildTagPage <- function(tags, lang, dates, fileName,
       sectionhtml,
       "</article>")
 
-  file.copy(paste(lang, "/", type, "_template.html", sep = ""),
+  fileName <- paste(lang, "/", type, "s/", fileName,
+                    ".html", sep = "")
+  file.copy(paste(lang, "/", type, "s/", type,
+                  "_template.html", sep = ""),
             fileName,
             overwrite = TRUE)
   # copy template

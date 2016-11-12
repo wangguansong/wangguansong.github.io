@@ -26,8 +26,8 @@ updateTags <-
   * Reload albumDF.
   * Generate / update album pages, in R:
 ```R
-  BuildAlbumPages("zh", updateTags)
-  BuildAlbumPages("en", updateTags)
+  UpdateAlbumPages("zh", updateTags)
+  UpdateAlbumPages("en", updateTags)
 ```
   * Update picture front page if new tags are added:
 ```R
@@ -41,6 +41,7 @@ if (length(setdiff(updateTags, currentTags))>0) {
 ```R
 UpdateAlbumPages("zh", albumDF$tags)
 UpdateAlbumPages("en", albumDF$tags)
+```
 
 
 # Database: Structures
@@ -85,4 +86,3 @@ Then I have to mannually put in all other variables in photoDF.
 
 
 # To Do
-## R exif package

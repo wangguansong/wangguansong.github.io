@@ -1,8 +1,7 @@
 ########################################################################
 # Build/Update front and album pages
 
-UpdatePictureFrontPage <-function(lang,
-                                  albumDFfile = "database/albumDF.csv"){
+UpdatePictureFrontPage <-function(lang) {
   pagePath <- paste(lang, "/pictures.html", sep = "")
   typeList <- c("theme", "location", "tag", "year")
   if (lang == "en") {
@@ -11,9 +10,6 @@ UpdatePictureFrontPage <-function(lang,
     typeWord <- c("专题", "地理位置", "标签", "年")
   }
 
-  if (!exists("albumDF", mode = "list")) {
-    albumDF <- read.csv(albumDFfile, stringsAsFactors = FALSE)
-  }
   for (i in 1:length(typeList)) {
     sectionHTML <- c(paste("<section id = \"", typeList[i], "\">",
                            sep = ""),
@@ -296,7 +292,7 @@ UpdatePhotoDatabase <- function(rootDir, subDir,
   if (!grepl("/$", rootDir)) rootDir <- paste(rootDir, "/", sep = "")
   if (!grepl("/$", subDir)) subDir <- paste(subDir, "/", sep = "")
   photoFiles <- list.files(paste(rootDir, subDir, sep = ""))
-  photoFiles <- photoFiles[-which(photoFiles %in% c("Private"))]
+  photoFiles <- photoFiles[ ! photoFiles %in% c("Private")]
   addPhotoDF <- data.frame(filePath = paste(subDir, photoFiles,
                                             sep = ""),
                            date = "",
@@ -314,6 +310,7 @@ UpdatePhotoDatabase <- function(rootDir, subDir,
     addPhotoDF$date <- strptime(addPhotoDF$date,
                                 "%Y:%m:%d %H:%M:%S")
   }
+
   write.table(addPhotoDF, file = photoDFfile, append = TRUE, sep = ",",
               row.names = FALSE, col.names = FALSE, quote = FALSE,
               fileEncoding = "utf-8")
