@@ -8,9 +8,9 @@ tag,date,type,zhTitle,enTitle,zhDesc,enDesc
 2013,NA,year,2013,2013,2013,2013
 2014,NA,year,2014,2014,2014,2014
 2015,NA,year,2015,2015,2015,2015
-2016,2016-11-13 15:30:05,year,2016,2016,2016,2016
+2016,2016-11-20 07:32:50,year,2016,2016,2016,2016
 animals,2016:10:03 08:12:32,theme,动物世界,Animal planet,动物世界,Animal planet
-beijing,2016-11-13 15:30:05,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
+beijing,2016-11-20 07:32:50,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
 beiyandang,2016:03:05 09:33:04,location,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China"
 butters,2016:10:03 08:01:45,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
 butters_crap,2016:10:03 08:01:45,theme,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap
@@ -30,5 +30,6 @@ selfie,2016:09:25 10:34:30,theme,自拍的人,Taking Selfies,自拍的人,Taking
 shanghai,2016:03:02 17:06:34,location,中国上海,"Shanghai, China",中国上海,"Shanghai, China"
 sites,2016:10:03 07:19:58,theme,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites
 travel,2016:03:05 09:33:04,tag,旅行,Travel,旅行,Travel
-weekend,2016-11-13 15:30:05,theme,周末,Weekend,周末,Weekend
+weekend,2016-11-20 07:32:50,theme,周末,Weekend,周末,Weekend
 yuanmingyuan,2016-11-12 16:51:26,tag,圆明园,Yuanmingyuan,北京圆明园,Yuanmingyuan Park in Beijing
+zhenjue_temple,2016-11-20 07:32:50,tag,真觉寺,Zhenjue Temple,真觉寺,Zhenjue Temple
