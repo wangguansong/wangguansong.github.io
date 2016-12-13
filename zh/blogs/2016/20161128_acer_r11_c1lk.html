@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <link rel="import" href="test.html">
+<title>Acer Chromebook R11 配置过程 - 王冠嵩</title>
+<meta charset="UTF-8">
+<meta name="author" content="wangguansong@outlook.com">
+<meta name="description" content="website">
+<link rel="stylesheet" href="../../../layout.css" type="text/css">
+<link rel="stylesheet" href="../../../design.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+  <h1>王冠嵩的网站</h1>
+  <nav>
+    <ul>
+      <li><a href="/zh/index.html">首页</a></li>
+      <li><a href="/zh/aboutme.html">关于我</a></li>
+      <li><a href="/zh/projects.html">项目</a></li>
+      <li><a href="/zh/blog.html">文章</a></li>
+      <li><a href="/zh/pictures.html">图片</a></li>
+      <li><a href="/zh/updates.html">更新记录</a></li>
+      <li><a href="/zh/links.html">相关链接</a></li>
+      <li><a href="/en/index.html" lang="en">English</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+
+<article id="content">
+  <header>
+    <h2>Acer Chromebook R11 配置过程</h2>
+    <p>
+    <span class="tags">
+      标签：
+    <a href="/zh/tags/tag_2016.html">2016</a>，
+    <a href="/zh/tags/tag_pc.html">电脑</a>
+    </span>
+    <span class="datestamp">2016-11-28</span>
+    </p>
+    <p class="summary">
+      上周五（11/25），亚马逊海外购的<span lang="en">Acer Chromebook</span> R11终于到手了，周末加班空闲折腾了一下。本文记录了我的上手经历，以方便之后再折腾和供其他悲剧的墙内<span lang="en">Chromebook</span>使用者查阅。
+    </p>
+  </header>
+  <section>
+    <p>这款Acer R11我已经种草很久了。</p>
+    <p>继我的东芝平板（$250）突然点不亮了，我的巴诺电子书（$25）散落在世间某处后，我进入了漫长的电子玩具空窗期，随身一直携带被墙阉割的<span lang="en">Acer C720</span>。本想给它换个大一些的硬盘，但看到这款<span lang="en">Chromebook</span>，觉得再加一点预算就可以又满足了我日常看<span lang="en">pdf</span>的需求，就不用背着厚厚的手册了。而且它配合谷歌安卓市场，大大可玩啊。</p>
+    <p>亚马逊一直只有2GB内存版本，不久前终于上了4GB内存版本，之后又价格又小降了一些，终于击溃了我。在双十一后一周下了单，由于存货少，亚马逊海外购折腾了好几天才发货，又在北京海关清关延误了好几天，上周五才到手。经历了若干波折，周末加班之余配置好了，终于可以开心的摆弄了。</p>
+    <h3>开箱</h3>
+    <p>前不久刚为父亲买了一台<span lang="en">Acer</span>笔记本电脑（<span lang="en">TMP248</span>），<span lang="en">Acer</span>的笔记本包装都是一样的格局。其中包括笔记本电脑、电源线、和一些文件。电源线的插口是美标的三孔，需要准备国际电源插口或换上国内插头的梅花电源线。</p>
+    <p>这个版本机型的颜色是刷白（或象牙白）。尺寸和<span lang="en">C720</span>类似，似乎由于触摸屏的原因，比<span lang="en">C720</span>稍微厚一些。<span lang="en">R11</span>的<span lang="en">SD</span>卡槽可以将整个<span lang="en">SD</span>卡吞进去，而不是像<span lang="en">C720</span>那样只能塞进去一半。感受的重量和C720差不多，肯定会比普通平板感觉要重了很多，但比起其他笔记本比就轻多了。可能是因为新机的原因，键盘的触感要比我旧的<span lang="en">C720</span>好；触摸板也比<span lang="en">C720</span>用起来更顺手。</p>
+    <p>我还没有怎么使用触摸屏，只试了一下平板模式下阅读<span lang="en">pdf</span>文件。屏幕有重力感应，可以自动旋转方向，全屏下<span lang="en">pdf</span>看起来效果很好。不足的是系统用浏览器打开<span lang="en">pdf</span>，需要继续寻找其他<span lang="en">Chromeos</span>的扩展或者安卓应用。</p>
+    <p>另一点和<span lang="en">C720</span>不同的是，<span lang="en">R11</span>没有风扇，也没有通常笔记本的散热出口，所以可以尽情的放在床上使用。除了在安装<span lang="en">Ubuntu</span>时感到一点温热，我基本没有感受到发热。</p>
+    
+    <h3>科学上网</h3>
+    <p>在祖国使用<span lang="en">Chromebook</span>，科学上网是必备的技能。不然当你兴高采烈地打开新机器，却发现根本无法登录进入系统，你会崩溃的。</p>
+    <p>开机后，可以选择语言并连接无线网络。国内通常的网络环境下，由于无法连接服务器，无法进入登录页面。可选的方案有：
+	  <ul>
+		  <li>设置代理</li>
+		  <li>在路由器上配置可科学上网的无线网络</li>
+		  <li>在<span lang="en">root</span>过的安卓手机上，通过热点共享无线网络</li>
+		  <li>在可科学上网的电脑上用软件（猎豹）创建无线网络</li>
+	  </ul>
+    </p>
+    <p>本人的宽带网络服务商是长城/鹏博士小区，科学上网及其难以连接，而且很容易掉线。（家里的联通宽带和在4G、公司、咖啡店等的网络下都可正常连接。所以推荐有科学上网需求的人慎重选择。）于是我非常悲剧地先用手机开WIFI热点共享4G网络给电脑，电脑再创建WIFI给<span lang="en">Chromebook</span>，这才进入了登录页面。我的手机没有root，不然可以直接创建可科学上网的WIFI。</p>
+    <p>进入登录页面后就根据系统提示一步步登录系统。其实登录之后就可以断开科学上网了，我没有，一下跑了手机50M流量。登录后若需要科学上网，可以配置代理，或者用ChromeOS自带OpenVPN和L2TP连接VPN。</p>
+    
+    <h3>同步与更新</h3>
+    <p>登录之后，如果在科学上网环境，系统会同步帐号的数据（收藏夹、自动填写、历史记录、应用和扩展等等）。在同步账户应用和扩展时，系统偶尔会闪屏。可以暂时关闭所有的同步，先更新系统。</p>
+    <p>通过共享WIFI或在Chromeos中设置代理/VPN后，在系统设置页面检查更新，系统更新会自动下载。检查更新的时候必须可以连接谷歌服务器，但在下载过程中也许可以不用保持连接。在C720上我也有类似的经历，在下载系统更新中途VPN网络掉线，下载进度稍微停滞一会儿后又继续，速度反而更快。你可以在下载刚开始的时候尝试一下断开VPN。</p>
+    <p>在这时我推荐不要打开Chromeos的同步，因为同步某些插件的时候会反复闪屏并重启系统页面。</p>
+    <p>系统更新安装好之后，重启系统。再次登录就不需要科学上网环境了。而且系统重置的备份镜像也被更新到了新版本，这是从我悲惨经历的一些额外发现，之后会详述。</p>
+    
+    <h3>安卓市场</h3>
+    <p>是的，这款Chromebook可以安装安卓应用！更新系统后，快速启动栏中应该已经有谷歌应用市场的图标了。也可以在设置中启用。</p>
+    <p>我挂上VPN，兴致勃勃地打开应用市场，却出现了错误，关于“GSM”不存在。在谷歌上搜索了一下有零星的两个错误报告帖子，没有找到解决方案。经过一些尝试后，我发现系统自身连接VPN会报错，但在共享WIFI环境下是可以打开的。</p>
+    <p>最终我的确打开了谷歌应用市场，但截至现在，我还没有成功地下载好一个应用。</p>
+
+    <h3 lang="en">crouton</h3>
+    <p>设计上<span lang="en">Chromebook</span>的功能都在网上实现，在一个正常的网络环境里这也确实是可行的，但我们处在一个超常的现实中。如果你的需求只是浏览网页和看视频，那配置到以上就足够了。当然，这个小机器的潜力不止于次，安装<span lang="en">Linux</span>后它可以满足我日常对笔记本的所有需求。现在有两种方式（据我所知）在<span lang="en">Chromebook</span>中安装<span lang="en">Linux</span>，我推荐通过crouton安装，因为这样可以无缝切换Chromeos和Linux。</p>
+    <p>如果可以阅读crouton的<a href="https://github.com/dnschneid/crouton">读我文档</a>和<a href="https://github.com/dnschneid/crouton/wiki">维基页面</a>（英文），各种安装和使用的细节都已写明。以下简单记录一下我的安装过程，和在国内安装值得注意之处。</p>
+    <ol>
+      <li><p>首先，下载crouton，地址：<a href="https://goo.gl/fd3zc">https://goo.gl/fd3zc</a></p></li>
+      <li>打开一个控制台（CTRL+ALT+T），输入<code>shell</code>后回车，进入下载文件夹：<code>cd ~/Download</code></li>
+      <li>可以输入<code>sh crouton</code>下载更新脚本并显示帮助，但这一步可以省略，因为安装时脚本会自动更新。</li>
+      <li>支持的发行版包括<span lang="en">debian</span>、<span lang="en">kali</span>和<span lang="en">Ubuntu</span>，每个发行版都支持若干个新老版本。我选择比较熟悉的<span lang="en">Ubuntu 14.04 (trusty)</span>。查看所有可安装的发行版：
+      <p><code>sh crouton -r list</code></p></li>
+      <li>选好发行版后，选择可安装的目标。所谓目标，我理解就是一些包的合集以完成某功能。以下为我安装的目标，可查看所有可安装的目标：
+      <p><code>sh crouton -t list</code></p>
+      <ul>
+	<li>首先，除非只在命令行下操作，你需要一个桌面系统，可选的有：<span lang="en">unity, xfce, kde, lxde, gnome, e17</span>。由于比较熟悉，我选择了<span lang="en">unity</span>。</li>
+	<li>对于常见的桌面环境，可以选择基本安装和完全安装，比如基本安装<span lang="en">unity</span>和完全安装<span lang="en">unity-desktop</span>。基本安装只包括了最基本的必需功能，完全安装即如正式发行版一样。为了节省空间和资源可选择基本安装，再进一步配置；为了减少麻烦，且空间足够，可直接安装完全版本。</li>
+	<li>由于这款是触摸屏，所以要加上相应的支持包：<span lang="en">touch</span>。其实我也并不知道如果不装会怎样。</li>
+	<li>两个系统之间互相共享剪贴板是一个非常有用的功能，需要<span lang="en">extension</span>包，以及在<span lang="en">Chromeos</span>中安装扩展。</li>
+	<li>另一个可能有用的功能是，直接在<span lang="en">Chromeos</span>中以一个应用的形式打开一个<span lang="en">Ubuntu</span>软件或整个系统，需要安装<span lang="en">xiwi</span>。</li>
+      </ul>
+      </li>
+      <li>可以在安装时用<code>-m</code>指定一个国内的镜像源，以提高速度。<br />
+      镜像列表：<a href="https://launchpad.net/ubuntu/+archivemirrors">https://launchpad.net/ubuntu/+archivemirrors</a></li>
+      <li>可以用<code>-n</code>指定<span lang="en">chroot</span>环境的名字，默认的为发行版的名字（<span lang="en">trusty</span>）。</li>
+      <li>我最终的安装命令为：
+        <p><code>sudo sh crouton -r trusty -t unity,extension,touch -m http://mirrors.tuna.tsinghua.edu.cn/ubuntu/</code></p></li>
+      <li>安装的大部分过程是可以在国内网络环境完成的，国内的镜像源速度也很快。在安装的中间会需要连接到谷歌的服务器下载一个驱动<span lang="en">CRAS</span>，此时会因为网络超时而退出安装。此时可以配置好网络后，重新开始更新：
+      <p><code>sudo sh crouton -u -n trusty</code></p>
+      <p>当<span lang="en">CRAS</span>下载好之后又会进入其他包的安装，此时可以换回非科学上网，以增加速度。安装会稍微停滞一会儿，但很快恢复。安装的最后会提示输入用户名和密码，创建好后就安装成功了。</p></li>
+      <li>安装好后，在<span lang="en">Chromeos</span>的<span lang="en">shell</span>中用下面的命令进入：
+        <p>sudo startunity</p>
+        <p>Ctrl+Alt+Shift+Back and Ctrl+Alt+Shift+Forward.</p>
+        <p>其他命令</p>
+        <p><code>sudo enter-chroot</code></p>
+      </li>
+      <p></p>
+    </ol>
+    <p></p>
+    <p>注一：关于<span lang="en">target</span>和<span lang="en">release</span>选择。我第一次安装尝试的是<span lang="en">xenial</span>和<span lang="en">unity</span>，但效果并不好，安装的控制台（<span lang="en">gnome-terminal</span>）无法启动，搜索了一下，还需要进一步配置，于是我就失去了耐心。我又试了<span lang="en">xfce</span>，控制台可以正常启动，反应速度很快而且界面足够漂亮。但想到还得去琢磨设置，就还是回到了最熟悉的<span lang="en">trusty</span>和<span lang="en">unity</span>。</p>
+    <p>注二：<span lang="en">xiwi</span>与<span lang="en">xorg</span>。<span lang="en">xiwi</span>在<span lang="en">ChromeOS</span>中以窗口的形式打开<span lang="en">crouton</span>系统或一个应用(<span lang="en">X11 in a Window</span>)。好处是可以直接像切换不同应用一样切换系统，而不需要用组合键。坏处是没有图像加速，所以很多程序运行的速度会比较慢（比如<span lang="en">unity</span>桌面)。只打开一个程序还是挺实用的，命令如下：</p>
+    <p>用xiwi启动桌面环境：<code>sudo startunity -X xiwi</code></p>
+    <p>用xiwi启动一个程序：<code>sudo enter-chroot xiwi -T gimp</code></p>
+    <p><code>sudo enter-chroot xiwi -T gimp</code></p>
+    <h3><span lang="en">Ubuntu</span></h3>
+    <p>基本安装<span lang="en">unity</span>之包括了最基本的程序，一些可能常用的程序还要自己配置一下。</p>
+	  <dl>
+	    <dt><span lang="en">gnome-terminal</span></dt>
+	    <dd>命令行终端。基本安装默认终端为<span lang="en">xterm</span>，还是觉得<span lang="en">Ubuntu</span>自带的用起来更舒服。</dd>
+	    <dt><span lang="en">bash-completion</span></dt>
+	    <dd>终端中的自动填充功能。</dd>
+	    <dt><span lang="en">synaptic apt-xapian</dt>
+	    <dd>新立得，和新立得中的快速搜索。</dd>
+	    <dt><span lang="en">software-properties-common</span></dt>
+	    <dd>为了使用<span lang="en">add-apt-repository</span>。</dd>
+	    <dt><span lang="en">language-selector-gnome</span></dt>
+	    <dd>语言选择。更精简的方法是直接安装中文包。</dd>
+	    <dt><span lang="en">fcitx</span></dt>
+	    <dd>输入法。</dd>
+	    <dt><span lang="en">fcitx-googlepinyin</span></dt>
+	    <dd>谷歌拼音数据</dd>
+      <dt><span lang="en">nautilus-open-terminal</span></dt>
+	    <dd>在文件夹中点击右键选择在此路径下打开终端。</dd>
+      <dt><span lang="en">libreoffice</span></dt>
+      <dd>办公软件套装。</dd>
+      <dt><span lang="en">GIMP2</span></dt>
+      <dd>图片编辑软件。</dd>
+      <dt><span lang="en">vim aptitude build-essential git jpegoptim r-base</span></dt>
+      <dd><span lang="en">Butters</span>的常用工具。</dd>
+	  </dl>
+    
+    <h3>后记</h3>
+    
+    <h3>参考网页</h3>
+    <ul>
+      <li><a href="https://github.com/dnschneid/crouton"><span lang="en">dnschneid/crouton: Chromium OS Universal Chroot Environment</span></a></li>
+      <li><a href="https://github.com/dnschneid/crouton/wiki"><span lang="en">Home · dnschneid/crouton Wiki</span></a></li>
+      <li><a href="http://codeingboy.me/crouton-installation-notes/"><span lang="en">crouton</span>安装手记|<span lang="en">CodeingBoy</span>的笔记本</a></li>
+      <li><a href="http://feizuibunengwang.lofter.com/post/1cb3ab89_59436b8">通过<span lang="en">crouton</span>在<span lang="en">chromebook</span>上安装<span lang="en">ubuntu</span>-／FEIZUI／</a></li>
+      <li><a href="http://tieba.baidu.com/p/2919742459">【教程】小白是怎样利用<span lang="en">crouton</span>给<span lang="en">C720 Chromebook</span>装<span lang="en">ubuntu</span>的</a></li>
+    </ul>
+
+  </section>
+  <section>
+    <ul>
+      <li>2016-11-29：第一版完成。</li>
+    </ul>
+  </section>
+
+</article>
+
+
+
+</main>
+
+<footer>
+  <ul>
+    <li>
+      网站备案：
+      <a href="http://www.miitbeian.gov.cn/">辽ICP备15012794号</a>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

@@ -14,14 +14,44 @@ UpdateBlogFrontPage <- function(lang) {
 }
 
 UpdateTagPages <- function(lang, tags,
-                           updateAll = TRUE,
-                           updateFront = TRUE) {
+                           updateFront = TRUE,
+                           updateSidebar = TRUE,
+                           tagDFfile = "database/tagDF.csv",
+                           blogDFfile = "database/blogDF.csv") {
+  # Update tag (given by tags) pages.
+  # If tags not given, update the album database and build or update
+  # for updated tags.
+  tagDF <- read.csv(tagDFfile, stringsAsFactors = FALSE)
+  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
+
+  if (missing(tags)) {
+    tags <- tagDF$tag[tagDF$lang %in% lang]
+  }
+
+  for (i in which(tagDF$tag %in% tags)) {
+    BuildTagPage(tags = tagDF$tag[i],
+                 lang = lang,
+                 fileName = tagDF$name[i],
+                 type = tagDF$type[i],
+                 title = tagDF$title[i],
+                 desc = tagDF$desc[i])
+  }
+
+  if (updateFront) {
+  }
+
+  if (updateSidebar) {
+  }
+
 }
 
 
 BuildTagPage <- function(tags, lang, dates, fileName,
-                         type, title, desc) {
+                         type, title, desc,
+                         blogDFfile = "database/blogDF.csv",
+                         tagDFfile = "database/tagDF.csv") {
   # Build a collection page of blogs, selected by tags, lang, dates.
+  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
 
   if (! all(tags %in% tagDF$tag)) {
     stop("UpdateTagPage: one or more tags not found in database.")
@@ -133,13 +163,11 @@ UpdateBlogFrontPage <- function(lang,
 
 }
 
-UpdateSidebars <- function(lang,tags, blogFront = TRUE,
+UpdateSidebars <- function(lang, tags, blogFront = TRUE,
                            tagDFfile = "database/tagDF.csv") {
   # Update the sidebars of tag pages and blog front page
 
-  if (!exists("tagDF", mode = "list")) {
-    tagDF <- read.csv(tagDFfile, stringsAsFactors = FALSE)
-  }
+  tagDF <- read.csv(tagDFfile, stringsAsFactors = FALSE)
   if (missing(tags)) {
     tags <- tagDF$tag[tagDF$lang == lang]
   }
@@ -196,6 +224,68 @@ UpdateSidebars <- function(lang,tags, blogFront = TRUE,
 ########################################################################
 # Database functions
 
+UpdateBlogDatabase <- function(newBlogPaths,
+                               blogDFfile = "database/blogDF.csv") {
+  # Add new blogs into the database.
+  # The paths of new blogs are given by a character vector.
+  # If not given, search for new html files in zh|en/blogs directories.
+  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
+
+  if (missing(newBlogPaths)) {
+    newBlogPaths <- character()
+    for (lang in c("en", "zh")) {
+      newBlogPaths <-  c(newBlogPaths,
+                         list.files(paste(lang, "blogs", sep="/"),
+                                    recursive=TRUE, full.names=TRUE,
+                                    pattern="*.html$"))
+    }
+    newBlogPaths <- newBlogPaths[!grepl("~$", newBlogPaths)]
+    newBlogPaths <- newBlogPaths[!grepl("yyyymmdd.*template",
+                                        newBlogPaths)]
+
+  }
+
+  if (! all(file.exists(newBlogPaths))) {
+    error("Some blog given by path does not exist")
+  }
+  newBlogPaths <- setdiff(newBlogPaths, blogDF$filePath)
+  if (length(newBlogPaths) == 0) {
+    print("No new blogs or blogs given by paths already in database.")
+    return()
+  }
+
+  character(length(newBlogPaths)) -> langList -> titleList ->
+    dateList -> tagsList -> summaryList
+  langList[grep("zh/", newBlogPaths)] <- "zh"
+  langList[grep("en/", newBlogPaths)] <- "en"
+  for (i in 1:length(newBlogPaths)) {
+    basicinfo <- ParseBlogHTML(newBlogPaths[i])
+    titleList[i] <- basicinfo$title
+    tagsList[i] <- paste(basicinfo$tags, collapse=",")
+    dateList[i] <- basicinfo$datestamp
+    summaryList[i] <- basicinfo$summary
+  }
+  newBlogDF <- data.frame(filePath = newBlogPaths,
+                          lang = as.factor(langList),
+                          title = titleList,
+                          tags = tagsList,
+                          date = as.Date(dateList, format="%Y-%m-%d"),
+                          desc = summaryList,
+                          hide = 0,
+                          stringsAsFactors=FALSE)
+
+  write.table(newBlogDF, file = blogDFfile, append = TRUE, sep = ",",
+              row.names = FALSE, col.names = FALSE, quote = TRUE,
+              fileEncoding = "utf-8")
+  assign("blogDF",
+         read.csv(blogDFfile, stringsAsFactors = FALSE),
+         envir = .GlobalEnv)
+  cat("Data frame \"blogDF\" is loaded from ", blogDFfile, "\n")
+  return(invisible(newBlogDF))
+
+}
+
+
 BuildBlogDatabase <- function(blogDFfile = "database/blogDF.csv") {
   # Scan and parse blog html files, build a data frame of blogs.
   blogFileList <- character()
@@ -242,9 +332,7 @@ UpdateTagDatabase <- function(rowIds,
                               tagDFfile = "database/tagDF.csv") {
   # Build or update the tag database from blog database.
   # If asked, return updated tags.
-  if (!exists("blogDF", mode = "list")) {
-    blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
-  }
+  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
   if (missing(rowIds)) {
     rowIds <- 1:nrow(blogDF)
   }
@@ -283,7 +371,6 @@ UpdateTagDatabase <- function(rowIds,
   }
 
   tagDF <- merge(tagDF, tagDFNew, by = c("tag", "lang"), all = TRUE)
-  print(tagDF)
 
   updateRows <- which(!is.na(tagDF$dateNew) &
                       (tagDF$dateNew > tagDF$date |
