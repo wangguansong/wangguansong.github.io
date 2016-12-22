@@ -293,6 +293,9 @@ UpdatePhotoDatabase <- function(rootDir, subDir,
   if (!grepl("/$", subDir)) subDir <- paste(subDir, "/", sep = "")
   photoFiles <- list.files(paste(rootDir, subDir, sep = ""))
   photoFiles <- photoFiles[ ! photoFiles %in% c("Private")]
+  photoFiles <- photoFiles[ ! grepl("(mp4|mpg|avi)$", photoFiles,
+                                    ignore.case = TRUE) ]
+
   addPhotoDF <- data.frame(filePath = paste(subDir, photoFiles,
                                             sep = ""),
                            date = "",
@@ -306,7 +309,7 @@ UpdatePhotoDatabase <- function(rootDir, subDir,
   if (require("exif")) {
     addPhotoDF$date <- read_exif(paste(rootDir,
                                        addPhotoDF$filePath,
-                                       sep = ""))$timestamp
+                                       sep = ""))$origin_timestamp
     addPhotoDF$date <- strptime(addPhotoDF$date,
                                 "%Y:%m:%d %H:%M:%S")
   }
