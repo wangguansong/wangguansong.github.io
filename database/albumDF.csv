@@ -1,7 +1,7 @@
 tag,date,type,zhTitle,enTitle,zhDesc,enDesc
 2007,2007-12-30 14:54:24,year,2007,2007,2007,2007
-2008,2008-10-05 08:11:12,year,2008,2008,2008,2008
-2009,NA,year,2009,2009,2009,2009
+2008,2009-01-01 11:58:40,year,2008,2008,2008,2008
+2009,2009-12-30 09:19:26,year,2009,2009,2009,2009
 2010,NA,year,2010,2010,2010,2010
 2011,NA,year,2011,2011,2011,2011
 2012,NA,year,2012,2012,2012,2012
@@ -9,32 +9,48 @@ tag,date,type,zhTitle,enTitle,zhDesc,enDesc
 2014,NA,year,2014,2014,2014,2014
 2015,NA,year,2015,2015,2015,2015
 2016,2016-11-20 07:32:50,year,2016,2016,2016,2016
+anaheim,2009-12-26 12:35:03,location,美国阿纳海姆,"Anaheim, CA, U.S.",美国阿纳海姆,"Anaheim, CA, U.S."
 animals,2016-11-19 16:30:58,theme,动物世界,Animal planet,动物世界,Animal planet
 beijing,2016-11-20 07:32:50,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
-beiyandang,2016:03:05 09:33:04,location,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China"
+beiyandang,2016-03-05 09:33:04,location,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China"
 boston,2007-12-30 14:54:24,location,美国波士顿,"Boston, MA, U.S.",美国波士顿,"Boston, MA, U.S."
-butters,2016:10:03 08:01:45,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
-butters_crap,2016:10:03 08:01:45,theme,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap
+butters,2016-10-03 08:01:45,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
+butters_crap,2016-10-03 08:01:45,theme,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap
 cat,2016-11-19 16:30:58,tag,猫,Cat,猫,Cat
-chapel_hill,2008-10-05 08:11:12,location,美国教堂山,"Chapel Hill, NC, U.S.",美国教堂山,"Chapel Hill, NC, U.S."
-chengdu,2016:09:25 17:32:56,location,中国四川省成都,"Chengdu, Sichuan, China",中国四川省成都,"Chengdu, Sichuan, China"
-dandong,2016:10:03 09:16:01,location,中国辽宁省丹东,"Dandong, Liaoning, China",中国辽宁省丹东,"Dandong, Liaoning, China"
+chapel_hill,2009-12-18 06:03:39,location,美国教堂山,"Chapel Hill, NC, U.S.",美国教堂山,"Chapel Hill, NC, U.S."
+chengdu,2016-09-25 17:32:56,location,中国四川省成都,"Chengdu, Sichuan, China",中国四川省成都,"Chengdu, Sichuan, China"
+dandong,2016-10-03 09:16:01,location,中国辽宁省丹东,"Dandong, Liaoning, China",中国辽宁省丹东,"Dandong, Liaoning, China"
+disney_land,2009-12-26 12:35:03,tag,迪斯尼乐园,Disneyland,迪斯尼乐园,Disneyland
+durham,2008-04-09 18:43:30,location,美国达勒姆,"Durham, NC, U.S.",美国达勒姆,"Durham, NC, U.S."
 fall_river,2008-01-05 14:41:11,location,美国福尔里弗,"Fall River, MA, U.S.",美国福尔里弗,"Fall River, MA, U.S."
 fayuan_temple,2016-11-13 15:30:05,tag,法源寺,Fayuan Temple,法源寺,Fayuan Temple
-food,2016:09:24 19:19:41,tag,食物,Food,食物,Food
+food,2016-09-24 19:19:41,tag,食物,Food,食物,Food
+hilton_head_island,2008-08-14 19:18:42,location,美国希尔顿黑德岛,"Hilton Head Island, SC, U.S.",美国希尔顿黑德岛,"Hilton Head Island, SC, U.S."
 interesting,2016-11-20 07:32:50,theme,有趣的东西,Interesting Things,有趣的东西,Interesting Things
-lvshun,2016:02:28 13:29:08,location,中国辽宁省旅顺,"Lvshun, Liaoning, China",中国辽宁省旅顺,"Lvshun, Liaoning, China"
-new_york,2007-12-28 14:03:44,location,美国纽约,"New York, NY, U.S.",美国纽约,"New York, NY, U.S."
+joshua_tree,2009-12-24 05:29:41,location,美国约书亚树国家公园,"Joshua Tree National Park, CA, U.S.",美国约书亚树国家公园,"Joshua Tree National Park, CA, U.S."
+los_angeles,2009-12-30 09:19:26,location,美国洛杉矶,"Los Angeles, CA, U.S.",美国洛杉矶,"Los Angeles, CA, U.S."
+lvshun,2016-02-28 13:29:08,location,中国辽宁省旅顺,"Lvshun, Liaoning, China",中国辽宁省旅顺,"Lvshun, Liaoning, China"
+new_hill,2009-12-17 04:46:30,location,美国新希尔,"New Hill, NC, U.S.",美国新希尔,"New Hill, NC, U.S."
+new_york,2007-12-28 14:12:44,location,美国纽约,"New York, NY, U.S.",美国纽约,"New York, NY, U.S."
 ningbo,2016:02:11 09:34:52,location,中国浙江省宁波,"Ningbo, Zhejiang, China",中国浙江省宁波,"Ningbo, Zhejiang, China"
 niujie_mosque,2016-11-13 13:31:07,tag,牛街清真寺,Niujie Mosque,牛街清真寺,Niujie Mosque
 olympic_park,2016-11-06 19:57:21,tag,奥林匹克公园,Olympic Park,奥林匹克公园,Olympic Park
-people,2016:10:03 08:24:52,theme,进入我镜头的人们,People who entered my camera,进入我镜头的人们,People who entered my camera
-photographer,2016:09:25 12:10:52,theme,拍照的人,Taking Pictures,拍照的人,Taking Pictures
-plants,2016:09:04 13:06:11,theme,花花草草,Plants,花花草草,Plants
-selfie,2016:09:25 10:34:30,theme,自拍的人,Taking Selfies,自拍的人,Taking Selfies
-shanghai,2016:03:02 17:06:34,location,中国上海,"Shanghai, China",中国上海,"Shanghai, China"
+orlando,2009-01-01 11:58:40,location,美国奥兰多,"Orlando, FL, U.S.",美国奥兰多,"Orlando, FL, U.S."
+people,2016-10-03 08:24:52,theme,进入我镜头的人们,People who entered my camera,进入我镜头的人们,People who entered my camera
+photographer,2016-09-25 12:10:52,theme,拍照的人,Taking Pictures,拍照的人,Taking Pictures
+plants,2016-09-04 13:06:11,theme,花花草草,Plants,花花草草,Plants
+raleigh,2009-10-23 03:31:12,location,美国罗利,"Raleigh, NC, U.S.",美国罗利,"Raleigh, NC, U.S."
+san_diego,2009-12-29 05:23:46,location,美国圣地亚哥,"San Diego, CA, U.S.",美国圣地亚哥,"San Diego, CA, U.S."
+san_diego_old_town,2009-12-29 05:23:46,tag,圣地亚哥老城,San Diego Old Town,圣地亚哥老城,San Diego Old Town
+san_diego_seaworld,2009-12-27 10:44:49,tag,圣地亚哥海洋世界,San Diego SeaWorld,圣地亚哥海洋世界,San Diego SeaWorld
+selfie,2016-09-25 10:34:30,theme,自拍的人,Taking Selfies,自拍的人,Taking Selfies
+shanghai,2016-03-02 17:06:34,location,中国上海,"Shanghai, China",中国上海,"Shanghai, China"
+shenyang,2009-07-14 19:32:40,location,中国沈阳,"Shenyang, China",中国沈阳,"Shenyang, China"
 sites,2016-11-19 14:26:41,theme,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites
-travel,2016:03:05 09:33:04,tag,旅行,Travel,旅行,Travel
+travel,2016-03-05 09:33:04,tag,旅行,Travel,旅行,Travel
 weekend,2016-11-20 07:32:50,theme,周末,Weekend,周末,Weekend
+wilmington,2008-09-01 21:32:18,location,美国威明顿,"Wilmington, NC, U.S.",美国威明顿,"Wilmington, NC, U.S."
+winston_salem,2009-10-26 05:14:15,location,美国温斯顿塞勒姆,"Winston-Salem, NC, U.S.",美国温斯顿塞勒姆,"Winston-Salem, NC, U.S."
 yuanmingyuan,2016-11-12 16:51:26,tag,圆明园,Yuanmingyuan,北京圆明园,Yuanmingyuan Park in Beijing
 zhenjue_temple,2016-11-20 07:32:50,tag,真觉寺,Zhenjue Temple,真觉寺,Zhenjue Temple
+san_diego_zoo,2009-12-28 04:43:28,tag,圣地亚哥动物园,San Diego Zoo,圣地亚哥动物园,San Diego Zoo
