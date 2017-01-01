@@ -2,29 +2,34 @@ tag,date,type,zhTitle,enTitle,zhDesc,enDesc
 2007,2007-12-30 14:54:24,year,2007,2007,2007,2007
 2008,2009-01-01 11:58:40,year,2008,2008,2008,2008
 2009,2009-12-30 09:19:26,year,2009,2009,2009,2009
-2010,NA,year,2010,2010,2010,2010
+2010,2010-12-29 17:30:59,year,2010,2010,2010,2010
 2011,NA,year,2011,2011,2011,2011
 2012,NA,year,2012,2012,2012,2012
 2013,NA,year,2013,2013,2013,2013
 2014,NA,year,2014,2014,2014,2014
 2015,NA,year,2015,2015,2015,2015
 2016,2016-11-20 07:32:50,year,2016,2016,2016,2016
+alexandria,2010-05-28 11:32:58,location,美国亚历山卓,"Alexandria, VA, U.S.",美国亚历山卓,"Alexandria, VA, U.S."
 anaheim,2009-12-26 12:35:03,location,美国阿纳海姆,"Anaheim, CA, U.S.",美国阿纳海姆,"Anaheim, CA, U.S."
 animals,2016-11-19 16:30:58,theme,动物世界,Animal planet,动物世界,Animal planet
+arlington,2010-05-28 15:43:48,location,美国阿灵顿,"Arlington, VA, U.S.",美国阿灵顿,"Arlington, VA, U.S."
+bald_head_lsland,2010-09-05 18:41:58,tag,秃头岛,Bald Head Island,秃头岛,Bald Head Island
 beijing,2016-11-20 07:32:50,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
 beiyandang,2016-03-05 09:33:04,location,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China"
 boston,2007-12-30 14:54:24,location,美国波士顿,"Boston, MA, U.S.",美国波士顿,"Boston, MA, U.S."
 butters,2016-10-03 08:01:45,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
 butters_crap,2016-10-03 08:01:45,theme,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap
 cat,2016-11-19 16:30:58,tag,猫,Cat,猫,Cat
-chapel_hill,2009-12-18 06:03:39,location,美国教堂山,"Chapel Hill, NC, U.S.",美国教堂山,"Chapel Hill, NC, U.S."
+chapel_hill,2010-12-29 17:30:59,location,美国教堂山,"Chapel Hill, NC, U.S.",美国教堂山,"Chapel Hill, NC, U.S."
 chengdu,2016-09-25 17:32:56,location,中国四川省成都,"Chengdu, Sichuan, China",中国四川省成都,"Chengdu, Sichuan, China"
 dandong,2016-10-03 09:16:01,location,中国辽宁省丹东,"Dandong, Liaoning, China",中国辽宁省丹东,"Dandong, Liaoning, China"
 disney_land,2009-12-26 12:35:03,tag,迪斯尼乐园,Disneyland,迪斯尼乐园,Disneyland
-durham,2008-04-09 18:43:30,location,美国达勒姆,"Durham, NC, U.S.",美国达勒姆,"Durham, NC, U.S."
+durham,2010-06-13 16:36:41,location,美国达勒姆,"Durham, NC, U.S.",美国达勒姆,"Durham, NC, U.S."
 fall_river,2008-01-05 14:41:11,location,美国福尔里弗,"Fall River, MA, U.S.",美国福尔里弗,"Fall River, MA, U.S."
 fayuan_temple,2016-11-13 15:30:05,tag,法源寺,Fayuan Temple,法源寺,Fayuan Temple
 food,2016-09-24 19:19:41,tag,食物,Food,食物,Food
+georgetown,2010-05-28 19:22:29,tag,乔治城,Georgetown,乔治城,Georgetown
+hillsborough,2010-03-21 02:41:24,location,美国希尔斯伯勒,"Hillsborough, NC, U.S.",美国希尔斯伯勒,"Hillsborough, NC, U.S."
 hilton_head_island,2008-08-14 19:18:42,location,美国希尔顿黑德岛,"Hilton Head Island, SC, U.S.",美国希尔顿黑德岛,"Hilton Head Island, SC, U.S."
 interesting,2016-11-20 07:32:50,theme,有趣的东西,Interesting Things,有趣的东西,Interesting Things
 joshua_tree,2009-12-24 05:29:41,location,美国约书亚树国家公园,"Joshua Tree National Park, CA, U.S.",美国约书亚树国家公园,"Joshua Tree National Park, CA, U.S."
@@ -39,18 +44,20 @@ orlando,2009-01-01 11:58:40,location,美国奥兰多,"Orlando, FL, U.S.",美国�
 people,2016-10-03 08:24:52,theme,进入我镜头的人们,People who entered my camera,进入我镜头的人们,People who entered my camera
 photographer,2016-09-25 12:10:52,theme,拍照的人,Taking Pictures,拍照的人,Taking Pictures
 plants,2016-09-04 13:06:11,theme,花花草草,Plants,花花草草,Plants
-raleigh,2009-10-23 03:31:12,location,美国罗利,"Raleigh, NC, U.S.",美国罗利,"Raleigh, NC, U.S."
+raleigh,2010-10-23 22:01:45,location,美国罗利,"Raleigh, NC, U.S.",美国罗利,"Raleigh, NC, U.S."
 san_diego,2009-12-29 05:23:46,location,美国圣地亚哥,"San Diego, CA, U.S.",美国圣地亚哥,"San Diego, CA, U.S."
 san_diego_old_town,2009-12-29 05:23:46,tag,圣地亚哥老城,San Diego Old Town,圣地亚哥老城,San Diego Old Town
 san_diego_seaworld,2009-12-27 10:44:49,tag,圣地亚哥海洋世界,San Diego SeaWorld,圣地亚哥海洋世界,San Diego SeaWorld
+san_diego_zoo,2009-12-28 04:43:28,tag,圣地亚哥动物园,San Diego Zoo,圣地亚哥动物园,San Diego Zoo
 selfie,2016-09-25 10:34:30,theme,自拍的人,Taking Selfies,自拍的人,Taking Selfies
 shanghai,2016-03-02 17:06:34,location,中国上海,"Shanghai, China",中国上海,"Shanghai, China"
-shenyang,2009-07-14 19:32:40,location,中国沈阳,"Shenyang, China",中国沈阳,"Shenyang, China"
+shenyang,2010-08-06 23:16:23,location,中国沈阳,"Shenyang, China",中国沈阳,"Shenyang, China"
 sites,2016-11-19 14:26:41,theme,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites
 travel,2016-03-05 09:33:04,tag,旅行,Travel,旅行,Travel
+washington_dc,2010-05-31 11:24:55,location,美国华盛顿特区,"Washington DC, U.S.",美国华盛顿特区,"Washington DC, U.S."
 weekend,2016-11-20 07:32:50,theme,周末,Weekend,周末,Weekend
-wilmington,2008-09-01 21:32:18,location,美国威明顿,"Wilmington, NC, U.S.",美国威明顿,"Wilmington, NC, U.S."
+wilkesboro,2010-03-27 01:53:18,location,美国威尔克斯伯勒,"Wilkesboro, NC, U.S.",美国威尔克斯伯勒,"Wilkesboro, NC, U.S."
+wilmington,2010-09-05 18:41:58,location,美国威明顿,"Wilmington, NC, U.S.",美国威明顿,"Wilmington, NC, U.S."
 winston_salem,2009-10-26 05:14:15,location,美国温斯顿塞勒姆,"Winston-Salem, NC, U.S.",美国温斯顿塞勒姆,"Winston-Salem, NC, U.S."
 yuanmingyuan,2016-11-12 16:51:26,tag,圆明园,Yuanmingyuan,北京圆明园,Yuanmingyuan Park in Beijing
 zhenjue_temple,2016-11-20 07:32:50,tag,真觉寺,Zhenjue Temple,真觉寺,Zhenjue Temple
-san_diego_zoo,2009-12-28 04:43:28,tag,圣地亚哥动物园,San Diego Zoo,圣地亚哥动物园,San Diego Zoo
