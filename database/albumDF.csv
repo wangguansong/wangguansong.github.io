@@ -9,30 +9,41 @@ tag,date,type,zhTitle,enTitle,zhDesc,enDesc
 2014,NA,year,2014,2014,2014,2014
 2015,NA,year,2015,2015,2015,2015
 2016,2016-11-20 07:32:50,year,2016,2016,2016,2016
+2017,2017-01-08 16:14:00,year,2017,2017,2017,2017
+398summerwalk,2008-11-09 15:06:31,tag,教堂山住处,Apartment at Chapel Hill,教堂山住处,Apartment at Chapel Hill
 alexandria,2011-03-09 15:33:45,location,美国亚历山卓,"Alexandria, VA, U.S.",美国亚历山卓,"Alexandria, VA, U.S."
 anaheim,2009-12-26 12:35:03,location,美国阿纳海姆,"Anaheim, CA, U.S.",美国阿纳海姆,"Anaheim, CA, U.S."
 animals,2016-11-19 16:30:58,theme,动物世界,Animal planet,动物世界,Animal planet
 arlington,2010-05-28 15:43:48,location,美国阿灵顿,"Arlington, VA, U.S.",美国阿灵顿,"Arlington, VA, U.S."
 bald_head_lsland,2010-09-05 18:41:58,tag,秃头岛,Bald Head Island,秃头岛,Bald Head Island
-beijing,2016-11-20 07:32:50,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
+beijing,2017-01-08 16:14:00,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
+beijing_zoo,2017-01-08 16:14:00,tag,北京动物园,Beijing Zoo,北京动物园,Beijing Zoo
 beiyandang,2016-03-05 09:33:04,location,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China"
 boston,2007-12-30 14:54:24,location,美国波士顿,"Boston, MA, U.S.",美国波士顿,"Boston, MA, U.S."
 butters,2016-10-03 08:01:45,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
+butters_cooking,2008-11-11 19:57:19,tag,Butters的厨艺,Butters’ Cooking,Butters的厨艺,Butters’ Cooking
 butters_crap,2016-10-03 08:01:45,theme,Butters的破烂,Butters’ Crap,Butters的破烂,Butters’ Crap
+butters_place,2008-09-15 08:29:35,tag,Butters的住处,Butters’ Place,Butters的住处,Butters’ Place
 cat,2016-11-19 16:30:58,tag,猫,Cat,猫,Cat
+central_park,2007-12-25 15:00:49,tag,中央公园,Central Park,中央公园,Central Park
 chapel_hill,2013-12-24 21:22:48,location,美国教堂山,"Chapel Hill, NC, U.S.",美国教堂山,"Chapel Hill, NC, U.S."
 charlotte,2013-10-20 14:06:17,location,美国夏洛特,"Charlotte, NC, U.S.",美国夏洛特,"Charlotte, NC, U.S."
 chengdu,2016-09-25 17:32:56,location,中国四川省成都,"Chengdu, Sichuan, China",中国四川省成都,"Chengdu, Sichuan, China"
 dandong,2016-10-03 09:16:01,location,中国辽宁省丹东,"Dandong, Liaoning, China",中国辽宁省丹东,"Dandong, Liaoning, China"
 disney_land,2009-12-26 12:35:03,tag,迪斯尼乐园,Disneyland,迪斯尼乐园,Disneyland
+duke,2008-04-09 18:43:30,NA,杜克大学,Duke University,杜克大学,Duke University
 durham,2010-06-13 16:36:41,location,美国达勒姆,"Durham, NC, U.S.",美国达勒姆,"Durham, NC, U.S."
 ecu,2011-01-29 13:13:58,tag,东卡罗莱纳大学,East Carolina University,东卡罗莱纳大学,East Carolina University
 fall_river,2008-01-05 14:41:11,location,美国福尔里弗,"Fall River, MA, U.S.",美国福尔里弗,"Fall River, MA, U.S."
+farmers_market,2007-07-01 10:26:16,tag,农贸市场,Famers Market,农贸市场,Famers Market
 fayuan_temple,2016-11-13 15:30:05,tag,法源寺,Fayuan Temple,法源寺,Fayuan Temple
 food,2016-09-24 19:19:41,tag,食物,Food,食物,Food
+football,2007-05-13 20:11:52,tag,美式橄榄球,Football,美式橄榄球,Football
 gatlinburg,2011-10-17 04:06:54,location,美国盖林柏格,"Gatlinburg, TN, U.S.",美国盖林柏格,"Gatlinburg, TN, U.S."
 georgetown,2010-05-28 19:22:29,tag,乔治城,Georgetown,乔治城,Georgetown
+glen_lennox,2008-05-05 15:49:56,tag,教堂山住处,Apartment at Chapel Hill,教堂山住处,Apartment at Chapel Hill
 greenville,2011-01-29 16:40:52,location,美国格林威尔,"Greenville, NC, U.S.",美国格林威尔,"Greenville, NC, U.S."
+halloween,2007-07-12 20:44:14,tag,万圣节,Halloween,万圣节,Halloween
 hillsborough,2010-03-21 02:41:24,location,美国希尔斯伯勒,"Hillsborough, NC, U.S.",美国希尔斯伯勒,"Hillsborough, NC, U.S."
 hilton_head_island,2008-08-14 19:18:42,location,美国希尔顿黑德岛,"Hilton Head Island, SC, U.S.",美国希尔顿黑德岛,"Hilton Head Island, SC, U.S."
 interesting,2016-11-20 07:32:50,theme,有趣的东西,Interesting Things,有趣的东西,Interesting Things
@@ -59,9 +70,13 @@ selfie,2016-09-25 10:34:30,theme,自拍的人,Taking Selfies,自拍的人,Taking
 shanghai,2016-03-02 17:06:34,location,中国上海,"Shanghai, China",中国上海,"Shanghai, China"
 shenyang,2011-06-25 19:57:05,location,中国沈阳,"Shenyang, China",中国沈阳,"Shenyang, China"
 sites,2016-11-19 14:26:41,theme,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites
+snow,2008-01-20 14:18:59,tag,雪,Snow,雪,Snow
+south_point_mall,2007-05-13 14:08:42,tag,南点商场,South Point Mall,南点商场,South Point Mall
 travel,2016-03-05 09:33:04,tag,旅行,Travel,旅行,Travel
+unc,2008-11-09 15:24:35,tag,北卡罗来纳大学教堂山分校,University of North Carolina at Chapel Hill,北卡罗来纳大学教堂山分校,University of North Carolina at Chapel Hill
+university_lake,2008-03-30 15:57:11,tag,大学湖,University Lake,大学湖,University Lake
 washington_dc,2011-03-11 15:29:54,location,美国华盛顿特区,"Washington DC, U.S.",美国华盛顿特区,"Washington DC, U.S."
-weekend,2016-11-20 07:32:50,theme,周末,Weekend,周末,Weekend
+weekend,2017-01-08 16:14:00,theme,周末,Weekend,周末,Weekend
 wilkesboro,2010-03-27 01:53:18,location,美国威尔克斯伯勒,"Wilkesboro, NC, U.S.",美国威尔克斯伯勒,"Wilkesboro, NC, U.S."
 wilmington,2010-09-05 18:41:58,location,美国威明顿,"Wilmington, NC, U.S.",美国威明顿,"Wilmington, NC, U.S."
 winston_salem,2009-10-26 05:14:15,location,美国温斯顿塞勒姆,"Winston-Salem, NC, U.S.",美国温斯顿塞勒姆,"Winston-Salem, NC, U.S."
