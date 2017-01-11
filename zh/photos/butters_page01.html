@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -50,8 +55,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!original');">
     </td>
     <td>
       <h4> 中国R语言会议 </h4>
@@ -59,6 +65,246 @@ Pages:
         <li>2016-09-24 17:19:16</li>
         <li>中国四川省成都</li>
         <li>很意外的机会，我参加了在成都的中国R语言会议。虽然演讲的主题并不是我专长的领域，能够接触到业界和学术界的前沿人物还是很开心的。</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/2007_Misc/DSC00027.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/2007_Misc/DSC00027.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-05-01 09:36:45</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/2007_Misc/DSC00031.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/2007_Misc/DSC00031.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-05-01 22:48:27</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/2007_Misc/DSC00218.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/2007_Misc/DSC00218.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-07-12 20:44:14</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071124_JanChristmas/DSC00463.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071124_JanChristmas/DSC00463.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-11-24 15:42:55</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071124_JanChristmas/DSC00470.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071124_JanChristmas/DSC00470.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-11-24 15:45:52</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/2008_Misc/DSC01028.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/2008_Misc/DSC01028.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-03-04 19:38:57</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/2008_Misc/DSC01463.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/2008_Misc/DSC01463.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-04-28 13:28:04</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/2008_Misc/DSC01828.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/2008_Misc/DSC01828.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-10-04 08:25:34</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/2008_Misc/DSC01832.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/2008_Misc/DSC01832.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-10-05 07:46:31</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/2008_Misc/DSC01974.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/2008_Misc/DSC01974.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-12-21 17:38:35</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/2008_Misc/DSC01975.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/2008_Misc/DSC01975.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-12-21 17:38:57</li>
+        <li>美国教堂山</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01504.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01504.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-05-28 05:52:03</li>
+        <li>中国沈阳</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01561.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01561.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-06-08 22:23:02</li>
+        <li>中国沈阳</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01777.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01777.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-08-31 14:02:32</li>
+        <li>美国威明顿</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01795.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01795.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-09-01 12:29:20</li>
+        <li>美国威明顿</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01804.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01804.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2008-09-01 21:32:18</li>
+        <li>美国威明顿</li>
+        <li></li>
       </ul>
     </td>
   </tr>

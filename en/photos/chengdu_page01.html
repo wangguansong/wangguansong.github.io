@@ -10,9 +10,14 @@ Album: Chengdu, Sichuan, China - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -47,8 +52,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/2016ChinaRChengdu_wgs.JPG@!original');">
     </td>
     <td>
       <h4> China R, Chengdu </h4>
@@ -61,8 +67,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!original');">
     </td>
     <td>
       <h4> A Cat Who Cares Nobody </h4>
@@ -75,8 +82,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl In Social Events </h4>
@@ -89,8 +97,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!original');">
     </td>
     <td>
       <h4> Crowded Kuanzhai Alley </h4>
@@ -103,8 +112,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!original');">
     </td>
     <td>
       <h4> Crowded Kuanzhai Alley </h4>
@@ -117,8 +127,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!original');">
     </td>
     <td>
       <h4> Together Selfie </h4>
@@ -131,8 +142,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -145,8 +157,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -159,8 +172,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -173,8 +187,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -187,8 +202,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -201,8 +217,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -215,8 +232,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl Looking Around </h4>
@@ -229,8 +247,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!original');">
     </td>
     <td>
       <h4> The 16st National Village Head Forum </h4>
@@ -243,8 +262,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!original');">
     </td>
     <td>
       <h4> China R Meeting Name Card </h4>
@@ -257,8 +277,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!original');">
     </td>
     <td>
       <h4> Chengdu Hotpot </h4>
@@ -271,8 +292,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!original');">
     </td>
     <td>
       <h4> Cleaning Inner Ears </h4>
@@ -285,8 +307,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!original');">
     </td>
     <td>
       <h4> Cellphone Charging Station </h4>

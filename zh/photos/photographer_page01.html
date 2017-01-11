@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -50,8 +55,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!original');">
     </td>
     <td>
       <h4> 老伴拍照 </h4>
@@ -64,8 +70,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!original');">
     </td>
     <td>
       <h4> 一家人自拍 </h4>
@@ -78,8 +85,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06398.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06398.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06398.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06398.JPG@!original');">
     </td>
     <td>
       <h4> 自拍 </h4>
@@ -92,8 +100,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06399.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06399.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06399.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06399.JPG@!original');">
     </td>
     <td>
       <h4> 自拍 </h4>
@@ -106,8 +115,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06412.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06412.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06412.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06412.JPG@!original');">
     </td>
     <td>
       <h4> 拍夜景的人 </h4>
@@ -120,8 +130,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06413.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06413.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06413.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06413.JPG@!original');">
     </td>
     <td>
       <h4> 夜景中的太阳镜 </h4>
@@ -134,8 +145,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06414.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06414.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06414.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06414.JPG@!original');">
     </td>
     <td>
       <h4> 夜景太阳镜拍摄组 </h4>
@@ -148,8 +160,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06437.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06437.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06437.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06437.JPG@!original');">
     </td>
     <td>
       <h4> 拍照 </h4>
@@ -162,8 +175,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06448.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06448.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06448.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06448.JPG@!original');">
     </td>
     <td>
       <h4> 摆姿势的小男孩 </h4>
@@ -176,8 +190,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!original');">
     </td>
     <td>
       <h4> 大龙湫自拍 </h4>
@@ -190,8 +205,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06646.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06646.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06646.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06646.JPG@!original');">
     </td>
     <td>
       <h4> 拍花的女孩 </h4>
@@ -204,8 +220,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06650.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06650.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06650.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06650.JPG@!original');">
     </td>
     <td>
       <h4> 摆姿势的小女孩 </h4>
@@ -218,8 +235,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06652.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06652.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06652.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06652.JPG@!original');">
     </td>
     <td>
       <h4> 家庭合影 </h4>
@@ -232,8 +250,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06660.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06660.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06660.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06660.JPG@!original');">
     </td>
     <td>
       <h4> 拍莲花的女孩 </h4>
@@ -246,8 +265,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06667.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06667.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06667.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06667.JPG@!original');">
     </td>
     <td>
       <h4> 花一样 </h4>
@@ -260,8 +280,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06678.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06678.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06678.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06678.JPG@!original');">
     </td>
     <td>
       <h4> 自拍的情侣 </h4>
@@ -274,8 +295,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06685.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06685.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06685.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160814_ShiChaHai/DSC06685.JPG@!original');">
     </td>
     <td>
       <h4> 自拍的女孩 </h4>
@@ -288,8 +310,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06686.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06686.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06686.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06686.JPG@!original');">
     </td>
     <td>
       <h4> 角色扮演 </h4>
@@ -302,8 +325,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06687.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06687.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06687.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06687.JPG@!original');">
     </td>
     <td>
       <h4> 角色扮演 </h4>
@@ -316,8 +340,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06688.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06688.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06688.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06688.JPG@!original');">
     </td>
     <td>
       <h4> 角色扮演 </h4>
@@ -330,8 +355,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06704.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06704.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06704.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06704.JPG@!original');">
     </td>
     <td>
       <h4> 父女时间 </h4>
@@ -344,8 +370,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!original');">
     </td>
     <td>
       <h4> 大龄摄影者 </h4>
@@ -358,8 +385,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!original');">
     </td>
     <td>
       <h4> 角色扮演 </h4>
@@ -372,8 +400,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!original');">
     </td>
     <td>
       <h4> 照落日的人们 </h4>
@@ -386,8 +415,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!original');">
     </td>
     <td>
       <h4> 拍照留念 </h4>
@@ -400,8 +430,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!original');">
     </td>
     <td>
       <h4> 拍照留念 </h4>
@@ -414,8 +445,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!original');">
     </td>
     <td>
       <h4> 照落日的人们 </h4>
@@ -428,8 +460,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!original');">
     </td>
     <td>
       <h4> 艺术照 </h4>
@@ -442,8 +475,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!original');">
     </td>
     <td>
       <h4> 艺术照 </h4>
@@ -456,8 +490,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!original');">
     </td>
     <td>
       <h4> 艺术照 </h4>
@@ -470,8 +505,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!original');">
     </td>
     <td>
       <h4> 艺术照 </h4>
@@ -484,8 +520,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!original');">
     </td>
     <td>
       <h4> 艺术照 </h4>
@@ -498,8 +535,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!original');">
     </td>
     <td>
       <h4> 艺术照 </h4>
@@ -512,8 +550,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!original');">
     </td>
     <td>
       <h4> 四处张望的小女孩 </h4>

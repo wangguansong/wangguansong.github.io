@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -50,8 +55,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/2007_Misc/DSC00218.JPG@!original">
-      <img src="http://images.guansong.wang/2007/2007_Misc/DSC00218.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/2007_Misc/DSC00218.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/2007_Misc/DSC00218.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

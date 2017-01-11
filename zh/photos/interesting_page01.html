@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -43,6 +48,7 @@
 <section id="top_pages_index">
 Pages:
 [1]
+<a href="/zh/photos/interesting_page02.html">[2]</a>
 </section>
 
   <section id="album_table">
@@ -50,8 +56,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!original');">
     </td>
     <td>
       <h4> 回头是岸 </h4>
@@ -64,8 +71,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -78,8 +86,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -92,8 +101,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -106,8 +116,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -120,8 +131,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -134,8 +146,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -148,8 +161,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -162,8 +176,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06439.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06439.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06439.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06439.JPG@!original');">
     </td>
     <td>
       <h4> 拒绝逼婚照片展 </h4>
@@ -176,8 +191,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06443.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06443.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06443.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06443.JPG@!original');">
     </td>
     <td>
       <h4> 银票 </h4>
@@ -190,8 +206,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160226_161724.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160226_161724.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160226_161724.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160226_161724.jpg@!original');">
     </td>
     <td>
       <h4> 高速休息区充电桩 </h4>
@@ -204,8 +221,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_184930.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_184930.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_184930.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_184930.jpg@!original');">
     </td>
     <td>
       <h4> 上海商场旋转电梯 </h4>
@@ -218,8 +236,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_185652.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_185652.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_185652.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160229_185652.jpg@!original');">
     </td>
     <td>
       <h4> 上海商场旋转电梯 </h4>
@@ -232,8 +251,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160301_195030.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160301_195030.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160301_195030.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160301_195030.jpg@!original');">
     </td>
     <td>
       <h4> 摄影姿势 </h4>
@@ -246,8 +266,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160302_110536.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160302_110536.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160302_110536.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/IMG_20160302_110536.jpg@!original');">
     </td>
     <td>
       <h4> 东北大板 </h4>
@@ -260,8 +281,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!original');">
     </td>
     <td>
       <h4> 制作中的功德碑 </h4>
@@ -274,8 +296,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!original');">
     </td>
     <td>
       <h4> 阴阳洞 </h4>
@@ -288,8 +311,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!original');">
     </td>
     <td>
       <h4> 球状熔岩 </h4>
@@ -302,8 +326,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!original');">
     </td>
     <td>
       <h4> 中国历代服制服式 </h4>
@@ -316,8 +341,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!original');">
     </td>
     <td>
       <h4> 到此一游 </h4>
@@ -330,8 +356,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!original');">
     </td>
     <td>
       <h4> 佛教词云 </h4>
@@ -344,8 +371,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!original');">
     </td>
     <td>
       <h4> 香 </h4>
@@ -358,8 +386,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!original');">
     </td>
     <td>
       <h4> 招聘启事 </h4>
@@ -372,8 +401,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!original');">
     </td>
     <td>
       <h4> 鸽子粪 </h4>
@@ -386,8 +416,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!original');">
     </td>
     <td>
       <h4> 圆明园石舫 </h4>
@@ -400,8 +431,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160917_175006.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160917_175006.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160917_175006.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160917_175006.jpg@!original');">
     </td>
     <td>
       <h4> 龙头 </h4>
@@ -414,8 +446,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!original');">
     </td>
     <td>
       <h4> 第十六届全国村长论坛 </h4>
@@ -428,8 +461,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!original');">
     </td>
     <td>
       <h4> 掏耳朵 </h4>
@@ -442,8 +476,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!original');">
     </td>
     <td>
       <h4> LEOV和LOEV </h4>
@@ -456,8 +491,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!original');">
     </td>
     <td>
       <h4> 一列火车从朝鲜开入中国 </h4>
@@ -470,8 +506,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!original');">
     </td>
     <td>
       <h4> 进入中国的火车 </h4>
@@ -484,8 +521,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!original');">
     </td>
     <td>
       <h4> 刻着“鸭绿江”的塑料石头 </h4>
@@ -498,8 +536,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!original');">
     </td>
     <td>
       <h4> 真觉寺五塔匾额 </h4>
@@ -512,8 +551,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!original');">
     </td>
     <td>
       <h4> 寺内陈列的石碑 </h4>
@@ -526,8 +566,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!original');">
     </td>
     <td>
       <h4> 藏文和梵文 </h4>
@@ -540,8 +581,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!original');">
     </td>
     <td>
       <h4> 半张脸的石狮 </h4>
@@ -554,8 +596,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!original');">
     </td>
     <td>
       <h4> 长毛狮子浮雕 </h4>
@@ -568,8 +611,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!original');">
     </td>
     <td>
       <h4> 草书与日文 </h4>
@@ -582,8 +626,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!original');">
     </td>
     <td>
       <h4> 草书与日文 </h4>
@@ -596,8 +641,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!original');">
     </td>
     <td>
       <h4> 草书与日文 </h4>
@@ -608,12 +654,163 @@ Pages:
       </ul>
     </td>
   </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00565.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00565.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-25 19:54:58</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00566.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00566.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-25 19:55:37</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00581.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00581.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-25 20:33:37</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00590.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00590.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-25 20:52:43</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00607.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00607.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-25 22:06:13</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00614.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00614.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-26 10:37:47</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00617.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00617.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-26 10:40:24</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00624.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00624.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-26 10:53:59</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00643.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00643.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-26 11:11:35</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00647.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071225_NewYorkChristmas/DSC00647.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-12-26 11:14:49</li>
+        <li>美国纽约</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
 </table>
   </section>
 
 <section id="bottom_pages_index">
 Pages:
 [1]
+<a href="/zh/photos/interesting_page02.html">[2]</a>
 </section>
 
 </article>

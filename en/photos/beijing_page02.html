@@ -10,9 +10,14 @@ Album: Beijing, China - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -52,8 +57,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06750.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06750.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06750.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06750.JPG@!original');">
     </td>
     <td>
       <h4> Swallow Dipping Water </h4>
@@ -66,8 +72,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06763.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06763.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06763.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06763.JPG@!original');">
     </td>
     <td>
       <h4> Swallow Dipping Water </h4>
@@ -80,8 +87,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!original');">
     </td>
     <td>
       <h4> Sunset And Boat </h4>
@@ -94,8 +102,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!original');">
     </td>
     <td>
       <h4> Sunset And West Mountains </h4>
@@ -108,8 +117,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!original');">
     </td>
     <td>
       <h4> Sunset And West Mountains </h4>
@@ -122,8 +132,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06780.JPG@!original');">
     </td>
     <td>
       <h4> Elder Photograher </h4>
@@ -136,8 +147,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_161420.jpg@!original');">
     </td>
     <td>
       <h4> Cosplay </h4>
@@ -150,8 +162,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_163301.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_163301.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_163301.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/IMG_20160820_163301.jpg@!original');">
     </td>
     <td>
       <h4> Lovers' Clothing </h4>
@@ -164,8 +177,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06781.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06781.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06781.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06781.JPG@!original');">
     </td>
     <td>
       <h4> Prayers </h4>
@@ -178,8 +192,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06785.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06785.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06785.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06785.JPG@!original');">
     </td>
     <td>
       <h4> Readers </h4>
@@ -192,8 +207,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06786.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06786.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06786.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06786.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl Looking at Goldfishes </h4>
@@ -206,8 +222,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06788.JPG@!original');">
     </td>
     <td>
       <h4> Buddist  Word Cloud </h4>
@@ -220,8 +237,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06789.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06789.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06789.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06789.JPG@!original');">
     </td>
     <td>
       <h4> Hitting Bell With Coins </h4>
@@ -234,8 +252,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06792.JPG@!original');">
     </td>
     <td>
       <h4> Incense </h4>
@@ -248,8 +267,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06793.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06793.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06793.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06793.JPG@!original');">
     </td>
     <td>
       <h4> A Girl in Han Clothes </h4>
@@ -262,8 +282,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06797.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06797.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06797.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06797.JPG@!original');">
     </td>
     <td>
       <h4> Flute Player </h4>
@@ -276,8 +297,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!original');">
     </td>
     <td>
       <h4> Stupa </h4>
@@ -290,8 +312,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06799.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06799.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06799.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06799.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl Feeding Goldfishes </h4>
@@ -304,8 +327,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153204.jpg@!original');">
     </td>
     <td>
       <h4> Recruiting Ad </h4>
@@ -318,8 +342,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153355.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153355.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153355.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_153355.jpg@!original');">
     </td>
     <td>
       <h4> Persimmon </h4>
@@ -332,8 +357,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_171548.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_171548.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_171548.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_171548.jpg@!original');">
     </td>
     <td>
       <h4> White Cat </h4>
@@ -346,8 +372,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/IMG_20160821_184050.jpg@!original');">
     </td>
     <td>
       <h4> Pigeon Dump </h4>
@@ -360,8 +387,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06802.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06802.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06802.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06802.JPG@!original');">
     </td>
     <td>
       <h4> A Disturbed Cat </h4>
@@ -374,8 +402,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06804.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06804.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06804.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06804.JPG@!original');">
     </td>
     <td>
       <h4> Black Swan Cleaning </h4>
@@ -388,8 +417,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06806.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06806.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06806.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06806.JPG@!original');">
     </td>
     <td>
       <h4> Black Swan Stretching </h4>
@@ -402,8 +432,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06808.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06808.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06808.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06808.JPG@!original');">
     </td>
     <td>
       <h4> Surround Black Swans </h4>
@@ -416,8 +447,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06810.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06810.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06810.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06810.JPG@!original');">
     </td>
     <td>
       <h4> Wild Flowers </h4>
@@ -430,8 +462,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06811.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06811.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06811.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06811.JPG@!original');">
     </td>
     <td>
       <h4> Wild Flowers and Corridor </h4>
@@ -444,8 +477,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06813.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06813.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06813.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06813.JPG@!original');">
     </td>
     <td>
       <h4> Wild Flowers and Butterflies </h4>
@@ -458,8 +492,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06816.JPG@!original');">
     </td>
     <td>
       <h4> Marble Boat of Yuanmingyuan </h4>
@@ -472,8 +507,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06817.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06817.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06817.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/DSC06817.JPG@!original');">
     </td>
     <td>
       <h4> A Girl Unwilling to Take Picture </h4>
@@ -486,8 +522,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135135.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135135.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135135.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135135.jpg@!original');">
     </td>
     <td>
       <h4> Ants Eating Walnut </h4>
@@ -500,8 +537,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135448.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135448.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135448.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160903_YuanMingYuan/IMG_20160903_135448.jpg@!original');">
     </td>
     <td>
       <h4> A Bicycle and Wheel Chair </h4>
@@ -514,8 +552,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06820.JPG@!original');">
     </td>
     <td>
       <h4> People Taking Pictures of Sunset </h4>
@@ -528,8 +567,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06821.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06821.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06821.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06821.JPG@!original');">
     </td>
     <td>
       <h4> Sunset in the Lake </h4>
@@ -542,8 +582,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06823.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06823.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06823.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06823.JPG@!original');">
     </td>
     <td>
       <h4> Weed with Sunset in the Background </h4>
@@ -556,8 +597,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06824.JPG@!original');">
     </td>
     <td>
       <h4> Taking Picture </h4>
@@ -570,8 +612,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06825.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06825.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06825.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06825.JPG@!original');">
     </td>
     <td>
       <h4> Mid-Autumn Rising Moon </h4>
@@ -584,8 +627,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06833.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06833.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06833.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06833.JPG@!original');">
     </td>
     <td>
       <h4> Moon in the High Sky </h4>
@@ -598,8 +642,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06835.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06835.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06835.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06835.JPG@!original');">
     </td>
     <td>
       <h4> Tourism Spot of Moon Sight </h4>
@@ -612,8 +657,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06838.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06838.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06838.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06838.JPG@!original');">
     </td>
     <td>
       <h4> Remains of Western Mansions </h4>
@@ -626,8 +672,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06839.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06839.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06839.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06839.JPG@!original');">
     </td>
     <td>
       <h4> Remains of Western Mansions </h4>
@@ -640,8 +687,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06840.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06840.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06840.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06840.JPG@!original');">
     </td>
     <td>
       <h4> Remains of Western Mansions </h4>
@@ -654,8 +702,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06843.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06843.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06843.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06843.JPG@!original');">
     </td>
     <td>
       <h4> Remains of Western Mansions </h4>
@@ -668,8 +717,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06844.JPG@!original');">
     </td>
     <td>
       <h4> Taking Picture </h4>
@@ -682,8 +732,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06845.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06845.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06845.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06845.JPG@!original');">
     </td>
     <td>
       <h4> Remains of Western Mansions </h4>
@@ -696,8 +747,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06846.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06846.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06846.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06846.JPG@!original');">
     </td>
     <td>
       <h4> A Boy in the Center of the Maze </h4>
@@ -710,8 +762,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06847.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06847.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06847.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06847.JPG@!original');">
     </td>
     <td>
       <h4> A Boy in the Center of the Maze </h4>
@@ -724,8 +777,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06851.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06851.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06851.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/DSC06851.JPG@!original');">
     </td>
     <td>
       <h4> Selfie in the Center of the Maze </h4>
@@ -738,8 +792,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160915_YuanMingYuan/IMG_20160915_173413.jpg@!original');">
     </td>
     <td>
       <h4> People Taking Pictures of Sunset </h4>

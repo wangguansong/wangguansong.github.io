@@ -10,9 +10,14 @@ Album: Zhenjue Temple - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -47,8 +52,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07059.JPG@!original');">
     </td>
     <td>
       <h4> Plaque of Zhenjue Temple Five Pagoda </h4>
@@ -61,8 +67,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -75,8 +82,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -89,8 +97,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -103,8 +112,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_131338.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_131338.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_131338.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_131338.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -117,8 +127,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_135058.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -131,8 +142,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_141859.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -145,8 +157,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -159,8 +172,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_155929.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -173,8 +187,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073218.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -187,8 +202,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073234.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -201,8 +217,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161120_073250.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>

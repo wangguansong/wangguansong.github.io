@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -51,8 +56,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08135.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08135.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08135.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08135.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -65,8 +71,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08136.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08136.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08136.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08136.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -79,8 +86,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08137.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08137.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08137.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08137.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -93,8 +101,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08138.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08138.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08138.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08138.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -107,8 +116,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08141.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08141.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08141.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08141.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -121,8 +131,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08143.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08143.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08143.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08143.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -135,8 +146,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08144.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08144.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08144.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08144.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -149,8 +161,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08145.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08145.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08145.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08145.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -163,8 +176,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08146.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08146.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08146.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08146.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -177,8 +191,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08147.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08147.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08147.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08147.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -191,8 +206,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08148.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08148.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08148.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08148.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -205,8 +221,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08149.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08149.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08149.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08149.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -219,8 +236,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08153.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08153.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08153.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08153.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -233,8 +251,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110628_Japan/DSC08154.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08154.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110628_Japan/DSC08154.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110628_Japan/DSC08154.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

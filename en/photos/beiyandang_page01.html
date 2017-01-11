@@ -10,9 +10,14 @@ Album: Bei Yandangshan, Zhejiang, China - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -47,8 +52,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!original');">
     </td>
     <td>
       <h4> Pavillion in Air </h4>
@@ -61,8 +67,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06285.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06285.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06285.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06285.JPG@!original');">
     </td>
     <td>
       <h4> Selfie </h4>
@@ -75,8 +82,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!original');">
     </td>
     <td>
       <h4> Temple in Hill </h4>
@@ -89,8 +97,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!original');">
     </td>
     <td>
       <h4> Smokey Cloud </h4>
@@ -103,8 +112,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!original');">
     </td>
     <td>
       <h4> Temple in Hill </h4>
@@ -117,8 +127,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06293.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06293.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06293.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06293.JPG@!original');">
     </td>
     <td>
       <h4> Selfie </h4>
@@ -131,8 +142,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06296.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06296.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06296.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06296.JPG@!original');">
     </td>
     <td>
       <h4> Family Selfie </h4>
@@ -145,8 +157,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06297.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06297.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06297.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06297.JPG@!original');">
     </td>
     <td>
       <h4> Family Selfie </h4>
@@ -159,8 +172,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06298.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06298.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06298.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06298.JPG@!original');">
     </td>
     <td>
       <h4> Family </h4>
@@ -173,8 +187,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!original');">
     </td>
     <td>
       <h4> Guanyin Cave </h4>
@@ -187,8 +202,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06304.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06304.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06304.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06304.JPG@!original');">
     </td>
     <td>
       <h4> A Monk Enjoying Cellphone </h4>
@@ -201,8 +217,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!original');">
     </td>
     <td>
       <h4> Baiyun Nunnery </h4>
@@ -215,8 +232,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06306.JPG@!original');">
     </td>
     <td>
       <h4> Never Too Late to Go Back </h4>
@@ -229,8 +247,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06307.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06307.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06307.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06307.JPG@!original');">
     </td>
     <td>
       <h4> Cat in Nunnery </h4>
@@ -243,8 +262,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06308.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06308.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06308.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06308.JPG@!original');">
     </td>
     <td>
       <h4> Cat in Nunnery Rolling </h4>
@@ -257,8 +277,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!original');">
     </td>
     <td>
       <h4> Ling Peak </h4>
@@ -271,8 +292,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06476.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06476.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06476.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06476.JPG@!original');">
     </td>
     <td>
       <h4> Black and White Cat </h4>
@@ -285,8 +307,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06480.JPG@!original');">
     </td>
     <td>
       <h4> Merit Monument in Production </h4>
@@ -299,8 +322,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!original');">
     </td>
     <td>
       <h4> Morning in Mountains </h4>
@@ -313,8 +337,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06491.JPG@!original');">
     </td>
     <td>
       <h4> An Interestingly Shaped Cave </h4>
@@ -327,8 +352,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!original');">
     </td>
     <td>
       <h4> Drawbridge </h4>
@@ -341,8 +367,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!original');">
     </td>
     <td>
       <h4> A Town Surrounded By Mountains </h4>
@@ -355,8 +382,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!original');">
     </td>
     <td>
       <h4> Drawbridge </h4>
@@ -369,8 +397,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!original');">
     </td>
     <td>
       <h4> House on Top of the Hill </h4>
@@ -383,8 +412,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!original');">
     </td>
     <td>
       <h4> Benjue Academy </h4>
@@ -397,8 +427,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!original');">
     </td>
     <td>
       <h4> Front of the Academy </h4>
@@ -411,8 +442,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06526.JPG@!original');">
     </td>
     <td>
       <h4> Ball Shaped Lava Rock </h4>
@@ -425,8 +457,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06536.JPG@!original');">
     </td>
     <td>
       <h4> Selfie with Dalongqiu </h4>
@@ -439,8 +472,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!original');">
     </td>
     <td>
       <h4> Full Shot of Dalongqiu </h4>
@@ -453,8 +487,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!original');">
     </td>
     <td>
       <h4> Dalongqiu the Waterfall </h4>
@@ -467,8 +502,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06548.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06548.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06548.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06548.JPG@!original');">
     </td>
     <td>
       <h4> A Girl Resting </h4>
@@ -481,8 +517,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!original');">
     </td>
     <td>
       <h4> Dense Trees </h4>
@@ -495,8 +532,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!original');">
     </td>
     <td>
       <h4> Mountain under Sunshine </h4>
@@ -509,8 +547,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06564.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06564.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06564.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06564.JPG@!original');">
     </td>
     <td>
       <h4> Seden Chair </h4>
@@ -523,8 +562,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06566.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06566.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06566.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06566.JPG@!original');">
     </td>
     <td>
       <h4> A Flock of Cocks </h4>
@@ -537,8 +577,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!original');">
     </td>
     <td>
       <h4> Xiansheng Gate </h4>
@@ -551,8 +592,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!original');">
     </td>
     <td>
       <h4> Thin Waterfall </h4>
@@ -565,8 +607,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!original');">
     </td>
     <td>
       <h4> Abandoned Wooden House </h4>
@@ -579,8 +622,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!original');">
     </td>
     <td>
       <h4> Abandoned Wooden House </h4>
@@ -593,8 +637,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_080954.jpg@!original');">
     </td>
     <td>
       <h4> A Book on Traditional Chinese Clothing </h4>
@@ -607,8 +652,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/IMG_20160304_154734.jpg@!original');">
     </td>
     <td>
       <h4> Traveling Signatures </h4>

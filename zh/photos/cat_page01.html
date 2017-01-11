@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -50,8 +55,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07060.JPG@!original');">
     </td>
     <td>
       <h4> 寺内陈列的石碑 </h4>
@@ -64,8 +70,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07061.JPG@!original');">
     </td>
     <td>
       <h4> 远望的黑猫 </h4>
@@ -78,8 +85,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/DSC07064.JPG@!original');">
     </td>
     <td>
       <h4> 挠痒的白猫 </h4>
@@ -92,14 +100,30 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161119_ZhenjueTemple/IMG_20161119_142748.jpg@!original');">
     </td>
     <td>
       <h4> 真觉寺的黑猫 </h4>
       <ul>
         <li>2016-11-19 14:27:49</li>
         <li>中国北京</li>
+        <li></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="http://images.guansong.wang/2007/2007_Misc/DSC00048.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/2007_Misc/DSC00048.JPG@!original');">
+    </td>
+    <td>
+      <h4>  </h4>
+      <ul>
+        <li>2007-05-07 18:36:31</li>
+        <li>美国教堂山</li>
         <li></li>
       </ul>
     </td>

@@ -10,9 +10,14 @@ Album: Beijing, China - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -52,8 +57,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03435.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03435.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03435.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03435.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -66,8 +72,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03446.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03446.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03446.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03446.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -80,8 +87,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03452.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03452.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03452.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03452.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -94,8 +102,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03571.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03571.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03571.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03571.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -108,8 +117,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03589.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03589.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03589.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03589.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -122,8 +132,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03596.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03596.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03596.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03596.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -136,8 +147,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03598.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03598.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03598.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03598.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -150,8 +162,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03603.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03603.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03603.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03603.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -164,8 +177,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03606.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03606.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03606.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03606.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -178,8 +192,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03631.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03631.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03631.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03631.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -192,8 +207,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03670.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03670.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03670.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03670.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -206,8 +222,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03677.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03677.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03677.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03677.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -220,8 +237,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03682.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03682.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03682.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03682.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -234,8 +252,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03683.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03683.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03683.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03683.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -248,8 +267,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03732.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03732.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03732.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03732.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -262,8 +282,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03751.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03751.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03751.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03751.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -276,8 +297,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03764.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03764.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03764.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03764.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -290,8 +312,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03777.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03777.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03777.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03777.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -304,8 +327,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03782.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03782.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03782.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03782.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -318,8 +342,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03784.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03784.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03784.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03784.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -332,8 +357,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03787.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03787.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03787.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03787.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -346,8 +372,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03795.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03795.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03795.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03795.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -360,8 +387,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03811.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03811.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03811.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03811.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -374,8 +402,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03817.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03817.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03817.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03817.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -388,8 +417,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03818.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03818.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03818.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03818.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -402,8 +432,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03819.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03819.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03819.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03819.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -416,8 +447,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03844.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03844.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03844.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03844.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -430,8 +462,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03854.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03854.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03854.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03854.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -444,8 +477,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03861.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03861.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03861.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03861.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -458,8 +492,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03878.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03878.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03878.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03878.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -472,8 +507,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03901.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03901.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03901.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03901.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -486,8 +522,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03907.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03907.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03907.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03907.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -500,8 +537,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03908.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03908.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03908.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03908.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -514,8 +552,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03909.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03909.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03909.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03909.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -528,8 +567,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03927.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03927.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03927.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03927.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -542,8 +582,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03933.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03933.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03933.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03933.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -556,8 +597,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03938.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03938.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03938.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03938.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -570,8 +612,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03953.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03953.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03953.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03953.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -584,8 +627,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03971.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03971.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03971.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03971.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -598,8 +642,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC03976.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03976.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC03976.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC03976.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -612,8 +657,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC04054.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC04054.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC04054.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC04054.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -626,8 +672,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC04060.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC04060.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC04060.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC04060.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -640,8 +687,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090615_Beijing/DSC04067.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC04067.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090615_Beijing/DSC04067.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090615_Beijing/DSC04067.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -654,8 +702,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110613_Beijing/DSC09840.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09840.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09840.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110613_Beijing/DSC09840.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -668,8 +717,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110613_Beijing/DSC09841.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09841.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09841.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110613_Beijing/DSC09841.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -682,8 +732,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110613_Beijing/DSC09847.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09847.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09847.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110613_Beijing/DSC09847.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -696,8 +747,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110613_Beijing/DSC09848.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09848.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09848.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110613_Beijing/DSC09848.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -710,8 +762,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110613_Beijing/DSC09854.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09854.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09854.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110613_Beijing/DSC09854.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -724,8 +777,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110613_Beijing/DSC09860.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09860.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09860.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110613_Beijing/DSC09860.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -738,8 +792,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20110613_Beijing/DSC09863.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09863.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20110613_Beijing/DSC09863.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20110613_Beijing/DSC09863.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

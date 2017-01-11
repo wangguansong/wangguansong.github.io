@@ -10,9 +10,14 @@ Album: Wilmington, NC, U.S. - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -47,8 +52,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080831_Wilmington/DSC01777.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01777.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01777.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01777.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -61,8 +67,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080831_Wilmington/DSC01779.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01779.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01779.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01779.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -75,8 +82,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080831_Wilmington/DSC01787.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01787.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01787.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01787.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -89,8 +97,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080831_Wilmington/DSC01788.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01788.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01788.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01788.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -103,8 +112,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080831_Wilmington/DSC01795.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01795.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01795.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01795.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -117,8 +127,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080831_Wilmington/DSC01803.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01803.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01803.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01803.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -131,8 +142,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080831_Wilmington/DSC01804.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01804.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080831_Wilmington/DSC01804.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080831_Wilmington/DSC01804.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -145,8 +157,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07808.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07808.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07808.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07808.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -159,8 +172,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07815.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07815.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07815.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07815.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -173,8 +187,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07819.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07819.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07819.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07819.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -187,8 +202,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07826.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07826.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07826.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07826.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -201,8 +217,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07831.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07831.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07831.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07831.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -215,8 +232,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07838.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07838.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07838.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07838.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -229,8 +247,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07841.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07841.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07841.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07841.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -243,8 +262,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07849.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07849.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07849.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07849.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -257,8 +277,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07852.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07852.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07852.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07852.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -271,8 +292,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07855.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07855.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07855.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07855.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -285,8 +307,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07859.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07859.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07859.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07859.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -299,8 +322,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07864.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07864.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07864.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07864.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -313,8 +337,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07866.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07866.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07866.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07866.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -327,8 +352,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07878.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07878.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07878.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07878.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -341,8 +367,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07880.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07880.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07880.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07880.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -355,8 +382,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07881.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07881.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07881.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07881.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -369,8 +397,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07884.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07884.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07884.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07884.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -383,8 +412,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07888.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07888.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07888.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07888.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -397,8 +427,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07890.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07890.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07890.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07890.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -411,8 +442,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100309_Wilmington/DSC07895.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07895.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100309_Wilmington/DSC07895.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100309_Wilmington/DSC07895.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -425,8 +457,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -439,8 +472,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -453,8 +487,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -467,8 +502,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -481,8 +517,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -495,8 +532,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -509,8 +547,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -523,8 +562,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -537,8 +577,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -551,8 +592,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -565,8 +607,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -579,8 +622,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -593,8 +637,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -607,8 +652,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -621,8 +667,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -635,8 +682,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -649,8 +697,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

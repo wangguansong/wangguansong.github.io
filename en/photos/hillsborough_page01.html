@@ -10,9 +10,14 @@ Album: Hillsborough, NC, U.S. - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -47,8 +52,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07912.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07912.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07912.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07912.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -61,8 +67,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07917.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07917.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07917.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07917.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -75,8 +82,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07918.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07918.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07918.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07918.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -89,8 +97,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07936.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07936.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07936.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07936.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -103,8 +112,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07938.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07938.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07938.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07938.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -117,8 +127,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07939.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07939.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07939.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07939.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -131,8 +142,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07940.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07940.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07940.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07940.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -145,8 +157,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07942.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07942.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07942.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07942.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -159,8 +172,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07946.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07946.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100321_Occoneechee/DSC07946.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100321_Occoneechee/DSC07946.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

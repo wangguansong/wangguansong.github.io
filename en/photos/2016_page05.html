@@ -10,9 +10,14 @@ Album: 2016 - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -53,8 +58,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06857.JPG@!original');">
     </td>
     <td>
       <h4> A Cat Who Cares Nobody </h4>
@@ -67,8 +73,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06859.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl In Social Events </h4>
@@ -81,8 +88,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06860.JPG@!original');">
     </td>
     <td>
       <h4> Crowded Kuanzhai Alley </h4>
@@ -95,8 +103,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06862.JPG@!original');">
     </td>
     <td>
       <h4> Crowded Kuanzhai Alley </h4>
@@ -109,8 +118,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06864.JPG@!original');">
     </td>
     <td>
       <h4> Together Selfie </h4>
@@ -123,8 +133,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06865.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -137,8 +148,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06868.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -151,8 +163,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06869.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -165,8 +178,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06872.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -179,8 +193,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06874.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -193,8 +208,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06877.JPG@!original');">
     </td>
     <td>
       <h4> Arty Photos </h4>
@@ -207,8 +223,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/DSC06879.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl Looking Around </h4>
@@ -221,8 +238,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160923_150214.jpg@!original');">
     </td>
     <td>
       <h4> The 16st National Village Head Forum </h4>
@@ -235,8 +253,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_082424.jpg@!original');">
     </td>
     <td>
       <h4> China R Meeting Name Card </h4>
@@ -249,8 +268,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160924_191940.jpg@!original');">
     </td>
     <td>
       <h4> Chengdu Hotpot </h4>
@@ -263,8 +283,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_100658.jpg@!original');">
     </td>
     <td>
       <h4> Cleaning Inner Ears </h4>
@@ -277,8 +298,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160923_Chengdu/IMG_20160925_155952.jpg@!original');">
     </td>
     <td>
       <h4> Cellphone Charging Station </h4>
@@ -291,8 +313,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06883.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06883.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06883.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06883.JPG@!original');">
     </td>
     <td>
       <h4> Seagull on Yalu River </h4>
@@ -305,8 +328,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06884.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06884.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06884.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06884.JPG@!original');">
     </td>
     <td>
       <h4> China and North Korean Border in Heavy Fog </h4>
@@ -319,8 +343,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06885.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06885.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06885.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06885.JPG@!original');">
     </td>
     <td>
       <h4> Broken Wall on Yalu River </h4>
@@ -333,8 +358,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06889.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06889.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06889.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06889.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl in Korean Costume </h4>
@@ -347,8 +373,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06890.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06890.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06890.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06890.JPG@!original');">
     </td>
     <td>
       <h4> Fishing Boat on River </h4>
@@ -361,8 +388,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06892.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06892.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06892.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06892.JPG@!original');">
     </td>
     <td>
       <h4> Fisherman Collecting Crabbing Cages </h4>
@@ -375,8 +403,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06893.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06893.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06893.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06893.JPG@!original');">
     </td>
     <td>
       <h4> Fisherman Collecting Crabs from Cages </h4>
@@ -389,8 +418,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06895.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06895.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06895.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06895.JPG@!original');">
     </td>
     <td>
       <h4> Egret </h4>
@@ -403,8 +433,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06896.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06896.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06896.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06896.JPG@!original');">
     </td>
     <td>
       <h4> A Little Girl in Korean Costume </h4>
@@ -417,8 +448,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06898.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06898.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06898.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06898.JPG@!original');">
     </td>
     <td>
       <h4> Fishing Boat with National Flag </h4>
@@ -431,8 +463,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06899.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06899.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06899.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06899.JPG@!original');">
     </td>
     <td>
       <h4> A Walking Gentleman </h4>
@@ -445,8 +478,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/DSC06902.JPG@!original');">
     </td>
     <td>
       <h4> LEOV and LOEV </h4>
@@ -459,8 +493,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071807.jpg@!original');">
     </td>
     <td>
       <h4> A Train from North Korea to China </h4>
@@ -473,8 +508,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_071822.jpg@!original');">
     </td>
     <td>
       <h4> A Train Entering China </h4>
@@ -487,8 +523,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_080145.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_080145.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_080145.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_080145.jpg@!original');">
     </td>
     <td>
       <h4> Houses by the River </h4>
@@ -501,8 +538,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161003_Dandong/IMG_20161003_081859.jpg@!original');">
     </td>
     <td>
       <h4> Plastic Stone Inscribed with Yalu River </h4>
@@ -515,8 +553,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06905.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06905.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06905.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06905.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -529,8 +568,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06906.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06906.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06906.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06906.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -543,8 +583,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06907.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06907.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06907.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06907.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -557,8 +598,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06908.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06908.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06908.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06908.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -571,8 +613,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06909.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06909.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06909.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06909.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -585,8 +628,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06911.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06911.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06911.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/DSC06911.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -599,8 +643,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_172649.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_172649.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_172649.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_172649.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -613,8 +658,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_173813.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_173813.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_173813.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161023_YuanMingYuan/IMG_20161023_173813.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -627,8 +673,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06918.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06918.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06918.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/DSC06918.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -641,8 +688,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06920.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06920.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06920.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/DSC06920.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -655,8 +703,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06924.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06924.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06924.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/DSC06924.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -669,8 +718,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06926.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06926.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06926.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/DSC06926.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -683,8 +733,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06928.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06928.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06928.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/DSC06928.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -697,8 +748,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06931.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06931.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06931.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/DSC06931.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -711,8 +763,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06932.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06932.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/DSC06932.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/DSC06932.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -725,8 +778,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_162421.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_162421.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_162421.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_162421.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -739,8 +793,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_164144.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_164144.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_164144.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20161106_OlympicPark/IMG_20161106_164144.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>

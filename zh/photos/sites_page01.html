@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -51,8 +56,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06282.JPG@!original');">
     </td>
     <td>
       <h4> 空中亭 </h4>
@@ -65,8 +71,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06288.JPG@!original');">
     </td>
     <td>
       <h4> 山中寺庙 </h4>
@@ -79,8 +86,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06291.JPG@!original');">
     </td>
     <td>
       <h4> 云烟 </h4>
@@ -93,8 +101,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06292.JPG@!original');">
     </td>
     <td>
       <h4> 山中寺庙 </h4>
@@ -107,8 +116,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06300.JPG@!original');">
     </td>
     <td>
       <h4> 观音洞 </h4>
@@ -121,8 +131,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06305.JPG@!original');">
     </td>
     <td>
       <h4> 白云庵 </h4>
@@ -135,8 +146,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160209_BeiYanDang/DSC06309.JPG@!original');">
     </td>
     <td>
       <h4> 合掌峰 </h4>
@@ -149,8 +161,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!original');">
     </td>
     <td>
       <h4> 天一阁牌匾 </h4>
@@ -163,8 +176,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!original');">
     </td>
     <td>
       <h4> 宁波美术馆 </h4>
@@ -177,8 +191,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩 </h4>
@@ -191,8 +206,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩书店 </h4>
@@ -205,8 +221,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!original');">
     </td>
     <td>
       <h4> 宁波住宅楼 </h4>
@@ -219,8 +236,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!original');">
     </td>
     <td>
       <h4> 断壁和天主堂 </h4>
@@ -233,8 +251,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩 </h4>
@@ -247,8 +266,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩街景 </h4>
@@ -261,8 +281,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06382.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06382.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06382.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06382.JPG@!original');">
     </td>
     <td>
       <h4> 旅顺口老虎尾 </h4>
@@ -275,8 +296,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06388.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06388.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06388.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06388.JPG@!original');">
     </td>
     <td>
       <h4> 龙河家园 </h4>
@@ -289,8 +311,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06390.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06390.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06390.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06390.JPG@!original');">
     </td>
     <td>
       <h4> 上海城隍庙街道 </h4>
@@ -303,8 +326,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06403.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06403.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06403.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06403.JPG@!original');">
     </td>
     <td>
       <h4> 城隍庙 </h4>
@@ -317,8 +341,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06404.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06404.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06404.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06404.JPG@!original');">
     </td>
     <td>
       <h4> 日落 </h4>
@@ -331,8 +356,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06410.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06410.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06410.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06410.JPG@!original');">
     </td>
     <td>
       <h4> 外滩傍晚 </h4>
@@ -345,8 +371,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06411.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06411.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06411.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06411.JPG@!original');">
     </td>
     <td>
       <h4> 外滩傍晚 </h4>
@@ -359,8 +386,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06445.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06445.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06445.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06445.JPG@!original');">
     </td>
     <td>
       <h4> 上海市政府 </h4>
@@ -373,8 +401,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06446.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06446.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06446.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06446.JPG@!original');">
     </td>
     <td>
       <h4> 外滩夜晚 </h4>
@@ -387,8 +416,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06467.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06467.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06467.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06467.JPG@!original');">
     </td>
     <td>
       <h4> 外滩附近的搬迁区 </h4>
@@ -401,8 +431,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06468.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06468.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06468.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160226_LvShun_Shanghai/DSC06468.JPG@!original');">
     </td>
     <td>
       <h4> 外滩附近的搬迁区 </h4>
@@ -415,8 +446,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06486.JPG@!original');">
     </td>
     <td>
       <h4> 山中早晨 </h4>
@@ -429,8 +461,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06492.JPG@!original');">
     </td>
     <td>
       <h4> 吊桥 </h4>
@@ -443,8 +476,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06502.JPG@!original');">
     </td>
     <td>
       <h4> 环山的小镇 </h4>
@@ -457,8 +491,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06504.JPG@!original');">
     </td>
     <td>
       <h4> 吊桥 </h4>
@@ -471,8 +506,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06509.JPG@!original');">
     </td>
     <td>
       <h4> 山上小房 </h4>
@@ -485,8 +521,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06514.JPG@!original');">
     </td>
     <td>
       <h4> 雁荡山本觉书院 </h4>
@@ -499,8 +536,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06515.JPG@!original');">
     </td>
     <td>
       <h4> 书院门前 </h4>
@@ -513,8 +551,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06537.JPG@!original');">
     </td>
     <td>
       <h4> 大龙湫全景 </h4>
@@ -527,8 +566,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06543.JPG@!original');">
     </td>
     <td>
       <h4> 大龙湫 </h4>
@@ -541,8 +581,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06550.JPG@!original');">
     </td>
     <td>
       <h4> 密林 </h4>
@@ -555,8 +596,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06562.JPG@!original');">
     </td>
     <td>
       <h4> 阳光下的山 </h4>
@@ -569,8 +611,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06579.JPG@!original');">
     </td>
     <td>
       <h4> 显胜门 </h4>
@@ -583,8 +626,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06581.JPG@!original');">
     </td>
     <td>
       <h4> 小瀑布 </h4>
@@ -597,8 +641,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06599.JPG@!original');">
     </td>
     <td>
       <h4> 废弃的木屋 </h4>
@@ -611,8 +656,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160303_BeiYanDang/DSC06623.JPG@!original');">
     </td>
     <td>
       <h4> 废弃的木屋 </h4>
@@ -625,8 +671,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06649.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06649.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06649.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06649.JPG@!original');">
     </td>
     <td>
       <h4> 圆明园湖景 </h4>
@@ -639,8 +686,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06666.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06666.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06666.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/DSC06666.JPG@!original');">
     </td>
     <td>
       <h4> 园林小路 </h4>
@@ -653,8 +701,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_151218.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_151218.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_151218.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_151218.jpg@!original');">
     </td>
     <td>
       <h4> 暑假的清华大学 </h4>
@@ -667,8 +716,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_160633.jpg@!original">
-      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_160633.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_160633.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160813_YuanMingYuan/IMG_20160813_160633.jpg@!original');">
     </td>
     <td>
       <h4> 荷花池 </h4>
@@ -681,8 +731,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06714.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06714.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06714.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06714.JPG@!original');">
     </td>
     <td>
       <h4> 九州景区 </h4>
@@ -695,8 +746,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06771.JPG@!original');">
     </td>
     <td>
       <h4> 落日和游船 </h4>
@@ -709,8 +761,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06776.JPG@!original');">
     </td>
     <td>
       <h4> 落日和西山 </h4>
@@ -723,8 +776,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160820_YuanMingYuan/DSC06778.JPG@!original');">
     </td>
     <td>
       <h4> 落日和西山 </h4>
@@ -737,8 +791,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160821_BaDaChu/DSC06798.JPG@!original');">
     </td>
     <td>
       <h4> 舍利塔 </h4>

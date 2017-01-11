@@ -10,9 +10,14 @@ Album: 2009 - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -54,8 +59,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06083.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06083.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06083.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06083.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -68,8 +74,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06087.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06087.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06087.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06087.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -82,8 +89,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06088.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06088.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06088.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06088.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -96,8 +104,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06090.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06090.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06090.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06090.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -110,8 +119,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06091.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06091.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06091.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06091.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -124,8 +134,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06092.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06092.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06092.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06092.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -138,8 +149,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06098.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06098.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06098.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06098.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -152,8 +164,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06106.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06106.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06106.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06106.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -166,8 +179,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06114.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06114.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06114.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06114.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -180,8 +194,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06123.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06123.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06123.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06123.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -194,8 +209,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06128.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06128.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06128.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06128.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -208,8 +224,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06129.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06129.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06129.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06129.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -222,8 +239,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06130.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06130.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06130.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06130.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -236,8 +254,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06132.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06132.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06132.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06132.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -250,8 +269,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06135.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06135.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06135.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06135.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -264,8 +284,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06143.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06143.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06143.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06143.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -278,8 +299,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06149.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06149.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06149.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06149.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -292,8 +314,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06154.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06154.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06154.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06154.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -306,8 +329,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06155.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06155.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06155.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06155.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -320,8 +344,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06157.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06157.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06157.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06157.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -334,8 +359,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06159.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06159.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06159.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06159.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -348,8 +374,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06166.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06166.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06166.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06166.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -362,8 +389,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06167.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06167.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06167.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06167.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -376,8 +404,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091022_State_Fair/DSC06168.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06168.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091022_State_Fair/DSC06168.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091022_State_Fair/DSC06168.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -390,8 +419,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06177.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06177.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06177.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06177.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -404,8 +434,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06193.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06193.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06193.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06193.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -418,8 +449,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06195.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06195.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06195.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06195.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -432,8 +464,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06198.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06198.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06198.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06198.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -446,8 +479,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06199.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06199.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06199.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06199.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -460,8 +494,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06210.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06210.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06210.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06210.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -474,8 +509,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06214.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06214.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06214.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091024_Bolin_Creek_Trail/DSC06214.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -488,8 +524,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06229.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06229.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06229.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06229.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -502,8 +539,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06231.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06231.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06231.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06231.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -516,8 +554,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06241.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06241.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06241.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06241.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -530,8 +569,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06244.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06244.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06244.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06244.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -544,8 +584,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06248.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06248.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06248.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06248.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -558,8 +599,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06257.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06257.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06257.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06257.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -572,8 +614,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06259.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06259.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06259.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06259.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -586,8 +629,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06270.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06270.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06270.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06270.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -600,8 +644,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06282.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06282.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06282.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06282.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -614,8 +659,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06294.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06294.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06294.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06294.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -628,8 +674,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06296.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06296.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06296.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06296.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -642,8 +689,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06299.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06299.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06299.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06299.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -656,8 +704,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06305.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06305.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06305.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06305.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -670,8 +719,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06309.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06309.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06309.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06309.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -684,8 +734,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06313.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06313.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06313.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06313.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -698,8 +749,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06317.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06317.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06317.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06317.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -712,8 +764,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06320.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06320.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06320.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06320.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -726,8 +779,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06327.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06327.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06327.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06327.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -740,8 +794,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06329.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06329.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06329.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091025_Hanging_Rock/DSC06329.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

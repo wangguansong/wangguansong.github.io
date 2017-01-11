@@ -10,9 +10,14 @@ Album: Bald Head Island - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -47,8 +52,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09132.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -61,8 +67,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09136.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -75,8 +82,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09139.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -89,8 +97,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09143.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -103,8 +112,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09152.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -117,8 +127,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09153.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -131,8 +142,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09157.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -145,8 +157,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09165.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -159,8 +172,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09184.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -173,8 +187,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09186.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -187,8 +202,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09190.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -201,8 +217,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09213.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -215,8 +232,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09214.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -229,8 +247,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09219.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -243,8 +262,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09222.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -257,8 +277,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09234.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -271,8 +292,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100905_Bald_Head_Is/DSC09237.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

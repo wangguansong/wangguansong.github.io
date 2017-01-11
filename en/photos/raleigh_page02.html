@@ -10,9 +10,14 @@ Album: Raleigh, NC, U.S. - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -48,8 +53,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09328.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09328.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09328.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09328.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -62,8 +68,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09333.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09333.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09333.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09333.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -76,8 +83,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09339.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09339.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09339.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09339.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -90,8 +98,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09342.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09342.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09342.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09342.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -104,8 +113,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09349.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09349.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09349.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09349.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -118,8 +128,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09355.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09355.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09355.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09355.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -132,8 +143,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09359.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09359.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09359.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09359.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -146,8 +158,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09360.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09360.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09360.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09360.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -160,8 +173,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09369.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09369.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09369.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09369.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -174,8 +188,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09372.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09372.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09372.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09372.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -188,8 +203,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20101023_State_Fair/DSC09374.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09374.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20101023_State_Fair/DSC09374.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20101023_State_Fair/DSC09374.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

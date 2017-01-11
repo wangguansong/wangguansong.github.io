@@ -10,9 +10,14 @@ Album: Weekend - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -51,8 +56,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/DSC07102.JPG@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/DSC07102.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/DSC07102.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/DSC07102.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -65,8 +71,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_134120.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_134120.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_134120.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_134120.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -79,8 +86,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_140512.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_140512.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_140512.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_140512.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -93,8 +101,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_141636.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_141636.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_141636.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_141636.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -107,8 +116,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142033.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142033.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142033.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142033.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -121,8 +131,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142122.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142122.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142122.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_142122.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -135,8 +146,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150416.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150416.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150416.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150416.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -149,8 +161,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150551.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150551.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150551.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_150551.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -163,8 +176,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_152240.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_152240.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_152240.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_152240.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -177,8 +191,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160143.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160143.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160143.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160143.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -191,8 +206,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160307.jpg@!original">
-      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160307.jpg@!small" /></a>
+      <img src="http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160307.jpg@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2017/20170108_BeijingZoo/IMG_20170108_160307.jpg@!original');">
     </td>
     <td>
       <h4>  </h4>

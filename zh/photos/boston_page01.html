@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -50,8 +55,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00896.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00896.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00896.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00896.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -64,8 +70,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00897.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00897.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00897.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00897.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -78,8 +85,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00900.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00900.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00900.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00900.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -92,8 +100,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00912.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00912.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00912.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00912.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -106,8 +115,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00917.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00917.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00917.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00917.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -120,8 +130,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00920.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00920.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00920.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00920.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -134,8 +145,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00922.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00922.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00922.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00922.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -148,8 +160,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00923.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00923.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00923.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00923.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -162,8 +175,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00925.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00925.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00925.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00925.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -176,8 +190,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00929.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00929.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00929.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00929.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -190,8 +205,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2007/20071230_Boston/DSC00936.JPG@!original">
-      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00936.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2007/20071230_Boston/DSC00936.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2007/20071230_Boston/DSC00936.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

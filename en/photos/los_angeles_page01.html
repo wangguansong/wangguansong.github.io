@@ -10,9 +10,14 @@ Album: Los Angeles, CA, U.S. - WGS
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>Guansong Wang's Website</h1>
@@ -47,8 +52,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06611.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06611.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06611.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06611.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -61,8 +67,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06613.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06613.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06613.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06613.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -75,8 +82,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06618.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06618.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06618.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06618.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -89,8 +97,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06630.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06630.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06630.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06630.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -103,8 +112,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06635.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06635.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06635.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06635.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -117,8 +127,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06639.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06639.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06639.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06639.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -131,8 +142,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06651.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06651.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06651.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06651.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -145,8 +157,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06664.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06664.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06664.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06664.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -159,8 +172,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06712.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06712.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06712.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06712.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -173,8 +187,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06730.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06730.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06730.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06730.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -187,8 +202,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06744.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06744.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06744.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06744.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -201,8 +217,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06764.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06764.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06764.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06764.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -215,8 +232,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06771.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06771.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06771.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06771.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -229,8 +247,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06775.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06775.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06775.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06775.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -243,8 +262,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06783.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06783.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06783.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06783.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -257,8 +277,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06788.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06788.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06788.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06788.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -271,8 +292,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06790.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06790.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06790.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06790.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -285,8 +307,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06791.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06791.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06791.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06791.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -299,8 +322,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06793.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06793.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06793.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06793.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -313,8 +337,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06796.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06796.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06796.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06796.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -327,8 +352,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06797.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06797.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06797.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06797.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -341,8 +367,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06815.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06815.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06815.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06815.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -355,8 +382,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC06822.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06822.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC06822.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC06822.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -369,8 +397,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC07678.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07678.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07678.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC07678.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -383,8 +412,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC07695.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07695.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07695.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC07695.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -397,8 +427,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC07700.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07700.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07700.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC07700.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -411,8 +442,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC07710.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07710.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07710.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC07710.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -425,8 +457,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC07715.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07715.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07715.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC07715.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -439,8 +472,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC07717.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07717.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07717.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC07717.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -453,8 +487,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20091222_South_California/DSC07720.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07720.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20091222_South_California/DSC07720.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20091222_South_California/DSC07720.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

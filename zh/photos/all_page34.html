@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -85,8 +90,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08788.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08788.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08788.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08788.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -99,8 +105,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08789.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08789.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08789.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08789.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -113,8 +120,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08792.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08792.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08792.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08792.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -127,8 +135,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08793.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08793.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08793.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08793.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -141,8 +150,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08794.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08794.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08794.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08794.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -155,8 +165,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08797.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08797.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08797.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08797.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -169,8 +180,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08798.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08798.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08798.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08798.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -183,8 +195,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08802.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08802.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08802.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08802.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -197,8 +210,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08803.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08803.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08803.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08803.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -211,8 +225,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08808.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08808.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08808.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08808.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -225,8 +240,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08815.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08815.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08815.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08815.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -239,8 +255,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08816.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08816.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08816.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08816.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -253,8 +270,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08817.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08817.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08817.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08817.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -267,8 +285,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08818.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08818.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08818.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08818.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -281,8 +300,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08819.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08819.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08819.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08819.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -295,8 +315,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08820.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08820.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08820.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08820.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -309,8 +330,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08821.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08821.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08821.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08821.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -323,8 +345,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08835.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08835.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08835.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08835.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -337,8 +360,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08848.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08848.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08848.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08848.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -351,8 +375,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08855.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08855.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08855.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08855.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -365,8 +390,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08856.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08856.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08856.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08856.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -379,8 +405,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08858.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08858.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08858.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08858.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -393,8 +420,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08861.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08861.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08861.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08861.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -407,8 +435,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08870.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08870.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08870.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08870.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -421,8 +450,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08874.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08874.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08874.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08874.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -435,8 +465,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08875.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08875.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08875.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08875.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -449,8 +480,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08877.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08877.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08877.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08877.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -463,8 +495,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08882.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08882.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08882.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08882.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -477,8 +510,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08884.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08884.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08884.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08884.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -491,8 +525,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08886.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08886.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08886.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08886.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -505,8 +540,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08894.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08894.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08894.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08894.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -519,8 +555,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08897.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08897.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08897.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08897.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -533,8 +570,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08905.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08905.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08905.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08905.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -547,8 +585,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08909.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08909.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08909.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08909.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -561,8 +600,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08911.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08911.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08911.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08911.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -575,8 +615,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08912.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08912.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08912.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08912.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -589,8 +630,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08917.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08917.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08917.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08917.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -603,8 +645,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08921.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08921.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08921.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08921.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -617,8 +660,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08924.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08924.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08924.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08924.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -631,8 +675,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08926.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08926.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08926.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08926.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -645,8 +690,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08930.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08930.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08930.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08930.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -659,8 +705,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08939.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08939.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08939.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08939.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -673,8 +720,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08941.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08941.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08941.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08941.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -687,8 +735,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08957.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08957.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08957.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08957.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -701,8 +750,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08961.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08961.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08961.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08961.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -715,8 +765,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08966.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08966.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08966.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08966.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -729,8 +780,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08968.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08968.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08968.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08968.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -743,8 +795,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08971.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08971.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08971.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08971.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -757,8 +810,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08974.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08974.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08974.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08974.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -771,8 +825,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08975.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08975.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08975.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111222_NYC_Philly/DSC08975.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

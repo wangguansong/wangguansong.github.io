@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -54,8 +59,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2323.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2323.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2323.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2323.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -68,8 +74,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2339.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2339.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2339.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2339.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -82,8 +89,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2452.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2452.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2452.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2452.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -96,8 +104,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2501.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2501.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2501.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2501.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -110,8 +119,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2524.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2524.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2524.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2524.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -124,8 +134,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2525.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2525.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2525.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2525.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -138,8 +149,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2538.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2538.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2538.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2538.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -152,8 +164,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2545.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2545.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2545.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2545.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -166,8 +179,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2549.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2549.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2549.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2549.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -180,8 +194,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2556.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2556.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2556.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2556.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -194,8 +209,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2589.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2589.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2589.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2589.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -208,8 +224,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2590.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2590.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2590.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2590.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -222,8 +239,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2595.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2595.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2595.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2595.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -236,8 +254,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/IMG_2605.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2605.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/IMG_2605.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/IMG_2605.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -250,8 +269,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20081223_Disney/JMS0UMOZ[SHRYP)IDN7@SX6.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20081223_Disney/JMS0UMOZ[SHRYP)IDN7@SX6.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20081223_Disney/JMS0UMOZ[SHRYP)IDN7@SX6.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20081223_Disney/JMS0UMOZ[SHRYP)IDN7@SX6.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

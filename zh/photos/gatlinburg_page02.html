@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -51,8 +56,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08668.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08668.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08668.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08668.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -65,8 +71,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08671.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08671.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08671.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08671.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -79,8 +86,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08676.JPG@!original">
-      <img src="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08676.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08676.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2011/20111015_Great_Smokey_Mnt/DSC08676.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

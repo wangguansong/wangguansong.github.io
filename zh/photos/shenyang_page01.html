@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -51,8 +56,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01504.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01504.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01504.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01504.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -65,8 +71,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01515.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01515.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01515.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01515.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -79,8 +86,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01516.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01516.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01516.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01516.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -93,8 +101,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01521.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01521.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01521.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01521.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -107,8 +116,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01524.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01524.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01524.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01524.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -121,8 +131,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01526.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01526.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01526.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01526.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -135,8 +146,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01533.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01533.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01533.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01533.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -149,8 +161,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2008/20080515_China/DSC01561.JPG@!original">
-      <img src="http://images.guansong.wang/2008/20080515_China/DSC01561.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2008/20080515_China/DSC01561.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2008/20080515_China/DSC01561.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -163,8 +176,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/2009_Misc/DSC05463.JPG@!original">
-      <img src="http://images.guansong.wang/2009/2009_Misc/DSC05463.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/2009_Misc/DSC05463.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/2009_Misc/DSC05463.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -177,8 +191,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03001.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03001.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03001.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03001.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -191,8 +206,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03052.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03052.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03052.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03052.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -205,8 +221,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03053.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03053.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03053.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03053.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -219,8 +236,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03055.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03055.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03055.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03055.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -233,8 +251,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03060.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03060.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03060.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03060.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -247,8 +266,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03070.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03070.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03070.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03070.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -261,8 +281,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03077.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03077.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03077.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03077.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -275,8 +296,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03166.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03166.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03166.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03166.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -289,8 +311,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03170.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03170.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03170.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03170.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -303,8 +326,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03186.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03186.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03186.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03186.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -317,8 +341,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03228.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03228.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03228.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03228.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -331,8 +356,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03229.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03229.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03229.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03229.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -345,8 +371,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090528_Shenyang/DSC03230.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03230.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090528_Shenyang/DSC03230.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090528_Shenyang/DSC03230.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -359,8 +386,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03269.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03269.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03269.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03269.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -373,8 +401,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03324.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03324.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03324.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03324.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -387,8 +416,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03327.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03327.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03327.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090601_Shenyang_Qipanshan/DSC03327.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -401,8 +431,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03375.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03375.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03375.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03375.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -415,8 +446,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03381.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03381.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03381.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03381.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -429,8 +461,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03384.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03384.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03384.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03384.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -443,8 +476,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03390.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03390.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03390.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03390.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -457,8 +491,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03393.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03393.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03393.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03393.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -471,8 +506,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03395.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03395.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03395.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03395.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -485,8 +521,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03398.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03398.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03398.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03398.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -499,8 +536,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03401.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03401.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03401.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03401.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -513,8 +551,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03403.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03403.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03403.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03403.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -527,8 +566,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03410.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03410.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03410.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03410.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -541,8 +581,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03414.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03414.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03414.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03414.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -555,8 +596,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03415.JPG@!original">
-      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03415.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2009/20090606_Dahuofang/DSC03415.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2009/20090606_Dahuofang/DSC03415.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -569,8 +611,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC08748.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08748.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08748.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC08748.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -583,8 +626,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC08755.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08755.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08755.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC08755.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -597,8 +641,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC08756.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08756.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08756.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC08756.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -611,8 +656,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC08760.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08760.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08760.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC08760.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -625,8 +671,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC08762.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08762.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC08762.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC08762.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -639,8 +686,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC09102.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09102.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09102.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC09102.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -653,8 +701,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC09111.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09111.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09111.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC09111.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -667,8 +716,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC09116.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09116.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09116.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC09116.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -681,8 +731,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC09119.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09119.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09119.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC09119.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -695,8 +746,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC09123.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09123.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09123.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC09123.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -709,8 +761,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100718_Shenyang/DSC09126.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09126.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100718_Shenyang/DSC09126.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100718_Shenyang/DSC09126.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -723,8 +776,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100731_Dahuofang/DSC08959.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100731_Dahuofang/DSC08959.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100731_Dahuofang/DSC08959.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100731_Dahuofang/DSC08959.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>
@@ -737,8 +791,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2010/20100731_Dahuofang/DSC08994.JPG@!original">
-      <img src="http://images.guansong.wang/2010/20100731_Dahuofang/DSC08994.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2010/20100731_Dahuofang/DSC08994.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2010/20100731_Dahuofang/DSC08994.JPG@!original');">
     </td>
     <td>
       <h4>  </h4>

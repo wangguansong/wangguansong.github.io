@@ -10,9 +10,14 @@
 <meta name="description" content="website">
 <link rel="stylesheet" href="/layout.css" type="text/css">
 <link rel="stylesheet" href="/design.css" type="text/css">
+<script type="text/javascript" src="/PhotoViewer.js"></script>
 </head>
 
 <body>
+
+<div id="largeImgPanel" onclick="hideMe(this);">
+  <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+</div>
 
 <header>
   <h1>王冠嵩的网站</h1>
@@ -50,8 +55,9 @@ Pages:
 <table>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06311.JPG@!original');">
     </td>
     <td>
       <h4> 天一阁牌匾 </h4>
@@ -64,8 +70,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06313.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06313.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06313.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06313.JPG@!original');">
     </td>
     <td>
       <h4> 红领巾志愿者 </h4>
@@ -78,8 +85,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06316.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -92,8 +100,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06319.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -106,8 +115,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06322.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -120,8 +130,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06326.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -134,8 +145,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06328.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -148,8 +160,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06329.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -162,8 +175,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06336.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06336.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06336.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06336.JPG@!original');">
     </td>
     <td>
       <h4> 红领巾志愿者 </h4>
@@ -176,8 +190,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06337.JPG@!original');">
     </td>
     <td>
       <h4> 宁波美术馆 </h4>
@@ -190,8 +205,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06341.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩 </h4>
@@ -204,8 +220,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06350.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩书店 </h4>
@@ -218,8 +235,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06352.JPG@!original');">
     </td>
     <td>
       <h4> 宁波住宅楼 </h4>
@@ -232,8 +250,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06355.JPG@!original');">
     </td>
     <td>
       <h4> 守护神兽 </h4>
@@ -246,8 +265,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06357.JPG@!original');">
     </td>
     <td>
       <h4> 老伴拍照 </h4>
@@ -260,8 +280,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06358.JPG@!original');">
     </td>
     <td>
       <h4> 一家人自拍 </h4>
@@ -274,8 +295,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06365.JPG@!original');">
     </td>
     <td>
       <h4> 断壁和天主堂 </h4>
@@ -288,8 +310,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06366.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩 </h4>
@@ -302,8 +325,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06367.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06367.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06367.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06367.JPG@!original');">
     </td>
     <td>
       <h4> 梅花 </h4>
@@ -316,8 +340,9 @@ Pages:
   </tr>
   <tr>
     <td>
-      <a href="http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!original">
-      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!small" /></a>
+      <img src="http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!small"
+           style="cursor:pointer"
+           onclick="showImage('http://images.guansong.wang/2016/20160210_Ningbo/DSC06370.JPG@!original');">
     </td>
     <td>
       <h4> 宁波老外滩街景 </h4>
