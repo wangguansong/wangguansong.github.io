@@ -12,4 +12,5 @@ function unselectAll() {
 }
 function hideMe(obj) {
   obj.style.visibility = 'hidden';
+  document.getElementById('largeImg').src = '';
 }
