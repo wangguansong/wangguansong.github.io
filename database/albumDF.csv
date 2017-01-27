@@ -7,7 +7,8 @@ tag,date,type,zhTitle,enTitle,zhDesc,enDesc
 2012,2012-09-04 13:53:32,year,2012,2012,2012,2012
 2013,2013-12-24 21:22:48,year,2013,2013,2013,2013
 2014,NA,year,2014,2014,2014,2014
-2015,NA,year,2015,2015,2015,2015
+2015,2015-06-28 11:49:43,year,2015,2015,2015,2015
+2015_tibet_trip,2015-06-28 11:49:43,theme,2015旅行：西安青海西藏,"Trip to Xi’an, Qinghai, and Tibet in 2015",2015旅行：西安青海西藏,"Trip to Xi’an, Qinghai, and Tibet in 2015"
 2016,2016-11-20 07:32:50,year,2016,2016,2016,2016
 2017,2017-01-08 16:14:00,year,2017,2017,2017,2017
 398summerwalk,2008-11-09 15:06:31,tag,教堂山住处,Apartment at Chapel Hill,教堂山住处,Apartment at Chapel Hill
@@ -16,9 +17,12 @@ anaheim,2009-12-26 12:35:03,location,美国阿纳海姆,"Anaheim, CA, U.S.",美�
 animals,2016-11-19 16:30:58,theme,动物世界,Animal planet,动物世界,Animal planet
 arlington,2010-05-28 15:43:48,location,美国阿灵顿,"Arlington, VA, U.S.",美国阿灵顿,"Arlington, VA, U.S."
 bald_head_lsland,2010-09-05 18:41:58,tag,秃头岛,Bald Head Island,秃头岛,Bald Head Island
+barkhor,2015-06-24 18:32:59,tag,八廓街,Barkhor Street,八廓街,Barkhor Street
+bayi,2015-06-13 12:11:31,location,中国西藏八一镇,"Bayi Town, Tibet, China",中国西藏八一镇,"Bayi Town, Tibet, China"
 beijing,2017-01-08 16:14:00,location,中国北京,"Beijing, China",中国北京,"Beijing, China"
 beijing_zoo,2017-01-08 16:14:00,tag,北京动物园,Beijing Zoo,北京动物园,Beijing Zoo
 beiyandang,2016-03-05 09:33:04,location,中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China",中国浙江省北雁荡山,"Bei Yandangshan, Zhejiang, China"
+bome,2015-06-10 07:29:12,location,中国西藏波密县,"Bomê County, Tibet, China",中国西藏波密县,"Bomê County, Tibet, China"
 boston,2007-12-30 14:54:24,location,美国波士顿,"Boston, MA, U.S.",美国波士顿,"Boston, MA, U.S."
 butters,2016-10-03 08:01:45,theme,Butters本人,Butters Himself,Butters本人,Butters Himself
 butters_cooking,2008-11-11 19:57:19,tag,Butters的厨艺,Butters’ Cooking,Butters的厨艺,Butters’ Cooking
@@ -27,11 +31,16 @@ butters_place,2008-09-15 08:29:35,tag,Butters的住处,Butters’ Place,Butters�
 cat,2016-11-19 16:30:58,tag,猫,Cat,猫,Cat
 central_park,2007-12-25 15:00:49,tag,中央公园,Central Park,中央公园,Central Park
 chapel_hill,2013-12-24 21:22:48,location,美国教堂山,"Chapel Hill, NC, U.S.",美国教堂山,"Chapel Hill, NC, U.S."
+chaka_salt_lake,2015-06-01 17:35:01,tag,茶卡盐湖,Chaka Salt Lake,茶卡盐湖,Chaka Salt Lake
 charlotte,2013-10-20 14:06:17,location,美国夏洛特,"Charlotte, NC, U.S.",美国夏洛特,"Charlotte, NC, U.S."
 chengdu,2016-09-25 17:32:56,location,中国四川省成都,"Chengdu, Sichuan, China",中国四川省成都,"Chengdu, Sichuan, China"
+chokorgyel_monastery,2015-06-15 12:57:28,tag,琼果杰寺,Chokorgyel Monastery,琼果杰寺,Chokorgyel Monastery
+damxung,2015-06-06 11:03:26,location,中国西藏当雄县,"Damxung County, Tibet, China",中国西藏当雄县,"Damxung County, Tibet, China"
 dandong,2016-10-03 09:16:01,location,中国辽宁省丹东,"Dandong, Liaoning, China",中国辽宁省丹东,"Dandong, Liaoning, China"
+dangar_old_town,2015-06-01 10:41:56,tag,丹葛尔古城,Dangar Old Town,丹葛尔古城,Dangar Old Town
+dayanta,2015-05-29 17:21:26,tag,大雁塔,Big Wild Goose Pagoda (Dayanta),大雁塔,Big Wild Goose Pagoda (Dayanta)
 disney_land,2009-12-26 12:35:03,tag,迪斯尼乐园,Disneyland,迪斯尼乐园,Disneyland
-duke,2008-04-09 18:43:30,NA,杜克大学,Duke University,杜克大学,Duke University
+duke,2008-04-09 18:43:30,tag,杜克大学,Duke University,杜克大学,Duke University
 durham,2010-06-13 16:36:41,location,美国达勒姆,"Durham, NC, U.S.",美国达勒姆,"Durham, NC, U.S."
 ecu,2011-01-29 13:13:58,tag,东卡罗莱纳大学,East Carolina University,东卡罗莱纳大学,East Carolina University
 fall_river,2008-01-05 14:41:11,location,美国福尔里弗,"Fall River, MA, U.S.",美国福尔里弗,"Fall River, MA, U.S."
@@ -43,25 +52,48 @@ gatlinburg,2011-10-17 04:06:54,location,美国盖林柏格,"Gatlinburg, TN, U.S.
 georgetown,2010-05-28 19:22:29,tag,乔治城,Georgetown,乔治城,Georgetown
 glen_lennox,2008-05-05 15:49:56,tag,教堂山住处,Apartment at Chapel Hill,教堂山住处,Apartment at Chapel Hill
 greenville,2011-01-29 16:40:52,location,美国格林威尔,"Greenville, NC, U.S.",美国格林威尔,"Greenville, NC, U.S."
+guide,2015-06-03 16:55:17,location,中国青海省贵德县,"Guide County, Qinghai, China",中国青海省贵德县,"Guide County, Qinghai, China"
+guide_national_geopark,2015-06-03 13:00:20,tag,贵德国家地质公园,Guide National Geopark,贵德国家地质公园,Guide National Geopark
+gyaca,2015-06-15 14:08:43,location,中国西藏加查县,"Gyaca County, Tibet, China",中国西藏加查县,"Gyaca County, Tibet, China"
+gyantse,2015-06-22 21:27:47,location,中国西藏江孜县,"Gyantse County, Tibet, China",中国西藏江孜县,"Gyantse County, Tibet, China"
+gyantse_dzong,2015-06-22 15:32:55,tag,江孜宗山,Gyantse Dzong,江孜宗山,Gyantse Dzong
+gyantse_richu_monastery,2015-06-22 17:08:30,tag,江孜日追寺,Gyantse Richu Monastery,江孜日追寺,Gyantse Richu Monastery
 halloween,2007-07-12 20:44:14,tag,万圣节,Halloween,万圣节,Halloween
 hillsborough,2010-03-21 02:41:24,location,美国希尔斯伯勒,"Hillsborough, NC, U.S.",美国希尔斯伯勒,"Hillsborough, NC, U.S."
 hilton_head_island,2008-08-14 19:18:42,location,美国希尔顿黑德岛,"Hilton Head Island, SC, U.S.",美国希尔顿黑德岛,"Hilton Head Island, SC, U.S."
 interesting,2016-11-20 07:32:50,theme,有趣的东西,Interesting Things,有趣的东西,Interesting Things
+jokhang_temple,2015-06-19 10:21:33,tag,拉萨大昭寺,Jokhang Temple in Lhasa,拉萨大昭寺,Jokhang Temple in Lhasa
 joshua_tree,2009-12-24 05:29:41,location,美国约书亚树国家公园,"Joshua Tree National Park, CA, U.S.",美国约书亚树国家公园,"Joshua Tree National Park, CA, U.S."
+kanbula_national_forest_park,2015-06-03 16:55:17,tag,坎布拉国家森林公园,Kanbula National Forest Park,坎布拉国家森林公园,Kanbula National Forest Park
+kumbum_monastery,2015-06-03 10:01:25,tag,塔尔寺,Kumbum Monastery,塔尔寺,Kumbum Monastery
+lhagyari_palace,2015-06-17 09:35:43,tag,拉加里王宫,Lhagyari Palace,拉加里王宫,Lhagyari Palace
+lhamo_latso,2015-06-15 11:56:05,tag,拉姆拉错,Lhamo Latso,拉姆拉错,Lhamo Latso
+lhasa,2015-06-28 11:49:43,location,中国西藏拉萨,"Lhasa, Tibet, China",中国西藏拉萨,"Lhasa, Tibet, China"
 los_angeles,2009-12-30 09:19:26,location,美国洛杉矶,"Los Angeles, CA, U.S.",美国洛杉矶,"Los Angeles, CA, U.S."
+lulang,2015-06-09 07:39:23,location,中国西藏鲁朗镇,"Lulang, Tibet, China",中国西藏鲁朗镇,"Lulang, Tibet, China"
 lvshun,2016-02-28 13:29:08,location,中国辽宁省旅顺,"Lvshun, Liaoning, China",中国辽宁省旅顺,"Lvshun, Liaoning, China"
+ma_bufang_mansion,2015-06-04 08:55:14,tag,马步芳公馆,Ma Bufang Mansion,马步芳公馆,Ma Bufang Mansion
+medog,2015-06-11 12:39:06,location,中国西藏墨脱县,"Mêdog County, Tibet, China",中国西藏墨脱县,"Mêdog County, Tibet, China"
+namtso,2015-06-06 11:03:26,tag,纳木错,Namtso,纳木错,Namtso
 narita,2011-06-28 06:33:11,location,日本成田,"Narita, Japan",日本成田,"Narita, Japan"
 new_hill,2009-12-17 04:46:30,location,美国新希尔,"New Hill, NC, U.S.",美国新希尔,"New Hill, NC, U.S."
 new_york,2011-12-28 03:55:29,location,美国纽约,"New York, NY, U.S.",美国纽约,"New York, NY, U.S."
 ningbo,2016:02:11 09:34:52,location,中国浙江省宁波,"Ningbo, Zhejiang, China",中国浙江省宁波,"Ningbo, Zhejiang, China"
 niujie_mosque,2016-11-13 13:31:07,tag,牛街清真寺,Niujie Mosque,牛街清真寺,Niujie Mosque
+norbulingka,2015-06-24 11:43:05,tag,罗布林卡,Norbulingka,罗布林卡,Norbulingka
 olympic_park,2016-11-06 19:57:21,tag,奥林匹克公园,Olympic Park,奥林匹克公园,Olympic Park
 orlando,2009-01-01 11:58:40,location,美国奥兰多,"Orlando, FL, U.S.",美国奥兰多,"Orlando, FL, U.S."
+palcho_monastery,2015-06-22 16:27:14,tag,白居寺,Palcho Monastery,白居寺,Palcho Monastery
 people,2016-10-03 08:24:52,theme,进入我镜头的人们,People who entered my camera,进入我镜头的人们,People who entered my camera
 philadelphia,2011-12-27 06:18:40,location,美国费城,"Philadelphia, PA, U.S.",美国费城,"Philadelphia, PA, U.S."
 photographer,2016-09-25 12:10:52,theme,拍照的人,Taking Pictures,拍照的人,Taking Pictures
 plants,2016-09-04 13:06:11,theme,花花草草,Plants,花花草草,Plants
+potala_palace,2015-06-25 09:09:42,tag,布达拉宫,Potala Palace,布达拉宫,Potala Palace
+qinghai_lake,2015-06-04 16:54:41,location,青海湖,Qinghai Lake,青海湖,Qinghai Lake
+qinghai_lake_bird_island,2015-06-02 11:11:59,tag,青海湖鸟岛,Bird Island in Qinghai Lake,青海湖鸟岛,Bird Island in Qinghai Lake
+qusum,2015-06-17 09:35:43,location,中国西藏曲松县,"Qusum County, Tibet, China",中国西藏曲松县,"Qusum County, Tibet, China"
 raleigh,2010-10-23 22:01:45,location,美国罗利,"Raleigh, NC, U.S.",美国罗利,"Raleigh, NC, U.S."
+ramoche_monastery,2015-06-24 14:27:32,tag,拉萨小昭寺,Ramoche Monastery,拉萨小昭寺,Ramoche Monastery
 san_diego,2009-12-29 05:23:46,location,美国圣地亚哥,"San Diego, CA, U.S.",美国圣地亚哥,"San Diego, CA, U.S."
 san_diego_old_town,2009-12-29 05:23:46,tag,圣地亚哥老城,San Diego Old Town,圣地亚哥老城,San Diego Old Town
 san_diego_seaworld,2009-12-27 10:44:49,tag,圣地亚哥海洋世界,San Diego SeaWorld,圣地亚哥海洋世界,San Diego SeaWorld
@@ -69,10 +101,16 @@ san_diego_zoo,2009-12-28 04:43:28,tag,圣地亚哥动物园,San Diego Zoo,圣地
 selfie,2016-09-25 10:34:30,theme,自拍的人,Taking Selfies,自拍的人,Taking Selfies
 shanghai,2016-03-02 17:06:34,location,中国上海,"Shanghai, China",中国上海,"Shanghai, China"
 shenyang,2011-06-25 19:57:05,location,中国沈阳,"Shenyang, China",中国沈阳,"Shenyang, China"
+shigatse,2015-06-21 21:20:35,location,中国西藏日喀則,"Shigatse, Tibet, China",中国西藏日喀則,"Shigatse, Tibet, China"
 sites,2016-11-19 14:26:41,theme,风景山水名胜古迹,Natural and historical sites,风景山水名胜古迹,Natural and historical sites
 snow,2008-01-20 14:18:59,tag,雪,Snow,雪,Snow
 south_point_mall,2007-05-13 14:08:42,tag,南点商场,South Point Mall,南点商场,South Point Mall
+tashi_lhunpo_monastery,2015-06-21 20:19:20,tag,扎什伦布寺,Tashi Lhunpo Monastery,扎什伦布寺,Tashi Lhunpo Monastery
+tibet_museum,2015-06-25 11:03:52,tag,西藏博物馆,Tibet Museum,西藏博物馆,Tibet Museum
+tingri,2015-06-21 09:55:10,location,中国西藏定日县,"Tingri County, Tibet, China",中国西藏定日县,"Tingri County, Tibet, China"
+tradruk_temple,2015-06-17 17:38:10,tag,昌珠寺,Tradruk Temple,昌珠寺,Tradruk Temple
 travel,2016-03-05 09:33:04,tag,旅行,Travel,旅行,Travel
+tsetang,2015-06-17 19:41:07,location,中国西藏泽当,"Tsetang, Tibet, China",中国西藏泽当,"Tsetang, Tibet, China"
 unc,2008-11-09 15:24:35,tag,北卡罗来纳大学教堂山分校,University of North Carolina at Chapel Hill,北卡罗来纳大学教堂山分校,University of North Carolina at Chapel Hill
 university_lake,2008-03-30 15:57:11,tag,大学湖,University Lake,大学湖,University Lake
 washington_dc,2011-03-11 15:29:54,location,美国华盛顿特区,"Washington DC, U.S.",美国华盛顿特区,"Washington DC, U.S."
@@ -80,5 +118,9 @@ weekend,2017-01-08 16:14:00,theme,周末,Weekend,周末,Weekend
 wilkesboro,2010-03-27 01:53:18,location,美国威尔克斯伯勒,"Wilkesboro, NC, U.S.",美国威尔克斯伯勒,"Wilkesboro, NC, U.S."
 wilmington,2010-09-05 18:41:58,location,美国威明顿,"Wilmington, NC, U.S.",美国威明顿,"Wilmington, NC, U.S."
 winston_salem,2009-10-26 05:14:15,location,美国温斯顿塞勒姆,"Winston-Salem, NC, U.S.",美国温斯顿塞勒姆,"Winston-Salem, NC, U.S."
+xian,2015-05-31 17:00:31,location,中国陕西西安,"Xi’an, Shanxi, China",中国陕西西安,"Xi’an, Shanxi, China"
+xining,2015-06-04 12:11:43,location,中国青海西宁,"Xining, Qinghai, China",中国青海西宁,"Xining, Qinghai, China"
+xining_dongguan_mosque,2015-06-04 10:01:00,tag,西宁东关清真寺,Xining Dongguan Mosque,西宁东关清真寺,Xining Dongguan Mosque
 yuanmingyuan,2016-11-12 16:51:26,tag,圆明园,Yuanmingyuan,北京圆明园,Yuanmingyuan Park in Beijing
+yumbu_lhakhang_palace,2015-06-17 19:41:07,tag,雍布拉康,Yumbu Lhakhang Palace,雍布拉康,Yumbu Lhakhang Palace
 zhenjue_temple,2016-11-20 07:32:50,tag,真觉寺,Zhenjue Temple,真觉寺,Zhenjue Temple
