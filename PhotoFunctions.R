@@ -305,9 +305,11 @@ UpdatePhotoDatabase <- function(rootDir, subDir,
                            favorite = 0,
                            hide = 0)
   if (require("exif")) {
-    addPhotoDF$date <- read_exif(paste(rootDir,
-                                       addPhotoDF$filePath,
-                                       sep = ""))$origin_timestamp
+    addPhotoDF$date <-
+      tryCatch(read_exif(paste(rootDir,
+                               addPhotoDF$filePath,
+                               sep = ""))$origin_timestamp,
+               error = function(e) {return(NA)})
     addPhotoDF$date <- strptime(addPhotoDF$date,
                                 "%Y:%m:%d %H:%M:%S")
   }
