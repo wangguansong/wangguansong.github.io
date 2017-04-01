@@ -55,7 +55,7 @@ UpdatePictureFrontPage <-function(lang) {
 }
 
 UpdateAlbumPages <- function(lang, tags,
-                             updateAll = TRUE,
+                             updateAll = FALSE,
                              updateFront = TRUE) {
   # Update album (given by tags) pages.
   # If tags not given, update the album database and build or update
@@ -407,10 +407,9 @@ ScanPhotoTags <- function(rowIds,
                           photoDFfile = "database/photoDF.csv") {
   # Scan for tags for given rows by "rowIds", return tagsDF:tag,date.
   # scan all tags in photoDF of given rowIds.
-  # if photoDF doesn't exist, read it from dbFile
-  if (!exists("photoDF", mode = "list")) {
-    photoDF <- read.csv(photoDFfile, stringsAsFactors = FALSE)
-  }
+  # Return a data frame: tag, date
+
+  photoDF <- read.csv(photoDFfile, stringsAsFactors = FALSE)
   # if rowIds not given, scan all the photos
   if (missing(rowIds)) {
     rowIds <- 1:nrow(photoDF)
@@ -420,8 +419,9 @@ ScanPhotoTags <- function(rowIds,
   allTags <- unique(allTags)
   tagsDF <- data.frame(tag = allTags)
   tagsDF$date <- apply(tagsDF, 1, FUN = function(x) {
-                         return(max(photoDF$date[grepl(x, photoDF$tags[rowIds])]))
-                          })
+    tagregex <- paste("\\<", x, "\\>", sep = "")
+    return(max(photoDF$date[grepl(tagregex, photoDF$tags[rowIds])]))
+  })
   return(tagsDF)
 }
 
