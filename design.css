@@ -72,9 +72,8 @@ article header {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
-article header .summary {
+#article_summary {
   text-align: left;
-  font-size: small;
   width: 75%;
   margin: 0 auto 0 auto;
 }
@@ -82,15 +81,26 @@ article {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
 }
-article .tags {
+#article_tags {
   margin-left: 3em;
   margin-right: 3em;
 }
-article .datestamp{
+#article_datestamp{
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+article .tags {
   font-size: small;
   margin-left: 3em;
   margin-right: 3em;
 }
+article section .datestamp{
+  font-size: small;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
 article section{
   padding: 0.5em 0 0.5em 0;
   border-bottom: 1px solid gray;

@@ -1,75 +1,36 @@
-########################################################################
-# Procedure for adding a new blog:
-# - NewBlogPage(path)
-# - source("ScanPages.R")
-# - UpdateSidebars()
-# - UpdateBlogFrontPage()
+#########################################################################
+## Procedure for adding a new blog:
+## - NewBlogPage(path)
+## - source("ScanPages.R")
+## - UpdateSidebars()
+## - UpdateBlogFrontPage()
+#
+#
+#########################################################################
+## Building pages
 
-
-########################################################################
-# Building pages
-
-UpdateBlogFrontPage <- function(lang) {
-
-}
-
-UpdateTagPages <- function(lang, tags,
-                           updateFront = TRUE,
-                           updateSidebar = TRUE,
-                           tagDFfile = "database/tagDF.csv",
-                           blogDFfile = "database/blogDF.csv") {
-  # Update tag (given by tags) pages.
-  # If tags not given, update the album database and build or update
-  # for updated tags.
-  tagDF <- read.csv(tagDFfile, stringsAsFactors = FALSE)
-  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
-
-  if (missing(tags)) {
-    tags <- tagDF$tag[tagDF$lang %in% lang]
-  }
-
-  for (i in which(tagDF$tag %in% tags)) {
-    BuildTagPage(tags = tagDF$tag[i],
-                 lang = lang,
-                 fileName = tagDF$name[i],
-                 type = tagDF$type[i],
-                 title = tagDF$title[i],
-                 desc = tagDF$desc[i])
-  }
-
-  if (updateFront) {
-  }
-
-  if (updateSidebar) {
-  }
-
-}
-
-
-BuildTagPage <- function(tags, lang, dates, fileName,
-                         type, title, desc,
+BuildTagPage <- function(tag, lang,
                          blogDFfile = "database/blogDF.csv",
                          tagDFfile = "database/tagDF.csv") {
   # Build a collection page of blogs, selected by tags, lang, dates.
   blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
+  tagDF <- read.csv(tagDFfile, stringsAsFactors = FALSE)
 
-  if (! all(tags %in% tagDF$tag)) {
-    stop("UpdateTagPage: one or more tags not found in database.")
+  tagId <- which(tagDF$tag == tag & tagDF$lang == lang)
+  if (length(tagId) != 1) {
+    stop(paste("The tag \"", tag, "\" is not found in database.",
+               sep = ""))
   }
 
   tagRows <- rep(TRUE, nrow(blogDF))
   #tagRows <- tagRows & blogDF$type == "blog"
   tagRows <- tagRows & blogDF$lang == lang
-  if (!missing(dates)) {
-    tagRows <- tagRows & blogDF$date %in% dates
-  }
-  if (!missing(tags)) {
-    tagsList <- strsplit(blogDF$tags, ",")
-    tagRows <- tagRows & unlist(lapply(tagsList,
-                                       FUN = function(x) {
-                                         return(all(tags %in% x))
-                                       }))
-  }
+
+  tagsList <- strsplit(blogDF$tags, ",")
+  tagRows <- tagRows &
+    unlist(lapply(tagsList, FUN = function(x) {
+                   return(tag %in% x)
+                 }))
   tagRows <- which(tagRows)
   tagRows <- tagRows[order(blogDF$date[tagRows], decreasing = TRUE)]
 
@@ -95,26 +56,27 @@ BuildTagPage <- function(tags, lang, dates, fileName,
   sectionhtml[(1:blognum-1)*9 + 8] <- "    </p>"
   sectionhtml[(1:blognum-1)*9 + 9] <- "  </section>"
 
+
   articlehtml <-
     c("<article>",
       "  <header>",
-      paste("    <h2>", title, "</h2>", sep=""),
+      paste("    <h2>", tagDF$title[tagId], "</h2>", sep=""),
       "    <p class=\"summary\">",
-      paste("      ", desc, sep=""),
+      paste("      ", tagDF$desc[tagId], sep=""),
       "    </p>",
       "  </header>",
       sectionhtml,
       "</article>")
 
-  fileName <- paste(lang, "/", type, "s/", fileName,
-                    ".html", sep = "")
-  file.copy(paste(lang, "/", type, "s/", type,
-                  "_template.html", sep = ""),
+  # copy template
+  fileName <- paste(tagDF$lang[tagId], "/", tagDF$type[tagId], "s/",
+                    tagDF$name[tagId], ".html", sep = "")
+  file.copy(paste("template/", tagDF$type[tagId], "_template_",
+                  tagDF$lang[tagId], ".html", sep = ""),
             fileName,
             overwrite = TRUE)
-  # copy template
   ReplaceTag(fileName,
-             c("<title>", title, "</title>"),
+             c("<title>", tagDF$title[tagId], "</title>"),
              "title", 1)
   ReplaceTag(fileName, articlehtml, "article", 1)
   return(invisible(articlehtml))
@@ -124,12 +86,9 @@ BuildTagPage <- function(tags, lang, dates, fileName,
 UpdateBlogFrontPage <- function(lang,
                                 blogDFfile = "database/blogDF.csv") {
   # Update the blog front page in zh/en
+  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
 
-  if (!exists("blogDF", mode = "list")) {
-    blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
-  }
-
-  rowIds <- which(blogDF$type == "blog" & blogDF$lang == lang)
+  rowIds <- which(blogDF$lang == lang & blogDF$hide == 0)
   rowIds <- rowIds[order(blogDF$date[rowIds], decreasing = TRUE)]
   blognum <- length(rowIds)
   linkLine <- paste("      <a href=\"/",
@@ -162,7 +121,7 @@ UpdateBlogFrontPage <- function(lang,
   return(invisible(articlehtml))
 
 }
-
+#
 UpdateSidebars <- function(lang, tags, blogFront = TRUE,
                            tagDFfile = "database/tagDF.csv") {
   # Update the sidebars of tag pages and blog front page
@@ -221,15 +180,19 @@ UpdateSidebars <- function(lang, tags, blogFront = TRUE,
 }
 
 
-########################################################################
-# Database functions
-
+#########################################################################
+## Database functions
 UpdateBlogDatabase <- function(newBlogPaths,
                                blogDFfile = "database/blogDF.csv") {
   # Add new blogs into the database.
   # The paths of new blogs are given by a character vector.
   # If not given, search for new html files in zh|en/blogs directories.
-  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
+  if (file.exists(blogDFfile)) {
+    blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
+    flagCreateNew <- FALSE 
+  } else {
+    flagCreateNew <- TRUE
+  }
 
   if (missing(newBlogPaths)) {
     newBlogPaths <- character()
@@ -248,7 +211,9 @@ UpdateBlogDatabase <- function(newBlogPaths,
   if (! all(file.exists(newBlogPaths))) {
     error("Some blog given by path does not exist")
   }
-  newBlogPaths <- setdiff(newBlogPaths, blogDF$filePath)
+  if (!flagCreateNew) {
+    newBlogPaths <- setdiff(newBlogPaths, blogDF$filePath)
+  }
   if (length(newBlogPaths) == 0) {
     print("No new blogs or blogs given by paths already in database.")
     return()
@@ -259,7 +224,7 @@ UpdateBlogDatabase <- function(newBlogPaths,
   langList[grep("zh/", newBlogPaths)] <- "zh"
   langList[grep("en/", newBlogPaths)] <- "en"
   for (i in 1:length(newBlogPaths)) {
-    basicinfo <- ParseBlogHTML(newBlogPaths[i])
+    basicinfo <- ParseArticle(newBlogPaths[i])
     titleList[i] <- basicinfo$title
     tagsList[i] <- paste(basicinfo$tags, collapse=",")
     dateList[i] <- basicinfo$datestamp
@@ -270,75 +235,40 @@ UpdateBlogDatabase <- function(newBlogPaths,
                           title = titleList,
                           tags = tagsList,
                           date = as.Date(dateList, format="%Y-%m-%d"),
-                          desc = summaryList,
+                          summary = summaryList,
                           hide = 0,
                           stringsAsFactors=FALSE)
 
-  write.table(newBlogDF, file = blogDFfile, append = TRUE, sep = ",",
-              row.names = FALSE, col.names = FALSE, quote = TRUE,
-              fileEncoding = "utf-8")
-  assign("blogDF",
-         read.csv(blogDFfile, stringsAsFactors = FALSE),
-         envir = .GlobalEnv)
-  cat("Data frame \"blogDF\" is loaded from ", blogDFfile, "\n")
+  if(flagCreateNew) {
+    write.csv(newBlogDF, file = blogDFfile, row.names = FALSE,
+              fileEncoding = "UTF-8")
+  } else {
+    write.table(newBlogDF, file = blogDFfile, append = TRUE, sep = ",",
+                row.names = FALSE, col.names = FALSE, quote = TRUE,
+                fileEncoding = "UTF-8")
+  }
+  #assign("blogDF",
+  #       read.csv(blogDFfile, stringsAsFactors = FALSE),
+  #       envir = .GlobalEnv)
+  #cat("Data frame \"blogDF\" is loaded from ", blogDFfile, "\n")
   return(invisible(newBlogDF))
 
 }
 
 
-BuildBlogDatabase <- function(blogDFfile = "database/blogDF.csv") {
-  # Scan and parse blog html files, build a data frame of blogs.
-  blogFileList <- character()
-  for (lang in c("en", "zh")) {
-    blogFileList <-  c(blogFileList,
-                       list.files(paste(lang, "blogs", sep="/"),
-                                  recursive=TRUE, full.names=TRUE,
-                                  pattern="*.html$"))
-  }
-  blogFileList <- blogFileList[!grepl("~$", blogFileList)]
-  blogFileList <- blogFileList[!grepl("yyyymmdd.*template", blogFileList)]
 
-  character(length(blogFileList)) -> langList -> titleList ->
-    dateList -> tagsList -> summaryList
-  langList[grep("zh/", blogFileList)] <- "zh"
-  langList[grep("en/", blogFileList)] <- "en"
-
-  for (i in 1:length(blogFileList)) {
-    basicinfo <- ParseBlogHTML(blogFileList[i])
-    titleList[i] <- basicinfo$title
-    tagsList[i] <- paste(basicinfo$tags, collapse=",")
-    dateList[i] <- basicinfo$datestamp
-    summaryList[i] <- basicinfo$summary
-  }
-  blogDF <- data.frame(filePath = blogFileList,
-                       lang = as.factor(langList),
-                       title = titleList,
-                       tags = tagsList,
-                       date = as.Date(dateList, format="%Y-%m-%d"),
-                       desc = summaryList,
-                       hide = 0,
-                       stringsAsFactors=FALSE)
-
-  write.csv(blogDF, file = blogDFfile, row.names = FALSE)
-
-  assign("blogDF", blogDF, envir = .GlobalEnv)
-  cat("Data frame \"blogDF\" is loaded from database/blogDF.csv.\n")
-
-  return(invisible(blogDF))
-}
-
-UpdateTagDatabase <- function(rowIds,
+UpdateTagDatabase <- function(blogDF,
                               blogDFfile = "database/blogDF.csv",
                               tagDFfile = "database/tagDF.csv") {
   # Build or update the tag database from blog database.
   # If asked, return updated tags.
-  blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
-  if (missing(rowIds)) {
-    rowIds <- 1:nrow(blogDF)
+
+  if (missing(blogDF)) {
+    blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
   }
 
-  enRowIds <- rowIds[blogDF$lang[rowIds]=="en"]
-  zhRowIds <- rowIds[blogDF$lang[rowIds]=="zh"]
+  enRowIds <- blogDF$lang == "en"
+  zhRowIds <- blogDF$lang == "zh"
   enAllTags <- unlist(strsplit(blogDF$tags[enRowIds], ","))
   enAllTags <- trimws(enAllTags)    # R >= 3.2 required
   enAllTags <- unique(enAllTags)
@@ -350,12 +280,14 @@ UpdateTagDatabase <- function(rowIds,
                          lang = c(rep("en", length(enAllTags)),
                                    rep("zh", length(zhAllTags))),
                          stringsAsFactors = FALSE)
+  dateNew <- character(nrow(tagDFNew))
+  blogTagList <- strsplit(blogDF$tags, ",")
   tagDFNew$dateNew <- apply(tagDFNew, 1, FUN = function(x) {
-      tagRows <- which(grepl(x[1], blogDF$tags[rowIds]) &
-                       blogDF$lang[rowIds] == x[2])
-      return(max(blogDF$date[rowIds][tagRows], na.rm=TRUE))
-    })
-
+    tagregex <- paste("\\<", x["tag"], "\\>", sep = "")
+    tagRows <- which(grepl(x["tag"], blogTagList) &
+                     blogDF$lang == x["lang"])
+    return(max(blogDF$date[tagRows]))
+  })
 
   if (file.exists(tagDFfile)) {
     tagDF <- read.csv(tagDFfile, stringsAsFactors = FALSE)
@@ -391,81 +323,47 @@ UpdateTagDatabase <- function(rowIds,
     cat("There is no update of tagDF.\n")
   }
 
-  cat("Data frame \"tagDF\" is loaded from database/tagDF.csv.\n")
-  assign("tagDF", tagDF, envir = .GlobalEnv)
   return(invisible(updateTags))
 }
 
 
 
-########################################################################
-# Helper functions.
-# ScanBlogTags(rowIds, blogDFfile)
-# ParseBlogHTML(path)
-# ToggleActive(htmlfile, link)
+ScanBlogTags <- function(blogDF) {
+  # Scan for tags of blogs, return tagsDF:tag,date.
+  # Return a data frame: tag, date
 
-ScanBlogTags <- function(rowIds, blogDFfile = "database/blogDF.csv") {
-  if (!exists("blogDF", mode = "list")) {
-    blogDF <- read.csv(blogDFfile, stringsAsFactors = FALSE)
-  }
-  if (missing(rowIds)) {
-    rowIds <- 1:nrow(blogDF)
-  }
-  enRowIds <- rowIds[blogDF$lang[rowIds]=="en"]
-  zhRowIds <- rowIds[blogDF$lang[rowIds]=="zh"]
-  enAllTags <- unlist(strsplit(blogDF$tags[enRowIds], ","))
-  enAllTags <- trimws(enAllTags)    # R >= 3.2 required
-  enAllTags <- unique(enAllTags)
-  zhAllTags <- unlist(strsplit(blogDF$tags[zhRowIds], ","))
-  zhAllTags <- trimws(zhAllTags)    # R >= 3.2 required
-  zhAllTags <- unique(zhAllTags)
-
-  tagsDF <- data.frame(tag = c(enAllTags, zhAllTags),
-                       lang = c(rep("en", length(enAllTags)),
-                                rep("zh", length(zhAllTags))),
+  allTags <- unlist(strsplit(blogDF$tags, ","))
+  allTags <- trimws(allTags)    # R >= 3.2 required
+  allTags <- unique(allTags)
+  tagsDF <- data.frame(tag = allTags,
                        stringsAsFactors = FALSE)
   tagsDF$date <- apply(tagsDF, 1, FUN = function(x) {
-      tagRows <- which(grepl(x[1], blogDF$tags[rowIds]) &
-                       blogDF$lang[rowIds] == x[2])
-      return(max(as.character(blogDF$date)[rowIds][tagRows], na.rm=TRUE))
-    })
+    tagregex <- paste("\\<", x["tag"], "\\>", sep = "")
+    return(max(blogDF$date[grepl(tagregex, blogDF$tags)]))
+  })
   return(tagsDF)
-
 }
-
-
-ParseBlogHTML <- function(path) {
+#########################################################################
+## Helper functions.
+## ScanBlogTags(rowIds, blogDFfile)
+## ParseBlogHTML(path)
+## ToggleActive(htmlfile, link)
+#
+ParseArticle <- function(path) {
   # Given a path to a blog page, return tags, (url of tags), date stamp,
   # title and summary line.
 
-  rawhtml <- readLines(con=path, encoding="UTF-8")
-  articleopen <- grep("<article id=\"content\">", rawhtml)
-  headeropen <- grep("<header>", rawhtml[-(1:articleopen)])
-  headerclose <- grep("</header>", rawhtml[-(1:articleopen)])[1]
-  headerblock <- rawhtml[headeropen:headerclose + articleopen]
+  require("rvest")
+  rawhtml <- read_html(path, encoding = "UTF-8")
 
-  tagsopen <- grep("<span class=\"tags\">", headerblock)
-  tagsclose <- grep("</span>", headerblock[-(1:tagsopen)])[1]
-  tagsblock <- headerblock[tagsopen + 0:tagsclose]
-  tagline <- grep("<a href=", tagsblock)
-  tags <- gsub(".*<a href=[^>]*>(.*)</a>.*", "\\1", tagsblock[tagline])
-  #tagsurl <- gsub(".*<a href=\"/([^>]*)\">[^<].*</a>.*",
-  #                "\\1", tagsblock[tagline])
+  title <- html_node(rawhtml, "#article_title") %>% html_text
+  tags <- html_nodes(rawhtml, "#article_tags a") %>% html_text
+  datestamp <- html_node(rawhtml, "#article_datestamp") %>% html_text
+  summ <- html_node(rawhtml, "#article_summary") %>% html_text
 
-  dateline <- grep("<span class=\"datestamp\">", headerblock)[1]
-  datestamp <- gsub(".*<span class=\"datestamp\">(.*)</span>.*",
-                    "\\1", headerblock[dateline])
-
-  summaryopen <- grep("<p class=\"summary\">", headerblock)
-  summaryclose <- grep("</p>", headerblock[-(1:summaryopen)])[1]
-  summary <- headerblock[summaryopen + 1:(summaryclose-1)]
-  summary <- gsub("^[ ]*(.*)[ ]*$", "\\1", summary)
-
-  titleline <- grep("<h2>(.*)</h2>", headerblock)[1]
-  title <- gsub(".*<h2>(.*)</h2>.*", "\\1", headerblock[titleline])
 
   return(list(tags=tags, datestamp=datestamp, #tagsurl=tagsurl,
-              title=title, summary=summary))
+              title=title, summary=summ))
 }
 
 ToggleActive <- function(htmlfile, link) {
@@ -496,145 +394,3 @@ ToggleActive <- function(htmlfile, link) {
              filetext[(linkline+1):length(filetext)]))
   }
 }
-########################################################################
-# obsolete functions
-
-NewTagPage <- function(tag, filename="", lang="", type="", summ="",
-                       title="") {
-  # Create a new tag page, by the given information, or user input.
-  # Depend on: ReplaceTag(), and tag_template.html
-
-  if (! filename=="") {
-    filename <- strsplit(filename, "/")[[1]]
-    lang <- filename[1]
-    type <- filename[2]
-    filename <- filename[3]
-  }
-  cat(rep("-", 30), "\n")
-  cat("Creating HTML page for tag: ", tag, "\n", sep="")
-  while (type=="") {
-    type <- readline("Enter type, either tag, t, project or p: ")
-    type <- ifelse(type %in% c("tag", "project", "t", "p"), type, "")
-  }
-  if (type=="t") type <- "tag"
-  if (type=="p") type <- "project"
-  while (lang=="") {
-    lang <- readline("Enter language, either en, e, zh or z: ")
-    lang <- ifelse(lang %in% c("en", "zh", "e", "z"), lang, "")
-  }
-  if (lang=="e") lang <- "en"
-  if (lang=="z") lang <- "zh"
-  while (filename=="") {
-    filename <- readline("Enter the file name: tag/project_")
-  }
-  if (! grepl(".html$", filename)) {
-    filename <- paste(filename, ".html", sep="")
-  }
-  while (title=="") {
-    title <- readline("Enter the title of the tag: ")
-  }
-  while (summ=="") {
-    summ <- readline("Enter one line of HTML as summary: ")
-  }
-
-  path <- paste(lang, type, filename, sep="/")
-  templatepath <- list.files(dirname(path), pattern="template.*html$",
-                             full.names=TRUE)
-  file.copy(templatepath, path)
-  articlehtml <-
-    c("<article>",
-      "  <header>",
-      paste("    <h2>", title, "</h2>", sep=""),
-      "    <p class=\"summary\">",
-      paste("      ", summ, sep=""),
-      "    </p>",
-      "  </header>",
-      "</article>")
-  asidehtml <-
-    c("<aside>",
-      paste("  <h3>", ifelse(lang=="en", "Tags:", "标签："), "</h3>",
-            sep=""),
-      "  <ul>",
-      paste("    <li class=\"active\">", "<a href=\"/", path, "\">",
-            tag, "</a></li>", sep=""),
-      "  </ul>",
-      "</aside>")
-  ReplaceTag(path, articlehtml, "article", 1)
-  ReplaceTag(path, asidehtml, "aside", 1)
-  return(invisible(path))
-}
-
-NewBlogPage <- function(path) {
-  # Given the path to a new blog page, that's not in htmldf:
-  #   - scan tags, title, date, summary
-  #   - if there are tags not in htmldf
-
-  if (! file.exists(path)) {
-    stop("NewBlogPage: file does not exist.")
-  }
-  if (! exists("htmldf", mode="list")) load("SiteMeta.RData")
-  if (sum(htmldf$PATH==path)>0) {
-    stop("NewBlogPage: file already in database.")
-  }
-  basicinfo <- ParseBlogHTML(path)
-  lang <- substr(path, 1, 2)
-  tags <- basicinfo$tags
-  newtags <- setdiff(tags,
-                     htmldf$TAGS[htmldf$TYPE %in% c("tag", "project") &
-                                 htmldf$LANG==lang])
-  if (length(newtags)>0) {
-    for (i in 1:length(newtags)) {
-      NewTagPage(newtags[i],
-                 filename=basicinfo$tagsurl[which(tags==newtags[i])])
-    }
-  }
-  sectionhtml <-
-    c("  <section>",
-      "    <h3>",
-      paste("      <a href=\"/", path, "\">", basicinfo$title, "</a>",
-            sep=""),
-      paste("      <span class=\"datestamp\">", basicinfo$datestamp,
-            "</span>", sep=""),
-      "    </h3>",
-      "    <p class=\"summary\">",
-      paste("      ", basicinfo$summary, sep=""),
-      "    </p>",
-      "  </section>")
-  for (i in 1:length(tags)) {
-    tagshtml <- readLines(basicinfo$tagsurl[i])
-    articleopen <- grep("<article[^>]*>", tagshtml)
-    headerclose <- grep("</header>", tagshtml[-(1:articleopen)])[1] +
-                   articleopen
-    tagshtml <- c(tagshtml[1:headerclose],
-                  sectionhtml,
-                  tagshtml[(headerclose+1):length(tagshtml)])
-    writeLines(tagshtml, basicinfo$tagsurl[i])
-  }
-  return(invisible(path))
-}
-
-
-ParseTagHTML <- function(path) {
-  # Given a path to a tag page, return the tag, title and summary line.
-
-  rawhtml <- readLines(con=path, encoding="UTF-8")
-  articleopen <- grep("<article>", rawhtml)
-  headeropen <- grep("<header>", rawhtml[-(1:articleopen)])
-  headerclose <- grep("</header>", rawhtml[-(1:articleopen)])[1]
-  headerblock <- rawhtml[headeropen:headerclose + articleopen]
-  titleline <- grep("<h2>(.*)</h2>", headerblock)[1]
-  title <- gsub(".*<h2>(.*)</h2>.*", "\\1", headerblock[titleline])
-
-  tagline <- grep("<li class=\"active\"[^>]*>", rawhtml)
-  tag <- gsub(".*<li[^>]*><a[^>]*>(.*)</a></li>.*", "\\1",
-              rawhtml[tagline])
-
-  summaryopen <- grep("<p class=\"summary\">", headerblock)
-  summaryclose <- grep("</p>", headerblock[-(1:summaryopen)])[1]
-  summary <- headerblock[summaryopen + 1:(summaryclose-1)]
-  summary <- gsub("^[ ]*(.*)[ ]*$", "\\1", summary)
-
-  return(list(tags=tag, title=title, summary=summary))
-
-}
-
