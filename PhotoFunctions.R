@@ -406,7 +406,6 @@ PhotoLink <- function(filePath, filter,
 ScanPhotoTags <- function(rowIds,
                           photoDFfile = "database/photoDF.csv") {
   # Scan for tags for given rows by "rowIds", return tagsDF:tag,date.
-  # scan all tags in photoDF of given rowIds.
   # Return a data frame: tag, date
 
   photoDF <- read.csv(photoDFfile, stringsAsFactors = FALSE)

@@ -1,22 +1,24 @@
-"filePath","lang","type","title","tags","date","desc"
-"en/blogs/2015/20150821_aqi_china.html","en","blog","Collecting and Cleansing AQI Data","2015,ChinaAQI",2015-08-21,"Collect and cleanse hourly AQI of five cities of China （where U.S. embassy locations: Beijing, Shanghai, Guangzhou, Shenyang, Chengdu) from 2008 to 2014."
-"en/blogs/2016/20160308_a_dance_with_dragons.html","en","blog","A Song of Ice and Fire: A Dance with Dragons","2016,Reading",2016-03-08,"Finally, after a while, I finished the fifth book of <cite>A Song of Ice and Fire</cite>: <cite>A Dance with Dragons</cite>, and catched up with the current progress of the author and the TV."
-"zh/blogs/2015/20150821_aqi_china.html","zh","blog","AQI数据搜集整理","2015,中国空气质量指数",2015-08-21,"收集并清理从2008年到2014年中国五个城市（美国使馆所在城市：北京，上海，广州，沈阳，成都）的每小时空气指数（AQI）。"
-"zh/blogs/2015/20150828_aqi_patterns.html","zh","blog","中国五市AQI时间序列特征","2015,中国空气质量指数",2015-08-28,"每天几点钟的空气更好更适合锻炼，一年中是否冬季真的空气最差，不同城市的空气质量特征是否相同，利用中国五座城市的历史AQI试图回答以上的问题。"
-"zh/blogs/2015/20150914_taq_dataset.html","zh","blog","TAQ数据处理","2015,高频数据日波动率",2015-09-14,"高频交易报价数据来自于TAQ数据库。这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。"
-"zh/blogs/2015/20150925_iv_estimators.html","zh","blog","高频数据波动性统计量","2015,高频数据日波动率",2015-09-25,"这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。"
-"zh/blogs/2015/20150926_rounding_error.html","zh","blog","取整误差对日波动率统计量的影响","2015,高频数据日波动率",2015-09-26,"取整误差会导致高频交易数据的误差项有时间序列自相关，建立在白噪声假设下的统计量会有严重偏差。"
-"zh/blogs/2015/20150929_nlxj_description.html","zh","blog","解析征友资料HTML页面","2015,交友资料文字挖掘",2015-09-29,"纳兰性急是一个微信公众号，每周末发布三期交友信息。我从190期HTML页面中提取出来2509份征友的资料，以待之后分析。"
-"zh/blogs/2015/20151019_shanghai_shenzhen_stocks.html","zh","blog","上海深圳股票历史数据","2015,沪深股票下载（R）",2015-10-19,"R程序，用于下载和清理上海和深圳股票以及指数的每日价格和每日之内交易明细价格。"
-"zh/blogs/2015/20151103_trading_records_sina.html","zh","blog","股票交易明细：新浪财经","2015,沪深股票下载（R）",2015-11-03,"加入以<a href=""http://finance.sina.com.cn/"">新浪财经</a>为数据源的下载交易明细的程序。"
-"zh/blogs/2015/20151213_shanghai_shenzhen_financial_statements.html","zh","blog","沪深股票财务明细下载","2015,沪深股票下载（R）",2015-12-13,"加入了下载股票财务信息的程序，以网易或新浪为数据源。"
-"zh/blogs/2015/20151225_nlxj_preliminary_results.html","zh","blog","征友资料挖掘：初步结果","2015,交友资料文字挖掘",2015-12-25,"虽然并没有完成，但先放出一些结果：性别、年龄、身高、城市的分布图。"
-"zh/blogs/2016/20160120_market_code_list.html","zh","blog","上海深圳股票指数代码列表","2016,沪深股票下载（R）",2016-01-20,"把脚本中的代码生成过程独立出来，在文件（GenCodeList.R）中。需要下载全部的脚本可以直接引用。"
-"zh/blogs/2016/20160308_a_dance_with_dragons.html","zh","blog","冰与火之歌：与龙共舞","2016,读书",2016-03-08,"历经许久，终于读完了<cite>冰与火之歌</cite>的第五本：<cite>与龙共舞</cite>（<cite lang=""en"">A Song of Ice and Fire: A Dance with Dragons</cite>），至此赶上了作者的进度。"
-"zh/blogs/2016/20160319_aqi_pku_report.html","zh","blog","北京大学空气质量评估报告","2016,中国空气质量指数",2016-03-19,"北京大学光华管理学院和统计科学中心发布的第二篇空气质量评估报告，同样引用了美国使馆的AQI数据。"
-"zh/blogs/2016/20160404_a_day_with_my_chromebook.html","zh","blog","和我的Chromebook的一天","2016,电脑",2016-04-04,"Chromebook更新全过程。"
-"zh/blogs/2016/20160411_a_practical_introduction_to_garch_modeling.html","zh","blog","GARCH模型的实用介绍（译）","2016,译文,GARCH,计量经济学,R",2016-04-11,"关于波动率聚类以及GARCH(1,1)模型。翻译原文<cite lang=""en""><a href=""http://www.portfolioprobe.com/2012/07/06/a-practical-introduction-to-garch-modeling/"">A practical introduction to garch modeling</a></cite>。"
-"zh/blogs/2016/20160414_garch_of_china.html","zh","blog","GARCH：中国股指","2016,GARCH,计量经济学,R",2016-04-14,"把上证指数、沪深300和深证成指代入ARMA(1,1)-GARCH(1,1)，应用rugarch扩展包。"
-"zh/blogs/2016/20160427_ubuntu_xenial_xerus.html","zh","blog","Ubuntu 16.04 Xenial Xerus 安装配置","2016,电脑",2016-04-27,"安装Ubuntu系统之后的后续安装，和环境配置。记录以供以后安装系统参考。"
-"zh/blogs/2016/20160501_dividend_adjust.html","zh","blog","计算除权除息价格","2016,沪深股票下载（R）",2016-05-02,"获取股票分红配股信息；根据分红配股计算除权除息历史价格。"
-"zh/blogs/2016/20160924_china_r_chengdu.html","zh","blog","第九届中国R语言会议（成都）","2016,R",2016-09-24,"SUMMARY"
+"filePath","lang","title","tags","date","desc","hide"
+"en/blogs/2015/20150821_aqi_china.html","en","Collecting and Cleansing AQI Data","2015,ChinaAQI",2015-08-21,"Collect and cleanse hourly AQI of five cities of China （where U.S. embassy locations: Beijing, Shanghai, Guangzhou, Shenyang, Chengdu) from 2008 to 2014.",0
+"en/blogs/2016/20160308_a_dance_with_dragons.html","en","A Song of Ice and Fire: A Dance with Dragons","2016,Reading",2016-03-08,"Finally, after a while, I finished the fifth book of <cite>A Song of Ice and Fire</cite>: <cite>A Dance with Dragons</cite>, and catched up with the current progress of the author and the TV.",0
+"zh/blogs/2015/20150821_aqi_china.html","zh","AQI数据搜集整理","2015,中国空气质量指数",2015-08-21,"收集并清理从2008年到2014年中国五个城市（美国使馆所在城市：北京，上海，广州，沈阳，成都）的每小时空气指数（AQI）。",0
+"zh/blogs/2015/20150828_aqi_patterns.html","zh","中国五市AQI时间序列特征","2015,中国空气质量指数",2015-08-28,"每天几点钟的空气更好更适合锻炼，一年中是否冬季真的空气最差，不同城市的空气质量特征是否相同，利用中国五座城市的历史AQI试图回答以上的问题。",0
+"zh/blogs/2015/20150914_taq_dataset.html","zh","TAQ数据处理","2015,高频数据日波动率",2015-09-14,"高频交易报价数据来自于TAQ数据库。这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。",0
+"zh/blogs/2015/20150925_iv_estimators.html","zh","高频数据波动性统计量","2015,高频数据日波动率",2015-09-25,"这个项目利用Shell脚本（主要是awk）和R脚本，把大（压缩）数据文件分割成每日每支股票的小数据文件（RData）。此外还包括了一些基本的数据处理和清理。",0
+"zh/blogs/2015/20150926_rounding_error.html","zh","取整误差对日波动率统计量的影响","2015,高频数据日波动率",2015-09-26,"取整误差会导致高频交易数据的误差项有时间序列自相关，建立在白噪声假设下的统计量会有严重偏差。",0
+"zh/blogs/2015/20150929_nlxj_description.html","zh","解析征友资料HTML页面","2015,交友资料文字挖掘",2015-09-29,"纳兰性急是一个微信公众号，每周末发布三期交友信息。我从190期HTML页面中提取出来2509份征友的资料，以待之后分析。",0
+"zh/blogs/2015/20151019_shanghai_shenzhen_stocks.html","zh","上海深圳股票历史数据","2015,沪深股票下载_R",2015-10-19,"R程序，用于下载和清理上海和深圳股票以及指数的每日价格和每日之内交易明细价格。",0
+"zh/blogs/2015/20151103_trading_records_sina.html","zh","股票交易明细：新浪财经","2015,沪深股票下载_R",2015-11-03,"加入以<a href=""http://finance.sina.com.cn/"">新浪财经</a>为数据源的下载交易明细的程序。",0
+"zh/blogs/2015/20151213_shanghai_shenzhen_financial_statements.html","zh","沪深股票财务明细下载","2015,沪深股票下载_R",2015-12-13,"加入了下载股票财务信息的程序，以网易或新浪为数据源。",0
+"zh/blogs/2015/20151225_nlxj_preliminary_results.html","zh","征友资料挖掘：初步结果","2015,交友资料文字挖掘",2015-12-25,"虽然并没有完成，但先放出一些结果：性别、年龄、身高、城市的分布图。",0
+"zh/blogs/2016/20160120_market_code_list.html","zh","上海深圳股票指数代码列表","2016,沪深股票下载_R",2016-01-20,"把脚本中的代码生成过程独立出来，在文件（GenCodeList.R）中。需要下载全部的脚本可以直接引用。",0
+"zh/blogs/2016/20160308_a_dance_with_dragons.html","zh","冰与火之歌：与龙共舞","2016,读书",2016-03-08,"历经许久，终于读完了<cite>冰与火之歌</cite>的第五本：<cite>与龙共舞</cite>（<cite lang=""en"">A Song of Ice and Fire: A Dance with Dragons</cite>），至此赶上了作者的进度。",0
+"zh/blogs/2016/20160319_aqi_pku_report.html","zh","北京大学空气质量评估报告","2016,中国空气质量指数",2016-03-19,"北京大学光华管理学院和统计科学中心发布的第二篇空气质量评估报告，同样引用了美国使馆的AQI数据。",0
+"zh/blogs/2016/20160404_a_day_with_my_chromebook.html","zh","和我的Chromebook的一天","2016,电脑",2016-04-04,"Chromebook更新全过程。",0
+"zh/blogs/2016/20160411_a_practical_introduction_to_garch_modeling.html","zh","GARCH模型的实用介绍（译）","2016,译文,GARCH,计量经济学,R",2016-04-11,"关于波动率聚类以及GARCH(1,1)模型。翻译原文<cite lang=""en""><a href=""http://www.portfolioprobe.com/2012/07/06/a-practical-introduction-to-garch-modeling/"">A practical introduction to garch modeling</a></cite>。",0
+"zh/blogs/2016/20160414_garch_of_china.html","zh","GARCH：中国股指","2016,GARCH,计量经济学,R",2016-04-14,"把上证指数、沪深300和深证成指代入ARMA(1,1)-GARCH(1,1)，应用rugarch扩展包。",0
+"zh/blogs/2016/20160427_ubuntu_xenial_xerus.html","zh","Ubuntu 16.04 Xenial Xerus 安装配置","2016,电脑",2016-04-27,"安装Ubuntu系统之后的后续安装，和环境配置。记录以供以后安装系统参考。",0
+"zh/blogs/2016/20160501_dividend_adjust.html","zh","计算除权除息价格","2016,沪深股票下载_R",2016-05-02,"获取股票分红配股信息；根据分红配股计算除权除息历史价格。",0
+"zh/blogs/2016/20160924_china_r_chengdu.html","zh","第九届中国R语言会议（成都）","2016,R",2016-09-24,"SUMMARY",0
+"en/blogs/2016/20161211_acer_r11_c1lk.html","en","Acer Chromebook R11 Configuration","2016,PC",2016-12-11,"On Nov 25th Fri, the Acer Chromebook R11 from Amazon.cn finally arrived, and I set it up during my weekend overtime. This article is about the process for later reminders and reference to other pathetic Chromebook users in mainland.",0
+"zh/blogs/2016/20161128_acer_r11_c1lk.html","zh","Acer Chromebook R11 配置过程","2016,电脑",2016-11-28,"上周五（11/25），亚马逊海外购的<span lang=\"en\">Acer Chromebook</span> R11终于到手了，周末加班空闲折腾了一下。本文记录了我的上手经历，以方便之后再折腾和供其他悲剧的墙内<span lang=\"en\">Chromebook</span>使用者查阅。",0
