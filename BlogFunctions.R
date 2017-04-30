@@ -1,3 +1,4 @@
+source("SiteFunctions.R")
 #########################################################################
 ## Procedure for adding a new blog:
 ## - NewBlogPage(path)
@@ -202,7 +203,11 @@ UpdateBlogDatabase <- function(newBlogPaths,
                                     recursive=TRUE, full.names=TRUE,
                                     pattern="*.html$"))
     }
+    # exclude drafts
+    newBlogPaths <- newBlogPaths[!grepl("draft\\.html$", newBlogPaths)]
+    # exclude temporary files
     newBlogPaths <- newBlogPaths[!grepl("~$", newBlogPaths)]
+    # exclude tempolate files
     newBlogPaths <- newBlogPaths[!grepl("yyyymmdd.*template",
                                         newBlogPaths)]
 

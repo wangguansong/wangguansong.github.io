@@ -1,3 +1,4 @@
+source("SiteFunctions.R")
 ########################################################################
 # Build/Update front and album pages
 
@@ -79,6 +80,8 @@ UpdateAlbumPages <- function(lang, tags,
                      update = albumDF[i, "date"],
                      title = albumDF[i, paste(lang, "Title", sep = "")],
                      desc = albumDF[i, paste(lang, "Desc", sep = "")])
+      cat("Built album page: tag = \"", albumDF$tag[i], "\" ",
+          "lang = \"", lang, "\"\n", sep = "")
     }
   }
 
@@ -119,6 +122,8 @@ BuildAlbumPage <- function(tags, lang, dates, fileName,
     albumRows <- albumRows & !photoDF$hide
   }
   albumRows <- which(albumRows)
+
+  albumRows <- albumRows[AlbumOrder(photoDF[albumRows,])]
 
   # destination file
   destFile <- paste(lang, "/photos/", fileName,
@@ -422,5 +427,16 @@ ScanPhotoTags <- function(rowIds,
     return(max(photoDF$date[grepl(tagregex, photoDF$tags[rowIds])]))
   })
   return(tagsDF)
+}
+
+AlbumOrder <- function(x) {
+  # Sort by date in reverse order first, then by time
+  onlyDate <- ! grepl(" ", x$date)
+  xposixct <- as.POSIXct(x$date, tz = "CST")
+  xdates <- as.numeric(as.Date(xposixct))
+  xtime <- format(xposixct, "%H%M%S")
+  xtime[onlyDate] <- NA
+  return(order(-xdates, xtime, basename(x$filePath)))
+
 }
 
