@@ -183,6 +183,9 @@ UpdateSidebars <- function(lang, tags, blogFront = TRUE,
 
 #########################################################################
 ## Database functions
+# UpdateBlogDatabase
+# UpdateTagDatabase
+
 UpdateBlogDatabase <- function(newBlogPaths,
                                blogDFfile = "database/blogDF.csv") {
   # Add new blogs into the database.
@@ -333,27 +336,27 @@ UpdateTagDatabase <- function(blogDF,
 
 
 
-ScanBlogTags <- function(blogDF) {
-  # Scan for tags of blogs, return tagsDF:tag,date.
-  # Return a data frame: tag, date
+#ScanBlogTags <- function(blogDF) {
+#  # Scan for tags of blogs, return tagsDF:tag,date.
+#  # Return a data frame: tag, date
+#
+#  allTags <- unlist(strsplit(blogDF$tags, ","))
+#  allTags <- trimws(allTags)    # R >= 3.2 required
+#  allTags <- unique(allTags)
+#  tagsDF <- data.frame(tag = allTags,
+#                       stringsAsFactors = FALSE)
+#  tagsDF$date <- apply(tagsDF, 1, FUN = function(x) {
+#    tagregex <- paste("\\<", x["tag"], "\\>", sep = "")
+#    return(max(blogDF$date[grepl(tagregex, blogDF$tags)]))
+#  })
+#  return(tagsDF)
+#}
 
-  allTags <- unlist(strsplit(blogDF$tags, ","))
-  allTags <- trimws(allTags)    # R >= 3.2 required
-  allTags <- unique(allTags)
-  tagsDF <- data.frame(tag = allTags,
-                       stringsAsFactors = FALSE)
-  tagsDF$date <- apply(tagsDF, 1, FUN = function(x) {
-    tagregex <- paste("\\<", x["tag"], "\\>", sep = "")
-    return(max(blogDF$date[grepl(tagregex, blogDF$tags)]))
-  })
-  return(tagsDF)
-}
 #########################################################################
 ## Helper functions.
-## ScanBlogTags(rowIds, blogDFfile)
 ## ParseBlogHTML(path)
 ## ToggleActive(htmlfile, link)
-#
+
 ParseArticle <- function(path) {
   # Given a path to a blog page, return tags, (url of tags), date stamp,
   # title and summary line.

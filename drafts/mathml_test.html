@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+ <title>MathML in HTML5</title>
+</head>
+
+<body>
+<p>在网上搜索IV和WoE，得到的文献并不多，而且很多重复。在学术论文中也并没有搜出太多信息，相关的书也只有2、3本。可能是因为这个概念是在设计评分卡模型中借用的其他统计概念，并没有在其他领域广泛使用。以下是我对曾看到过的信息的整理。</p>
+
+<h3>模型设置</h3>
+<p>
+	简单起见，只考虑一个特征变量<math><mi>X</mi></math>和一个目标变量<math><mi>Y</mi></math>。
+	其中<math><mi>X</mi></math>是一个取值离散或连续的变量，<math><mi>Y</mi></math>是一个取值为0或1的简单二元分类变量。
+  需要解决的问题是，如何衡量<math><mi>X</mi></math>是否能够有效预测<math><mi>Y</mi></math>的分类（好与坏）。
+  从另一个角度考虑，问题可以（贝叶斯？）转换为在<math><mi>Y</mi></math>为0和1下<math><mi>X</mi></math>的条件概率分布的区别有多大。
+	IV、KS、以及其他统计量的思路都是通过表达两个条件概率分布的区别或距离大小，来衡量<math><mi>X</mi></math>对<math><mi>Y</mi></math>的影响。
+</p>
+
+<h3>定义IV</h3>
+<p>
+	IV（<span lang="en">Information Value</span>）数学定义为对一个几率对数（WoE）的加权积分，衡量了在<math><mi>Y</mi></math>分别为0或1时，<math><mi>X</mi></math>的两个条件概率分布有多大区别。
+	区别越大，说明不同<math><mi>Y</mi></math>分类中的<math><mi>X</mi></math>特征分布越不同，即<math><mi>X</mi></math>对<math><mi>Y</mi></math>的分组越有预测能力。
+
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mi>IV</mi>
+			<mo>=</mo>
+			<mstyle displaystyle="true">
+				<mo>&#x0222B;</mo>
+			</mstyle>
+			<mi>log</mi>
+			<mfrac>
+				<mrow>
+					<mi>f</mi>
+					<mrow>
+						<mo>(</mo>
+						<mi>x</mi>
+						<mo>|</mo>
+						<mi>Y</mi>
+						<mo>=</mo>
+						<mn>1</mn>
+						<mo>)</mo>
+					</mrow>
+				</mrow>
+				<mrow>
+					<mi>f</mi>
+					<mrow>
+						<mo>(</mo>
+						<mi>x</mi>
+						<mo>|</mo>
+						<mi>Y</mi>
+						<mo>=</mo>
+						<mn>0</mn>
+						<mo>)</mo>
+					</mrow>
+				</mrow>
+			</mfrac>
+			<mrow>
+				<mi>f</mi>
+				<mrow>
+					<mo>(</mo>
+					<mi>x</mi>
+					<mo>|</mo>
+					<mi>Y</mi>
+					<mo>=</mo>
+					<mn>1</mn>
+					<mo>)</mo>
+				</mrow>
+				<mo>-</mo>
+				<mi>f</mi>
+				<mrow>
+					<mo>(</mo>
+					<mi>x</mi>
+					<mo>|</mo>
+					<mi>Y</mi>
+					<mo>=</mo>
+					<mn>0</mn>
+					<mo>)</mo>
+				</mrow>
+				<mo>)</mo>
+			</mrow>
+			<mi>dx</mi>
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+  
+  
+<p>另外，也可以从信息相对熵的角度定义IV，可参考文献：（待添加）</p>
+  
+  <p>	理论上，IV的定义即为两个条件概率分布的对称KL散度（<span lang="en">Kullback–Leibler symmetrised divergence</span>）。KL散度是衡量两个概率分布之间“距离”的统计量。（参考wikipedia）</p>
+
+
+<h3>定义WoE</h3>
+<p>
+	IV定义中的log部分即为WoE（<span lang="en">Weight of Evidence</span>）。
+</p>
+<!-- begin MathToWeb -->
+<!-- (your LaTeX) \begin{equation}
+\underbrace{log \frac{P(Y=1|X)}{P(Y=0|X)}}_{conditional logit} = \underbrace{log \frac{P(Y=1)}{P(Y=0)}}_{sample log-odds} + \underbrace{log \frac{f(X|Y=1)}{f(X|Y=0)}}_{WoE of X}
+\end{equation} -->
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable class="m-equation" displaystyle="true" style="display: block; margin-top: 1.0em; margin-bottom: 2.0em">
+	<mtr>
+		<mtd>
+			<mspace width="6.0em" />
+		</mtd>
+		<mtd columnalign="left">
+			<mstyle displaystyle="true">
+				<munder>
+					<mrow>
+						<munder accentunder="true">
+							<mrow>
+								<mi>log</mi>
+								<mfrac>
+									<mrow>
+										<mi>P</mi>
+										<mrow>
+											<mo>(</mo>
+											<mi>Y</mi>
+											<mo>=</mo>
+											<mn>1</mn>
+											<mo>|</mo>
+											<mi>X</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mrow>
+										<mi>P</mi>
+										<mrow>
+											<mo>(</mo>
+											<mi>Y</mi>
+											<mo>=</mo>
+											<mn>0</mn>
+											<mo>|</mo>
+											<mi>X</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mfrac>
+							</mrow>
+							<mo stretchy="true">&#x0FE38;</mo>
+						</munder>
+					</mrow>
+					<mrow>
+						<mtext>conditional logit</mtext>
+					</mrow>
+				</munder>
+			</mstyle>
+			<mo>=</mo>
+			<mstyle displaystyle="true">
+				<munder>
+					<mrow>
+						<munder accentunder="true">
+							<mrow>
+								<mi>log</mi>
+								<mfrac>
+									<mrow>
+										<mi>P</mi>
+										<mrow>
+											<mo>(</mo>
+											<mi>Y</mi>
+											<mo>=</mo>
+											<mn>1</mn>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mrow>
+										<mi>P</mi>
+										<mrow>
+											<mo>(</mo>
+											<mi>Y</mi>
+											<mo>=</mo>
+											<mn>0</mn>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mfrac>
+							</mrow>
+							<mo stretchy="true">&#x0FE38;</mo>
+						</munder>
+					</mrow>
+					<mrow>
+						<mtext>sample log-odds</mtext>
+					</mrow>
+				</munder>
+			</mstyle>
+			<mo>+</mo>
+			<mstyle displaystyle="true">
+				<munder>
+					<mrow>
+						<munder accentunder="true">
+							<mrow>
+								<mi>l</mi>
+								<mi>o</mi>
+								<mi>g</mi>
+								<mfrac>
+									<mrow>
+										<mi>f</mi>
+										<mrow>
+											<mo>(</mo>
+											<mi>X</mi>
+											<mo>|</mo>
+											<mi>Y</mi>
+											<mo>=</mo>
+											<mn>1</mn>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mrow>
+										<mi>f</mi>
+										<mrow>
+											<mo>(</mo>
+											<mi>X</mi>
+											<mo>|</mo>
+											<mi>Y</mi>
+											<mo>=</mo>
+											<mn>0</mn>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mfrac>
+							</mrow>
+							<mo stretchy="true">&#x0FE38;</mo>
+						</munder>
+					</mrow>
+					<mrow>
+						<mtext>WoE of X</mtext>
+					</mrow>
+				</munder>
+			</mstyle>
+		</mtd>
+	</mtr>
+</mtable>
+</math>
+<!-- end MathToWeb -->
+<p>
+	上式中，等式左边即为逻辑回归中的目标变量，右边第一个log项为样本几率常数，第二个log即为WoE。WoE是x的函数，当x使得WoE大于1时，说明这个x会对应（比整体样本）更高概率观测到Y为1；当x使得WoE小于1时，说明这个x会对应更低概率观测到Y为1
+	
+</p>
+<p>
+	等式两边均为X的函数，所以逻辑回归可以看为是对这个等式的线性拟合。当对这个等式采取其他类型的拟合，则得到了其他分类模型，例如朴素贝叶斯方法（<span lang="en">naive Bayes</span>）或GAM。
+</p>
+
+<h3>IV与WoE：实际样本估计</h3>
+<p>以上是对IV和WoE的理论讨论，在实践中X的条件概率分布是未知的，只能通过样本进行估计。</p>
+  <p>分组估计WoE及IV：待添加</p>
+
+<h3>最优分组数</h3>
+<p>在分组估计时，如果组数过多，则每组内的条件概率的估计会不准确；如果组数过少，整体求和与实际积分的差别会增大。当存在权衡时，则会存在最优解。</p>
+
+<h3>KS</h3>
+<p>另一个衡量两个概率分布之间距离的指标为KS统计量（Kolmogorov–Smirnov）。不同于IV对整个概率分布区间内的积分，KS统计量定义为两个概率的累积分布函数之间的最大差值。</p>
+  
+  <h3>模拟数据</h3>
+  <p>
+    假设X服从0～1之间的均匀分布，Y|X服从B(X)分布（概率为X的伯努利分布），即给定X=x，Y为1的概率为x，Y为0的概率为1-x。
+    计算可得IV=2，KS=0.5。
+  </p>
+
+<h3>相关文章</h3>
+<ol>
+	<li>http://multithreaded.stitchfix.com/blog/2015/08/13/weight-of-evidence/</li>
+	<li>https://en.wikipedia.org/wiki/Kullback–Leibler_divergence</li>
+	<li>https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</li>
+</ol>
+
+</body>
+</html>
