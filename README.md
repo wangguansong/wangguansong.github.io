@@ -7,7 +7,7 @@
   * Compress the photo files into smaller ones:
 ```bash
 mkdir test
-jpegoptim --size=1024 --dest=test *
+for i in *.JPG *.jpg; do jpegoptim --dest=test --size=1024 $i; done
 ```
   * Select photos to keep and to keep private.
   * Update the photo database. In R:
